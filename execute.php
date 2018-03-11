@@ -60,6 +60,9 @@ if(strpos($text, 'nonno fiorucci') !== false)
     case 8:
       $response = $fiorucci8;
       break;
+    default:
+      $response = 'Dio tubercoloso fraacio!';
+      break;
   }
 }
 if(strpos($text, 'saluta') !== false)
