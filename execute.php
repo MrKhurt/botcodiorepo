@@ -24,15 +24,6 @@ $text = strtolower($text);
 $response = $text;
 if(strpos($text, 'nonno fiorucci') !== false)
 {
-  
-  $parameters = array('chat_id' => $chatId, "text" => 'nonno');
-  // method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
-  $parameters["method"] = "sendMessage";
-  // salvo l'ultimo messaggio ricevuto così al prossimo giro ho il messaggio precedente 
-  $GLOBALS['previous'] = $text;
-  // converto e stampo l'array JSON sulla response
-  echo json_encode($parameters);
-  
   $fiorucci01 = 'dio tubercoloso fracio';
   $fiorucci02 = 'dio serpente avvelenato';
   $fiorucci03 = 'madonna sta troia sta zzingara';
@@ -44,6 +35,16 @@ if(strpos($text, 'nonno fiorucci') !== false)
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
+  
+  
+  $parameters = array('chat_id' => $chatId, "text" => $randomNumber);
+  // method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
+  $parameters["method"] = "sendMessage";
+  // salvo l'ultimo messaggio ricevuto così al prossimo giro ho il messaggio precedente 
+  $GLOBALS['previous'] = $text;
+  // converto e stampo l'array JSON sulla response
+  echo json_encode($parameters);
+  
   switch($randomNumber)
   {
     case 1:
