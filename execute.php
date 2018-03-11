@@ -21,7 +21,9 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 // converto tutti i caratteri alfanumerici del messaggio in minuscolo
 $text = strtolower($text);
-$response = $text;
+$response = '';
+
+
 if(strpos($text, 'nonno fiorucci') !== false)
 {
   $fiorucci01 = 'dio tubercoloso fracio';
@@ -52,13 +54,43 @@ if(strpos($text, 'nonno fiorucci') !== false)
     $response = $fiorucci07;
   else if($randomNumber == 8)
     $response = $fiorucci08;
-  
 }
-if(strpos($text, 'saluta') !== false)
+else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
+{
+  $beck01 = 'prlrlrendo lo stegagno!!';
+  $beck02 = 'sbobdadgli dentbdooo..';
+  $beck03 = 'io ci sarlrloooooo';
+  $beck04 = '..e la lasci piena iihiihiihh';
+  $beck05 = 'meto in leto la tigrbdee';
+  $beck06 = 'e quell\'altrlra trlrloia che da in girlro la carlblta igienicaaa!';
+  $beck07 = 'cosa fai mangi la pancetta con le mani come i marbrlrocchini!?!';
+  $beck08 = 'tanti augubrlrlri anche alle donne brlrutte!';
+  $min=1;
+  $max=8;
+  $randomNumber = rand($min, $max);
+  
+  if($randomNumber == 1)
+    $response = $fiorucci01;
+  else if($randomNumber == 2)
+    $response = $fiorucci02;
+  else if($randomNumber == 3)
+    $response = $fiorucci03;
+  else if($randomNumber == 4)
+    $response = $fiorucci04;
+  else if($randomNumber == 5)
+    $response = $fiorucci05;
+  else if($randomNumber == 6)
+    $response = $fiorucci06;
+  else if($randomNumber == 7)
+    $response = $fiorucci07;
+  else if($randomNumber == 8)
+    $response = $fiorucci08;
+}
+else if(strpos($text, 'saluta') !== false)
 {
   $response = 'Sai chi ti saluta?';
 }
-if(strpos($text, 'chi?') !== false)
+else if(strpos($text, 'chi?') !== false)
 {
   header("Content-Type: application/json");
   $parameters = array('chat_id' => $chatId, "text" => $GLOBALS['previous']);
@@ -69,16 +101,20 @@ if(strpos($text, 'chi?') !== false)
     $response = 'Stocazzo!';
 }
 
-// mi preparo a restitutire al chiamante la mia risposta che è un oggetto JSON
-// imposto l'header della risposta
-header("Content-Type: application/json");
-// la mia risposta è un array JSON composto da chat_id, text, method
-// chat_id mi consente di rispondere allo specifico utente che ha scritto al bot
-// text è il testo della risposta
-$parameters = array('chat_id' => $chatId, "text" => $response);
-// method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
-$parameters["method"] = "sendMessage";
-// salvo l'ultimo messaggio ricevuto così al prossimo giro ho il messaggio precedente 
-$GLOBALS['previous'] = $text;
-// converto e stampo l'array JSON sulla response
-echo json_encode($parameters);
+if($response != '')
+{
+  // mi preparo a restitutire al chiamante la mia risposta che è un oggetto JSON
+  // imposto l'header della risposta
+  header("Content-Type: application/json");
+  // la mia risposta è un array JSON composto da chat_id, text, method
+  // chat_id mi consente di rispondere allo specifico utente che ha scritto al bot
+  // text è il testo della risposta
+  $parameters = array('chat_id' => $chatId, "text" => $response);
+  // method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
+  $parameters["method"] = "sendMessage";
+  // salvo l'ultimo messaggio ricevuto così al prossimo giro ho il messaggio precedente 
+  $GLOBALS['previous'] = $text;
+  // converto e stampo l'array JSON sulla response
+  echo json_encode($parameters);
+}
+
