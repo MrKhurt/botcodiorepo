@@ -41,35 +41,60 @@ if(strpos($text, 'nonno fiorucci') !== false)
   {
     case 1:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     case 2:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     case 3:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     case 4:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     case 5:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     case 6:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     case 7:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     case 8:
       $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
     default:
       $response = 'Dio tubercoloso fraacio!';
+      $parameters = array('chat_id' => $chatId, "text" => $response);
+      $parameters["method"] = "sendMessage";
+      $GLOBALS['previous'] = $text;
+      echo json_encode($parameters);
       break;
   }
-  $parameters["method"] = "sendMessage";
-  $GLOBALS['previous'] = $text;
-  echo json_encode($parameters);
 }
 if(strpos($text, 'saluta') !== false)
 {
