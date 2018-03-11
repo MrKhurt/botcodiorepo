@@ -92,13 +92,7 @@ else if(strpos($text, 'saluta') !== false)
 }
 else if(strpos($text, 'chi?') !== false)
 {
-  header("Content-Type: application/json");
-  $parameters = array('chat_id' => $chatId, "text" => $GLOBALS['previous']);
-  $parameters["method"] = "sendMessage";
-  $GLOBALS['previous'] = $text;
-  echo json_encode($parameters);
-  if(strpos($GLOBALS['previous'], 'saluta') != false)
-    $response = 'Stocazzo!';
+  $response = 'Stocazzo!';
 }
 
 if($response != '')
