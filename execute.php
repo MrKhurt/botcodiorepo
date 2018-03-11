@@ -70,9 +70,10 @@ if(strpos($text, 'saluta') !== false)
 {
   $response = 'Sai chi ti saluta?';
 }
-if(strpos($text, 'chi?') !== false && strpos($previous, 'saluta'))
+if(strpos($text, 'chi?') !== false)
 {
-  $response = 'Stocazzo!';
+  if(strpos($previous, 'saluta') != false)
+    $response = 'Stocazzo!';
 }
 
 // mi preparo a restitutire al chiamante la mia risposta che è un oggetto JSON
