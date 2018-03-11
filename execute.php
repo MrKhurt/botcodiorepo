@@ -37,21 +37,21 @@ if(strpos($text, 'nonno fiorucci') !== false)
   $randomNumber = rand($min, $max);
   
   if($randomNumber == 1)
-    $response = $fiorucci1;
-  if($randomNumber == 2)
-    $response = $fiorucci2;
-  if($randomNumber == 3)
-    $response = $fiorucci3;
-  if($randomNumber == 4)
-    $response = $fiorucci4;
-  if($randomNumber == 5)
-    $response = $fiorucci5;
-  if($randomNumber == 6)
-    $response = $fiorucci6;
-  if($randomNumber == 7)
-    $response = $fiorucci7;
-  if($randomNumber == 8)
-    $response = $fiorucci8;
+    $response = $fiorucci01;
+  else if($randomNumber == 2)
+    $response = $fiorucci02;
+  else if($randomNumber == 3)
+    $response = $fiorucci03;
+  else if($randomNumber == 4)
+    $response = $fiorucci04;
+  else if($randomNumber == 5)
+    $response = $fiorucci05;
+  else if($randomNumber == 6)
+    $response = $fiorucci06;
+  else if($randomNumber == 7)
+    $response = $fiorucci07;
+  else if($randomNumber == 8)
+    $response = $fiorucci08;
   
 }
 if(strpos($text, 'saluta') !== false)
