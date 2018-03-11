@@ -34,7 +34,7 @@ if(strpos($text, 'nonno fiorucci') !== false)
   $fiorucci08 = 'noooooooddiocane!';
   
   $randomNumber = rand(1, 8);
-  switch(randomNumber)
+  switch($randomNumber)
   {
     case 1:
       $response = $fiorucci1;
