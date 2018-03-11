@@ -32,8 +32,9 @@ if(strpos($text, 'nonno fiorucci') !== false)
   $fiorucci06 = 'io te porto a Villa Candida punto, e basta!';
   $fiorucci07 = 'sta stu stronzo!';
   $fiorucci08 = 'noooooooddiocane!';
-  
-  $randomNumber = rand(1, 8);
+  $min=1;
+  $max=8;
+  $randomNumber = rand($min, $max);
   switch($randomNumber)
   {
     case 1:
