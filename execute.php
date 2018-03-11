@@ -38,19 +38,19 @@ if(strpos($text, 'nonno fiorucci') !== false)
   
   if($randomNumber == 1)
     $response = $fiorucci1;
-  else if($randomNumber == 2)
+  if($randomNumber == 2)
     $response = $fiorucci2;
-  else if($randomNumber == 3)
+  if($randomNumber == 3)
     $response = $fiorucci3;
-  else if($randomNumber == 4)
+  if($randomNumber == 4)
     $response = $fiorucci4;
-  else if($randomNumber == 5)
+  if($randomNumber == 5)
     $response = $fiorucci5;
-  else if($randomNumber == 6)
+  if($randomNumber == 6)
     $response = $fiorucci6;
-  else if($randomNumber == 7)
+  if($randomNumber == 7)
     $response = $fiorucci7;
-  else if($randomNumber == 8)
+  if($randomNumber == 8)
     $response = $fiorucci8;
   
 }
