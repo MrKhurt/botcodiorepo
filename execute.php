@@ -70,21 +70,21 @@ else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
   $randomNumber = rand($min, $max);
   
   if($randomNumber == 1)
-    $response = $fiorucci01;
+    $response = $beck01;
   else if($randomNumber == 2)
-    $response = $fiorucci02;
+    $response = $beck02;
   else if($randomNumber == 3)
-    $response = $fiorucci03;
+    $response = $beck03;
   else if($randomNumber == 4)
-    $response = $fiorucci04;
+    $response = $beck04;
   else if($randomNumber == 5)
-    $response = $fiorucci05;
+    $response = $beck05;
   else if($randomNumber == 6)
-    $response = $fiorucci06;
+    $response = $beck06;
   else if($randomNumber == 7)
-    $response = $fiorucci07;
+    $response = $beck07;
   else if($randomNumber == 8)
-    $response = $fiorucci08;
+    $response = $beck08;
 }
 else if(strpos($text, 'saluta') !== false)
 {
