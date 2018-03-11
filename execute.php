@@ -35,66 +35,24 @@ if(strpos($text, 'nonno fiorucci') !== false)
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
-  header("Content-Type: application/json");
-    
-  switch($randomNumber)
-  {
-    case 1:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    case 2:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    case 3:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    case 4:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    case 5:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    case 6:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    case 7:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    case 8:
-      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-    default:
-      $response = 'Dio tubercoloso fraacio!';
-      $parameters = array('chat_id' => $chatId, "text" => $response);
-      $parameters["method"] = "sendMessage";
-      $GLOBALS['previous'] = $text;
-      echo json_encode($parameters);
-      break;
-  }
+  
+  if($randomNumber == 1)
+    $response = $fiorucci1;
+  else if($randomNumber == 2)
+    $response = $fiorucci2;
+  else if($randomNumber == 3)
+    $response = $fiorucci3;
+  else if($randomNumber == 4)
+    $response = $fiorucci4;
+  else if($randomNumber == 5)
+    $response = $fiorucci5;
+  else if($randomNumber == 6)
+    $response = $fiorucci6;
+  else if($randomNumber == 7)
+    $response = $fiorucci7;
+  else if($randomNumber == 8)
+    $response = $fiorucci8;
+  
 }
 if(strpos($text, 'saluta') !== false)
 {
