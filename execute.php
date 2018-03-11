@@ -35,46 +35,41 @@ if(strpos($text, 'nonno fiorucci') !== false)
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
-  
-  
-  $parameters = array('chat_id' => $chatId, "text" => $randomNumber);
-  // method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
-  $parameters["method"] = "sendMessage";
-  // salvo l'ultimo messaggio ricevuto così al prossimo giro ho il messaggio precedente 
-  $GLOBALS['previous'] = $text;
-  // converto e stampo l'array JSON sulla response
-  echo json_encode($parameters);
-  
+  header("Content-Type: application/json");
+    
   switch($randomNumber)
   {
     case 1:
-      $response = $fiorucci1;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     case 2:
-      $response = $fiorucci2;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     case 3:
-      $response = $fiorucci3;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     case 4:
-      $response = $fiorucci4;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     case 5:
-      $response = $fiorucci5;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     case 6:
-      $response = $fiorucci6;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     case 7:
-      $response = $fiorucci7;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     case 8:
-      $response = $fiorucci8;
+      $parameters = array('chat_id' => $chatId, "text" => $fiorucci1);
       break;
     default:
       $response = 'Dio tubercoloso fraacio!';
       break;
   }
+  $parameters["method"] = "sendMessage";
+  $GLOBALS['previous'] = $text;
+  echo json_encode($parameters);
 }
 if(strpos($text, 'saluta') !== false)
 {
