@@ -21,14 +21,66 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 // converto tutti i caratteri alfanumerici del messaggio in minuscolo
 $text = strtolower($text);
+$response = $text;
+if(strpos($text, 'nonno fiorucci') !== false)
+{
+  $fiorucci01 = 'dio tubercoloso fracio';
+  $fiorucci02 = 'dio serpente avvelenato';
+  $fiorucci03 = 'madonna sta troia sta zzingara';
+  $fiorucci04 = 'scemo! scemo! scemo!';
+  $fiorucci05 = 'dio serpente bove';
+  $fiorucci06 = 'io te porto a Villa Candida punto, e basta!';
+  $fiorucci07 = 'sta stu stronzo!';
+  $fiorucci08 = 'noooooooddiocane!';
+  
+  $randomNumber = rand(1, 8);
+  switch(randomNumber)
+  {
+    case 1:
+      $response = $fiorucci1;
+      break;
+    case 2:
+      $response = $fiorucci2;
+      break;
+    case 3:
+      $response = $fiorucci3;
+      break;
+    case 4:
+      $response = $fiorucci4;
+      break;
+    case 5:
+      $response = $fiorucci5;
+      break;
+    case 6:
+      $response = $fiorucci6;
+      break;
+    case 7:
+      $response = $fiorucci7;
+      break;
+    case 8:
+      $response = $fiorucci8;
+      break;
+  }
+}
+if(strpos($text, 'saluta') !== false)
+{
+  $response = 'Sai chi ti saluta?';
+}
+if(strpos($text, 'chi?') !== false && strpos($previous, 'saluta'))
+{
+  $response = 'Stocazzo!';
+}
+
 // mi preparo a restitutire al chiamante la mia risposta che è un oggetto JSON
 // imposto l'header della risposta
 header("Content-Type: application/json");
 // la mia risposta è un array JSON composto da chat_id, text, method
 // chat_id mi consente di rispondere allo specifico utente che ha scritto al bot
 // text è il testo della risposta
-$parameters = array('chat_id' => $chatId, "text" => $text);
+$parameters = array('chat_id' => $chatId, "text" => $response);
 // method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
 $parameters["method"] = "sendMessage";
+// salvo l'ultimo messaggio ricevuto così al prossimo giro ho il messaggio precedente 
+$GLOBALS['previous'] = $text;
 // converto e stampo l'array JSON sulla response
 echo json_encode($parameters);
