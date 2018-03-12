@@ -35,10 +35,10 @@ if(strpos($text, 'culo') !== false)
     ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
     ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
     $images = ImageSearch::search('hot ass girl', ['imgSize' => 'large']);
-    $min=1;
-    $max=8;
-    $randomNumber = rand($min, $max);
-    $response = $images[1] . ' seh ciao';
+    //$min=1;
+    //$max=8;
+    //$randomNumber = rand($min, $max);
+    $response = $images["items"]["link"] . ' seh ciao';
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
