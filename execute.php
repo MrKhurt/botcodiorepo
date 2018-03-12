@@ -109,7 +109,7 @@ else if(strpos($text, 'bestemmia') !== false || strpos($text, 'bestemmione') !==
   $bestemmia03 = 'madonna scalza in un paese di puntine';
   $bestemmia04 = 'dio camion di ghiaia e per ogni sasso un porco';
   $bestemmia05 = 'madonna porcodiona';
-  $bestemmia06 = 'dio sushi nella valle dei giapponedi a dieta';
+  $bestemmia06 = 'dio sushi nella valle dei giapponesi a dieta';
   $bestemmia07 = 'gesù pecora nella valle dei sardi arrapati';
   $bestemmia08 = 'gesù spazzino nelle valli partenopee';
   $bestemmia09 = 'gesù paglia nella valle degli incendi spontanei';
