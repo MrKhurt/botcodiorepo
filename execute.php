@@ -32,10 +32,17 @@ if(strpos($text, 'culo') !== false)
     ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
     $images = ImageSearch::search('hot ass girl'); // returns array of results
     //$images = getGoogleImg('hot ass girl');
-    $min=1;
-    $max=8;
-    $randomNumber = rand($min, $max);
-    $response = $images[1];
+  
+    foreach ($images["items"] as $result) 
+    {
+      //var_dump($result);
+      echo $result["link"]."\n";
+      break;
+    }
+    //$min=1;
+    //$max=8;
+    //$randomNumber = rand($min, $max);
+    //$response = $images[1];
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
