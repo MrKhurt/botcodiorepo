@@ -86,6 +86,61 @@ else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
   else if($randomNumber == 8)
     $response = $beck08;
 }
+else if(strpos($text, 'bestemmia') !== false || strpos($text, 'bestemmione') !== false || strpos($text, 'blasfemia') !== false)
+{
+  $bestemmia01 = 'dio scappato di casa';
+  $bestemmia02 = 'dio cane abbandonato in autostrada';
+  $bestemmia03 = 'madonna scalza in un paese di puntine';
+  $bestemmia04 = 'dio camion di ghiaia e per ogni sasso un porco';
+  $bestemmia05 = 'madonna porcodiona';
+  $bestemmia06 = 'dio sushi nella valle dei giapponedi a dieta';
+  $bestemmia07 = 'gesù pecora nella valle dei sardi arrapati';
+  $bestemmia08 = 'gesù spazzino nelle valli partenopee';
+  $bestemmia09 = 'gesù paglia nella valle degli incendi spontanei';
+  $bestemmia10 = 'dio cucitore di scarpe della Nike sottopagato';
+  $bestemmia11 = 'gesù bagno nella valle dell\'influenza intestinale';
+  $bestemmia12 = 'gesù donna nella valle dei benzinai self-service';
+  $bestemmia13 = 'madonna extravergine d\'oliva';
+  $bestemmia14 = 'dio mondial casa';
+  $bestemmia15 = 'cristo imbianchino';
+  $bestemmia16 = 'CristoMcBacon';
+  $min=1;
+  $max=16;
+  $randomNumber = rand($min, $max);
+  
+  if($randomNumber == 1)
+    $response = $bestemmia01;
+  else if($randomNumber == 2)
+    $response = $bestemmia02;
+  else if($randomNumber == 3)
+    $response = $bestemmia03;
+  else if($randomNumber == 4)
+    $response = $bestemmia04;
+  else if($randomNumber == 5)
+    $response = $bestemmia05;
+  else if($randomNumber == 6)
+    $response = $bestemmia06;
+  else if($randomNumber == 7)
+    $response = $bestemmia07;
+  else if($randomNumber == 8)
+    $response = $bestemmia08;
+  else if($randomNumber == 9)
+    $response = $bestemmia09;
+  else if($randomNumber == 10)
+    $response = $bestemmia10;
+  else if($randomNumber == 11)
+    $response = $bestemmia11;
+  else if($randomNumber ==12)
+    $response = $bestemmia12;
+  else if($randomNumber == 13)
+    $response = $bestemmia13;
+  else if($randomNumber == 14)
+    $response = $bestemmia14;
+  else if($randomNumber == 15)
+    $response = $bestemmia15;
+  else if($randomNumber == 16)
+    $response = $bestemmia16;
+}
 else if(strpos($text, 'saluta') !== false)
 {
   $response = 'Sai chi ti saluta?';
