@@ -33,6 +33,7 @@ if(strpos($text, 'culo') !== false)
     $max=8;
     $randomNumber = rand($min, $max);
     $response = $images[$randomNumber];
+    $response = count($images);
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
