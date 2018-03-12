@@ -94,6 +94,66 @@ else if(strpos($text, 'chi?') !== false)
 {
   $response = 'Stocazzo!';
 }
+else if(strpos($text, 'insulta') !== false || strpos($text, 'offendi') !== false)
+{
+  $offeso = '';
+  if(strpos($text, 'insulta') !== false)
+  {
+    $arr = explode('insulta', $text);
+    $offeso = $arr[1];
+  }
+  else 
+  {
+    $arr = explode('offendi', $text);
+    $offeso = $arr[1];
+  }
+  $offesa01 = ' chissá che ti cadano le braccia e inizi a pruderti il culo nello stesso istante';
+  $offesa02 = ' non capisci un cazzo neanche se ne ingoi un mazzo';
+  $offesa03 = ' sei come la minchia sempre tra le palle';
+  $offesa04 = ' perché mi fai porcodiare?';
+  $offesa05 = ' sei un diomas\'cio';
+  $offesa06 = ' sei così brutto che quando sei nato tua mamma ha inviato i biglietti di scuse a tutti';
+  $offesa07 = ' si fa prima a finire un cubo di rubik che a trovarti il cazzo tanto é piccolo';
+  $offesa08 = ' darti dello stupido è oltraggiare gli stupidi, perciò per offenderti è urgente cercare una nuova parola';
+  $offesa09 = ' che cos\'è una disgrazia? Conoscerti e incontrarti hahaha ..diocan';
+  $offesa10 = ' sei come una nuvola, se ti levi dalle palle diventa una bella giornata';
+  $offesa11 = ' sei così brutto che se i testimoni di geova vengono a casa tua, si chiudono la porta in faccia da soli';
+  $offesa12 = ' sei così brutto che se qualcuno ti guarda il culo ti chiede perchè stai facendo la verticale';
+  $offesa13 = ' sei così brutto che quando preghi Gesù si mette su invisibile';
+  $offesa14 = ' sei falso come i soldi del monopoli';
+  
+  $min=1;
+  $max=14;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    $response = $offeso . $offesa01;
+  else if($randomNumber == 2)
+    $response = $offeso . $offesa02;
+  else if($randomNumber == 3)
+    $response = $offeso . $offesa03;
+  else if($randomNumber == 4)
+    $response = $offeso . $offesa04;
+  else if($randomNumber == 5)
+    $response = $offeso . $offesa05;
+  else if($randomNumber == 6)
+    $response = $offeso . $offesa06;
+  else if($randomNumber == 7)
+    $response = $offeso . $offesa07;
+  else if($randomNumber == 8)
+    $response = $offeso . $offesa08;
+  else if($randomNumber == 9)
+    $response = $offeso . $offesa09;
+  else if($randomNumber == 10)
+    $response = $offeso . $offesa10;
+  else if($randomNumber == 11)
+    $response = $offeso . $offesa11;
+  else if($randomNumber ==12)
+    $response = $offeso . $offesa12;
+  else if($randomNumber == 13)
+    $response = $offeso . $offesa13;
+  else if($randomNumber == 14)
+    $response = $offeso . $offesa14;
+}
 
 if($response != '')
 {
