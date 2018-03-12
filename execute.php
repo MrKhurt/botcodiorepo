@@ -28,8 +28,8 @@ $response = '';
 
 if(strpos($text, 'culo') !== false)
 {
-    ImageSearch::config()->apiKey('016485041220097449938');
-    ImageSearch::config()->cx('ox4wv57es20');
+    ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+    ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
     $images = ImageSearch::search('hot ass girl'); // returns array of results
     //$images = getGoogleImg('hot ass girl');
     $min=1;
