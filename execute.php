@@ -1,7 +1,10 @@
 <?php
 // includo il file imagessearch.php per la ricerca immagini da google images
-//include 'searchimages/ImageSearch.php';
-use searchimages/ImageSearch;
+include 'searchimages/Image.php';
+include 'searchimages/Http.php';
+include 'searchimages/Config.php';
+include 'searchimages/ImageSearch.php';
+//use searchimages/ImageSearch;
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
@@ -32,18 +35,10 @@ if(strpos($text, 'culo') !== false)
     ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
     ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
     $images = ImageSearch::search('hot ass girl'); // returns array of results
-    //$images = getGoogleImg('hot ass girl');
-  
-    foreach ($images["items"] as $result) 
-    {
-      //var_dump($result);
-      echo $result["link"]."\n";
-      break;
-    }
-    //$min=1;
-    //$max=8;
-    //$randomNumber = rand($min, $max);
-    //$response = $images[1];
+    $min=1;
+    $max=8;
+    $randomNumber = rand($min, $max);
+    $response = $images[1];
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
