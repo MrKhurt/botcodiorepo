@@ -4,6 +4,7 @@ include 'searchimages/Image.php';
 include 'searchimages/Http.php';
 include 'searchimages/Config.php';
 include 'searchimages/ImageSearch.php';
+use odannyc\GoogleImageSearch\ImageSearch;
 //use searchimages/ImageSearch;
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
@@ -38,7 +39,7 @@ if(strpos($text, 'culo') !== false)
     //$min=1;
     //$max=8;
     //$randomNumber = rand($min, $max);
-    $response = $images["items"]["link"] . ' seh ciao';
+    $response = $images[1] . ' seh ciao';
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
