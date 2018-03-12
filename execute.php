@@ -1,6 +1,7 @@
 <?php
 // includo il file imagessearch.php per la ricerca immagini da google images
-include 'searchimages/ImageSearch.php';
+//include 'searchimages/ImageSearch.php';
+use searchimages/ImageSearch;
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
