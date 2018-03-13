@@ -31,7 +31,38 @@ $response = '';
 // INIZIO
 if(strpos($text, 'comandi') !== false)
 {
-    $response = urlencode("Comandi BotCodio:\nculo \nfiga \nfica \ngnagna \ngnocca \nzozzerellona \nzozza \nbuongiorno \ntette \npoppe \nzinne \ntettona \nmammelle \ncapezzoli \ncapezzolo \nratajkowski \nnargi \ndecker \nnonno fiorucci \nbek \nbeck \nbestemmia \nbestemmione \nblasfemia \nnonno \nproverbio \npoesia \nsaluta \nchi? \ninsulta \noffendi");
+    $response = urlencode("Comandi BotCodio:
+        culo
+        figa 
+        fica
+        gnagna
+        gnocca
+        zozzerellona
+        zozza
+        buongiorno
+        tette
+        poppe
+        zinne
+        tettona
+        mammelle
+        capezzoli
+        capezzolo
+        ratajkowski
+        nargi
+        decker
+        nonno fiorucci
+        bek
+        beck
+        bestemmia
+        bestemmione
+        blasfemia
+        nonno
+        proverbio
+        poesia
+        saluta
+        chi?
+        insulta
+        offendi");
 }
 if(strpos($text, 'culo') !== false)
 {
