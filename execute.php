@@ -1,6 +1,6 @@
 <?php
 // includo il file imagessearch.php per la ricerca immagini da google images
-require_once 'vendor/autoload.php'
+require_once 'vendor/autoload.php';
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
