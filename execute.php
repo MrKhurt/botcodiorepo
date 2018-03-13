@@ -34,7 +34,7 @@ if(strpos($text, 'culo') !== false)
     $min=1;
     $max=10;
     $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber] . ' seh ciao';
+    $response = $images["items"][$randomNumber]["link"]. ' seh ciao';
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
