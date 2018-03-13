@@ -136,7 +136,7 @@ if(strpos($text, 'figa') !== false ||
       $resto = $buongiorno03;
     else if($randomNumber == 4)
       $resto = $buongiorno04;
-      $response = $response . $resto;
+      $response = $response . '\n' . $resto;
     }
 }
 if(strpos($text, 'tette') !== false || 
