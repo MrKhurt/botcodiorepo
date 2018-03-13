@@ -37,7 +37,7 @@ if(strpos($text, 'culo') !== false)
     $i = 1;
     foreach ($images["items"] as $result) 
     {
-        if($i == randomNumber)
+        if($i == $randomNumber)
         {
           $response= $result["link"];
           break;
