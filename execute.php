@@ -334,6 +334,63 @@ else if(strpos($text, 'bestemmia') !== false || strpos($text, 'bestemmione') !==
   else if($randomNumber == 16)
     $response = $bestemmia16;
 }
+else if(strpos($text, 'nonno') !== false || 
+          strpos($text, 'proverbio') !== false || 
+          strpos($text, 'poesia') !== false)
+{
+  $proverbio01 = 'Se la lengua nn sa de vacca ..la bocca non se stracca';
+  $proverbio02 = 'Fidati della volpe fidati del tasso, ma mai della donna col culo basso';
+  $proverbio03 = 'Ne per scherzo ne per burla dentro al culo non ci voglio nulla';
+  $proverbio04 = 'A cazzo dritto è difficile mantenere la calma';
+  $proverbio05 = 'Geloso de culo frocio sicuro';
+  $proverbio06 = 'Le figlie di Maria son le prime a darla via';
+  $proverbio07 = 'Quando s\'ha ben magnà e ben bevù se zerca el buso indò nar su';
+  $proverbio08 = 'Ala de capon, culo de castron e tete de massara xe na roba rara';
+  $proverbio09 = 'Ale done, ai sassi e ai bissi, colpi ciari e fissi';
+  $proverbio10 = 'Co l\'età, l\'omo fa panza e la femena fa stomego';
+  $proverbio11 = 'Co\'l cavéjo tra al bianchin, assa la dona e tiente el vin';
+  $proverbio12 = 'In istà la vache va in montagna a fare le siore, e le siore va in montagna a fare le vache';
+  $proverbio13 = 'La mojere xe come na scoreza: o te a moli o te te sofeghi';
+  $proverbio14 = 'Libri, done e cavai no se inpresta mai';
+  $proverbio15 = 'On palo in piè, na stropa domà e na fémena colgà i porta quanto peso che te voi';
+  $proverbio16 = 'Ovo de on\'ora, pan de on dì, vin de on ano, dona de vinti e amigo de trenta';
+  $min=1;
+  $max=16;
+  $randomNumber = rand($min, $max);
+  
+  if($randomNumber == 1)
+    $response = $proverbio01;
+  else if($randomNumber == 2)
+    $response = $proverbio02;
+  else if($randomNumber == 3)
+    $response = $proverbio03;
+  else if($randomNumber == 4)
+    $response = $proverbio04;
+  else if($randomNumber == 5)
+    $response = $proverbio05;
+  else if($randomNumber == 6)
+    $response = $proverbio06;
+  else if($randomNumber == 7)
+    $response = $proverbio07;
+  else if($randomNumber == 8)
+    $response = $proverbio08;
+  else if($randomNumber == 9)
+    $response = $proverbio09;
+  else if($randomNumber == 10)
+    $response = $proverbio10;
+  else if($randomNumber == 11)
+    $response = $proverbio11;
+  else if($randomNumber ==12)
+    $response = $proverbio12;
+  else if($randomNumber == 13)
+    $response = $proverbio13;
+  else if($randomNumber == 14)
+    $response = $proverbio14;
+  else if($randomNumber == 15)
+    $response = $proverbio15;
+  else if($randomNumber == 16)
+    $response = $proverbio16;
+}
 else if(strpos($text, 'saluta') !== false)
 {
   $response = 'Sai chi ti saluta?';
