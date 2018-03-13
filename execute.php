@@ -1,7 +1,6 @@
 <?php
 // includo il file imagessearch.php per la ricerca immagini da google images
-include 'searchimages/ImageSearch.php';
-//use searchimages/ImageSearch;
+use odannyc\GoogleImageSearch\ImageSearch;
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
@@ -35,7 +34,7 @@ if(strpos($text, 'culo') !== false)
     //$min=1;
     //$max=8;
     //$randomNumber = rand($min, $max);
-    $response = ' seh ciao';
+    $response = $images[1] . ' seh ciao';
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
