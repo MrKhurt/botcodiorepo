@@ -193,7 +193,7 @@ if(strpos($text, 'tette') !== false ||
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
 }
-if(strpos($text, 'ratajkovsky') !== false)
+if(strpos($text, 'ratajkowsky') !== false)
 {
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', ['imgSize' => 'large']);
     $min=1;
