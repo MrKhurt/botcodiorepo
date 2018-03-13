@@ -1,6 +1,6 @@
 <?php
 // includo il file imagessearch.php per la ricerca immagini da google images
-include 'searchimages/ImageSearch.php';
+use odannyc\GoogleImageSearch\ImageSearch;
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
@@ -28,14 +28,13 @@ $response = '';
 
 if(strpos($text, 'culo') !== false)
 {
-    ImageSearch::config()->apiKey('016485041220097449938');
-    ImageSearch::config()->cx('ox4wv57es20');
-    $images = ImageSearch::search('hot ass girl'); // returns array of results
-    //$images = getGoogleImg('hot ass girl');
-    $min=1;
-    $max=8;
-    $randomNumber = rand($min, $max);
-    $response = $images[$randomNumber];
+    ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+    ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    $images = ImageSearch::search('hot ass girl', ['imgSize' => 'large']);
+    //$min=1;
+    //$max=8;
+    //$randomNumber = rand($min, $max);
+    $response = $images[1] . ' seh ciao';
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
@@ -106,7 +105,7 @@ else if(strpos($text, 'bestemmia') !== false || strpos($text, 'bestemmione') !==
   $bestemmia03 = 'madonna scalza in un paese di puntine';
   $bestemmia04 = 'dio camion di ghiaia e per ogni sasso un porco';
   $bestemmia05 = 'madonna porcodiona';
-  $bestemmia06 = 'dio sushi nella valle dei giapponedi a dieta';
+  $bestemmia06 = 'dio sushi nella valle dei giapponesi a dieta';
   $bestemmia07 = 'gesù pecora nella valle dei sardi arrapati';
   $bestemmia08 = 'gesù spazzino nelle valli partenopee';
   $bestemmia09 = 'gesù paglia nella valle degli incendi spontanei';

@@ -4,7 +4,7 @@
  * @package google-image-search
  */
 namespace odannyc\GoogleImageSearch;
-
+include 'guzzle/Client.php';
 use GuzzleHttp\Client;
 
 /**
