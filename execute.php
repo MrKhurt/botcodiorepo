@@ -24,17 +24,99 @@ $text = trim($text);
 // converto tutti i caratteri alfanumerici del messaggio in minuscolo
 $text = strtolower($text);
 $response = '';
+// inizializzo il motore di ricerca
+\odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+\odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
 
 
 if(strpos($text, 'culo') !== false)
 {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search('hot ass sexy girl', ['imgSize' => 'large']);
-    $min=1;
-    $max=10;
-    $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"];
+  $culo01 = 'ass model girl';
+  $culo02 = 'lingerie model ass';
+  $culo03 = 'bonjourmadame ass';
+  $culo04 = 'non nude ass';
+  $culo05 = 'sexy bottom girl';
+  $culo06 = 'bikini model ass';
+  $culo07 = 'hottest ass girl';
+  $culo08 = 'tanga girl bum';
+  $min=1;
+  $max=8;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    $searchKey = $culo01;
+  else if($randomNumber == 2)
+    $searchKey = $culo02;
+  else if($randomNumber == 3)
+    $searchKey = $culo03;
+  else if($randomNumber == 4)
+    $searchKey = $culo04;
+  else if($randomNumber == 5)
+    $searchKey = $culo05;
+  else if($randomNumber == 6)
+    $searchKey = $culo06;
+  else if($randomNumber == 7)
+    $searchKey = $culo07;
+  else if($randomNumber == 8)
+    $searchKey = $culo08;
+  
+  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
+  $min=1;
+  $max=10;
+  $randomNumber = rand($min, $max);
+  $response = $images["items"][$randomNumber]["link"];
+}
+if(strpos($text, 'figa') !== false || 
+   strpos($text, 'fica') !== false || 
+   strpos($text, 'gnocca') !== false || 
+   strpos($text, 'gnagna') !== false ||
+   strpos($text, 'zozzerellona') !== false || 
+   strpos($text, 'zozza') !== false)
+{
+  $figa01 = 'lingerie model';
+  $figa02 = 'hot bikini models';
+  $figa03 = 'stunning non nude girls';
+  $figa04 = 'suicide girl sexy shot';
+  $figa05 = 'sexy model';
+  $figa06 = 'beach bikini hot';
+  $figa07 = 'topless hot girl';
+  $figa08 = 'leanna decker hot';
+  $figa09 = 'lexi belle non nude sexy';
+  $figa10 = 'katie fey hot';
+  $figa11 = 'faye reagan sexy';
+  $figa12 = 'piper fawn sexy';
+  $min=1;
+  $max=12;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    $searchKey = $figa01;
+  else if($randomNumber == 2)
+    $searchKey = $figa02;
+  else if($randomNumber == 3)
+    $searchKey = $figa03;
+  else if($randomNumber == 4)
+    $searchKey = $figa04;
+  else if($randomNumber == 5)
+    $searchKey = $figa05;
+  else if($randomNumber == 6)
+    $searchKey = $figa06;
+  else if($randomNumber == 7)
+    $searchKey = $figa07;
+  else if($randomNumber == 8)
+    $searchKey = $figa08;
+  else if($randomNumber == 9)
+    $searchKey = $figa09;
+  else if($randomNumber == 10)
+    $searchKey = $figa10;
+  else if($randomNumber == 11)
+    $searchKey = $figa11;
+  else if($randomNumber == 12)
+    $searchKey = $figa12;
+  
+  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
+  $min=1;
+  $max=10;
+  $randomNumber = rand($min, $max);
+  $response = $images["items"][$randomNumber]["link"];
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
