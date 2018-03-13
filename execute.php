@@ -34,17 +34,7 @@ if(strpos($text, 'culo') !== false)
     $min=1;
     $max=10;
     $randomNumber = rand($min, $max);
-    $i = 1;
-    foreach ($images["items"] as $result) 
-    {
-        if($i == $randomNumber)
-        {
-          $response= $result["link"];
-          error_log($result["link"]."\n", 0);
-          break;
-        }
-    }
-    //$response = $images[1] . ' seh ciao';
+    $response = $images["items"][$randomNumber] . ' seh ciao';
 }
 if(strpos($text, 'nonno fiorucci') !== false)
 {
