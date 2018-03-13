@@ -70,7 +70,8 @@ if(strpos($text, 'figa') !== false ||
    strpos($text, 'gnocca') !== false || 
    strpos($text, 'gnagna') !== false ||
    strpos($text, 'zozzerellona') !== false || 
-   strpos($text, 'zozza') !== false)
+   strpos($text, 'zozza') !== false || 
+   strpos($text, 'buongiorno') !== false)
 {
   $figa01 = 'lingerie model';
   $figa02 = 'hot bikini models';
@@ -78,7 +79,7 @@ if(strpos($text, 'figa') !== false ||
   $figa04 = 'suicide girl sexy shot';
   $figa05 = 'sexy model';
   $figa06 = 'beach bikini hot';
-  $figa07 = 'topless hot girl';
+  $figa07 = 'mia khalifa sexy non nude';
   $figa08 = 'leanna decker hot';
   $figa09 = 'lexi belle non nude sexy';
   $figa10 = 'katie fey hot';
@@ -111,6 +112,80 @@ if(strpos($text, 'figa') !== false ||
     $searchKey = $figa11;
   else if($randomNumber == 12)
     $searchKey = $figa12;
+  
+  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
+  $min=1;
+  $max=10;
+  $randomNumber = rand($min, $max);
+  $response = $images["items"][$randomNumber]["link"];
+  
+  if(strpos($text, 'buongiorno') !== false)
+  {
+    $buongiorno01 = 'buongiorno cani!';
+    $buongiorno02 = 'buongiorno morti de figa!';
+    $buongiorno03 = 'buongiorno froci!';
+    $buongiorno04 = 'buongiorno merdacce!';
+    $min=1;
+    $max=4;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+      $resto = $buongiorno01;
+    else if($randomNumber == 2)
+      $resto = $buongiorno02;
+    else if($randomNumber == 3)
+      $resto = $buongiorno03;
+    else if($randomNumber == 4)
+      $resto = $buongiorno04;
+      $response = $response . $resto;
+    }
+}
+if(strpos($text, 'tette') !== false || 
+   strpos($text, 'poppe') !== false || 
+   strpos($text, 'zinne') !== false || 
+   strpos($text, 'tettona') !== false ||
+   strpos($text, 'mammelle') !== false || 
+   strpos($text, 'capezzoli') !== false || 
+   strpos($text, 'capezzolo') !== false)
+{
+  $tette01 = 'topless lexi belle';
+  $tette02 = 'topless jenya d';
+  $tette03 = 'topless ratajkovsky';
+  $tette04 = 'topless denise milani';
+  $tette05 = 'piper fawn tits';
+  $tette06 = 'topless playmate';
+  $tette07 = 'topless hot girl';
+  $tette08 = 'leanna decker topless';
+  $tette09 = 'katie fey tits';
+  $tette10 = 'tits sexy girl';
+  $tette11 = 'tits topless model';
+  $tette12 = 'mia khalifa hot';
+  $min=1;
+  $max=12;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    $searchKey = $tette01;
+  else if($randomNumber == 2)
+    $searchKey = $tette02;
+  else if($randomNumber == 3)
+    $searchKey = $tette03;
+  else if($randomNumber == 4)
+    $searchKey = $tette04;
+  else if($randomNumber == 5)
+    $searchKey = $tette05;
+  else if($randomNumber == 6)
+    $searchKey = $tette06;
+  else if($randomNumber == 7)
+    $searchKey = $tette07;
+  else if($randomNumber == 8)
+    $searchKey = $tette08;
+  else if($randomNumber == 9)
+    $searchKey = $tette09;
+  else if($randomNumber == 10)
+    $searchKey = $tette10;
+  else if($randomNumber == 11)
+    $searchKey = $tette11;
+  else if($randomNumber == 12)
+    $searchKey = $tette12;
   
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
   $min=1;
