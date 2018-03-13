@@ -28,6 +28,7 @@ $response = '';
 
 if(strpos($text, 'culo') !== false)
 {
+    
     \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('hot ass girl', ['imgSize' => 'large']);
