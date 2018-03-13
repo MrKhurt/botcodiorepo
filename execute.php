@@ -193,6 +193,30 @@ if(strpos($text, 'tette') !== false ||
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
 }
+if(strpos($text, 'ratajkovsky') !== false)
+{
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', ['imgSize' => 'large']);
+    $min=1;
+    $max=10;
+    $randomNumber = rand($min, $max);
+    $response = $images["items"][$randomNumber]["link"];
+}
+if(strpos($text, 'nargi') !== false)
+{
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude', ['imgSize' => 'large']);
+    $min=1;
+    $max=10;
+    $randomNumber = rand($min, $max);
+    $response = $images["items"][$randomNumber]["link"];
+}
+if(strpos($text, 'decker') !== false)
+{
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude', ['imgSize' => 'large']);
+    $min=1;
+    $max=10;
+    $randomNumber = rand($min, $max);
+    $response = $images["items"][$randomNumber]["link"];
+}
 if(strpos($text, 'nonno fiorucci') !== false)
 {
   $fiorucci01 = 'dio tubercoloso fracio';
