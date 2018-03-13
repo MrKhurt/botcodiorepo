@@ -1,7 +1,7 @@
 <?php
 // includo il file imagessearch.php per la ricerca immagini da google images
-include 'odannyc/google-image-search/src/ImageSearch.php';
-//use odannyc\GoogleImageSearch\ImageSearch;
+require_once 'vendor/autoload.php'
+use odannyc\GoogleImageSearch\ImageSearch;
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
