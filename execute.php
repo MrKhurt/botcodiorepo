@@ -1,7 +1,6 @@
 <?php
 // includo il file imagessearch.php per la ricerca immagini da google images
 require_once 'vendor/autoload.php'
-use odannyc\GoogleImageSearch\ImageSearch;
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
@@ -29,9 +28,9 @@ $response = '';
 
 if(strpos($text, 'culo') !== false)
 {
-    ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-    ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    $images = ImageSearch::search('hot ass girl', ['imgSize' => 'large']);
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search('hot ass girl', ['imgSize' => 'large']);
     //$min=1;
     //$max=8;
     //$randomNumber = rand($min, $max);
