@@ -40,6 +40,7 @@ if(strpos($text, 'culo') !== false)
         if($i == $randomNumber)
         {
           $response= $result["link"];
+          error_log($result["link"]."\n", 0);
           break;
         }
     }
