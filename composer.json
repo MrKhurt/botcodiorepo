@@ -1,1 +1,5 @@
-{}
+{
+    "require": {
+        "odannyc/google-image-search": "^1.0"
+    }
+}
