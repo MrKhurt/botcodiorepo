@@ -28,7 +28,11 @@ $response = '';
 \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
 \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
 
-
+// INIZIO
+if(strpos($text, 'comandi') !== false)
+{
+    $response = urlencode("Comandi BotCodio:\nculo \nfiga \nfica \ngnagna \ngnocca \nzozzerellona \nzozza \nbuongiorno \ntette \npoppe \nzinne \ntettona \nmammelle \ncapezzoli \ncapezzolo \nratajkowski \nnargi \ndecker \nnonno fiorucci \nbek \nbeck \nbestemmia \nbestemmione \nblasfemia \nnonno \nproverbio \npoesia \nsaluta \nchi? \ninsulta \noffendi");
+}
 if(strpos($text, 'culo') !== false)
 {
   $culo01 = 'ass model girl';
@@ -279,7 +283,9 @@ else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
   else if($randomNumber == 8)
     $response = $beck08;
 }
-else if(strpos($text, 'bestemmia') !== false || strpos($text, 'bestemmione') !== false || strpos($text, 'blasfemia') !== false)
+else if(strpos($text, 'bestemmia') !== false || 
+           strpos($text, 'bestemmione') !== false || 
+           strpos($text, 'blasfemia') !== false)
 {
   $bestemmia01 = 'dio scappato di casa';
   $bestemmia02 = 'dio cane abbandonato in autostrada';
@@ -399,7 +405,8 @@ else if(strpos($text, 'chi?') !== false)
 {
   $response = 'Stocazzo!';
 }
-else if(strpos($text, 'insulta') !== false || strpos($text, 'offendi') !== false)
+else if(strpos($text, 'insulta') !== false || 
+          strpos($text, 'offendi') !== false)
 {
   $offeso = '';
   if(strpos($text, 'insulta') !== false)
