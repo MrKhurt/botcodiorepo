@@ -5,6 +5,10 @@ require_once 'vendor/autoload.php';
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
 $update = json_decode($content, true);
+
+// debug
+echo json_encode($update, true);
+
 // se la richiesta è null interrompo lo script
 if(!$update)
 {
