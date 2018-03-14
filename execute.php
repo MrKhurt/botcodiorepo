@@ -7,7 +7,7 @@ $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 
 // debug
-echo json_encode($update, true);
+// echo json_encode($update, true);
 
 // se la richiesta è null interrompo lo script
 if(!$update)
@@ -30,12 +30,20 @@ $text = strtolower($text);
 $response = '';
 // inizializzo il motore di ricerca
 \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-\odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
 
 // INIZIO
 if(strpos($text, 'comandi') !== false)
 {
-    $response = 'Comandi BotCodio:'.chr(10).'culo '.chr(10).'figa '.chr(10).'fica '.chr(10).'gnagna '.chr(10).'gnocca '.chr(10).'zozzerellona '.chr(10).'zozza '.chr(10).'buongiorno '.chr(10).'tette '.chr(10).'poppe '.chr(10).'zinne '.chr(10).'tettona '.chr(10).'mammelle '.chr(10).'capezzoli '.chr(10).'capezzolo '.chr(10).'ratajkowski '.chr(10).'nargi '.chr(10).'decker '.chr(10).'nonno fiorucci '.chr(10).'bek '.chr(10).'beck '.chr(10).'bestemmia '.chr(10).'bestemmione '.chr(10).'blasfemia '.chr(10).'nonno '.chr(10).'proverbio '.chr(10).'poesia '.chr(10).'saluta '.chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
+    $response = 'Comandi BotCodio:'.chr(10).'culo '.chr(10).'figa '
+      .chr(10).'fica '.chr(10).'gnagna '.chr(10).'gnocca '.chr(10).
+      'zozzerellona '.chr(10).'zozza '.chr(10).'buongiorno '.chr(10).
+      'tette '.chr(10).'poppe '.chr(10).'zinne '.chr(10).'tettona '
+      .chr(10).'mammelle '.chr(10).'capezzoli '.chr(10).'capezzolo '
+      .chr(10).'ratajkowski '.chr(10).'nargi '.chr(10).'decker '.chr(10).
+      'nonno fiorucci '.chr(10).'bek '.chr(10).'beck '.chr(10).
+      'bestemmia '.chr(10).'bestemmione '.chr(10).'blasfemia '.chr(10).
+      'nonno '.chr(10).'proverbio '.chr(10).'poesia '.chr(10).'saluta '
+      .chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
 }
 if(strpos($text, 'culo') !== false)
 {
@@ -67,6 +75,13 @@ if(strpos($text, 'culo') !== false)
   else if($randomNumber == 8)
     $searchKey = $culo08;
   
+  $min=1;
+  $max=2;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  else
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
   $min=1;
   $max=10;
@@ -121,6 +136,13 @@ if(strpos($text, 'figa') !== false ||
   else if($randomNumber == 12)
     $searchKey = $figa12;
   
+  $min=1;
+  $max=2;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  else
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
   $min=1;
   $max=10;
@@ -194,7 +216,14 @@ if(strpos($text, 'tette') !== false ||
     $searchKey = $tette11;
   else if($randomNumber == 12)
     $searchKey = $tette12;
-  
+    
+  $min=1;
+  $max=2;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  else
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
   $min=1;
   $max=10;
@@ -216,6 +245,13 @@ if(strpos($text, 'pazzo') !== false)
 }
 if(strpos($text, 'ratajkowski') !== false)
 {
+    $min=1;
+    $max=2;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    else
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', ['imgSize' => 'large']);
     $min=1;
     $max=10;
@@ -223,7 +259,14 @@ if(strpos($text, 'ratajkowski') !== false)
     $response = $images["items"][$randomNumber]["link"];
 }
 if(strpos($text, 'nargi') !== false)
-{
+{    
+    $min=1;
+    $max=2;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    else
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude', ['imgSize' => 'large']);
     $min=1;
     $max=10;
@@ -232,6 +275,13 @@ if(strpos($text, 'nargi') !== false)
 }
 if(strpos($text, 'decker') !== false)
 {
+    $min=1;
+    $max=2;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    else
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude', ['imgSize' => 'large']);
     $min=1;
     $max=10;
