@@ -197,6 +197,19 @@ if(strpos($text, 'tette') !== false ||
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
 }
+if(strpos($text, 'ratajkovski') !== false || 
+   strpos($text, 'ratajkovsky') !== false ||
+   strpos($text, 'ratajkowsky') !== false ||
+   strpos($text, 'rataykowsky') !== false ||
+   strpos($text, 'rataykovski') !== false ||
+   strpos($text, 'rataykovsky') !== false)
+{
+  $response = 'Si scrive Ratajkowski, cane!';
+}
+if(strpos($text, 'pazzo') !== false)
+{
+  $response = 'Aaaah sono pazzaaa!';
+}
 if(strpos($text, 'ratajkowski') !== false)
 {
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', ['imgSize' => 'large']);
