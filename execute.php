@@ -30,6 +30,7 @@ $text = strtolower($text);
 $response = '';
 // inizializzo il motore di ricerca
 \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+// AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM
 
 // INIZIO
 if(strpos($text, 'comandi') !== false)
@@ -75,13 +76,20 @@ if(strpos($text, 'culo') !== false)
   else if($randomNumber == 8)
     $searchKey = $culo08;
   
+  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
   $min=1;
   $max=2;
   $randomNumber = rand($min, $max);
   if($randomNumber == 1)
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  }
   else
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+  }
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
   $min=1;
   $max=10;
@@ -136,13 +144,20 @@ if(strpos($text, 'figa') !== false ||
   else if($randomNumber == 12)
     $searchKey = $figa12;
   
+  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
   $min=1;
   $max=2;
   $randomNumber = rand($min, $max);
   if($randomNumber == 1)
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  }
   else
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+  }
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
   $min=1;
   $max=10;
@@ -216,14 +231,21 @@ if(strpos($text, 'tette') !== false ||
     $searchKey = $tette11;
   else if($randomNumber == 12)
     $searchKey = $tette12;
-    
+  
+  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
   $min=1;
   $max=2;
   $randomNumber = rand($min, $max);
   if($randomNumber == 1)
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  }
   else
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+  }
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
   $min=1;
   $max=10;
@@ -245,13 +267,20 @@ if(strpos($text, 'pazzo') !== false)
 }
 if(strpos($text, 'ratajkowski') !== false)
 {
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
     $min=1;
     $max=2;
     $randomNumber = rand($min, $max);
     if($randomNumber == 1)
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    }
     else
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    }
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', ['imgSize' => 'large']);
     $min=1;
     $max=10;
@@ -259,14 +288,21 @@ if(strpos($text, 'ratajkowski') !== false)
     $response = $images["items"][$randomNumber]["link"];
 }
 if(strpos($text, 'nargi') !== false)
-{    
+{   
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
     $min=1;
     $max=2;
     $randomNumber = rand($min, $max);
     if($randomNumber == 1)
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    }
     else
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    }
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude', ['imgSize' => 'large']);
     $min=1;
     $max=10;
@@ -275,13 +311,20 @@ if(strpos($text, 'nargi') !== false)
 }
 if(strpos($text, 'decker') !== false)
 {
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
     $min=1;
     $max=2;
     $randomNumber = rand($min, $max);
     if($randomNumber == 1)
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    }
     else
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    }
     $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude', ['imgSize' => 'large']);
     $min=1;
     $max=10;
