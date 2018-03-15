@@ -97,7 +97,7 @@ if(strpos($text, 'culo') !== false)
   $isGif = $arr[1];
   trim($isGif);
   $isGif = strtolower($isGif);
-  if(substr( $isGif, 0, 4 ) === "gif")
+  if(substr( $isGif, 0, 3 ) === "gif")
     $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'gif']);
   else
     $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'png,jpg']);
