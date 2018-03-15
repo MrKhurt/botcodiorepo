@@ -92,7 +92,15 @@ if(strpos($text, 'culo') !== false)
     \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   }
-  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
+  $isGif = '';
+  $arr = explode('insulta', $text);
+  $isGif = $arr[1];
+  trim($isGif);
+  $isGif = strtolower($isGif);
+  if($isGif == 'gif')
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'gif']);
+  else
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'png,jpg']);
   $min=1;
   $max=10;
   $randomNumber = rand($min, $max);
