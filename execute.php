@@ -97,7 +97,7 @@ if(strpos($text, 'culo') !== false)
   $isGif = $arr[1];
   trim($isGif);
   $isGif = strtolower($isGif);
-  if(substr( $isGif, 0, 3 ) === "gif")
+  if(substr( $isGif, 0, 4 ) === " gif")
     $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'gif']);
   else
     $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'png,jpg']);
@@ -105,10 +105,10 @@ if(strpos($text, 'culo') !== false)
   $max=10;
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
-  if(substr( $isGif, 0, 4 ) === "gif")
-    $response = $response . ' dovrebbe essere una gif';
-  else
-    $response = $response . ' mmmh ' . $isGif;
+  //if(substr( $isGif, 0, 4 ) === "gif")
+  //  $response = $response . ' dovrebbe essere una gif';
+  //else
+  //  $response = $response . ' mmmh ' . $isGif;
   
 }
 
