@@ -105,6 +105,11 @@ if(strpos($text, 'culo') !== false)
   $max=10;
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
+  if(substr( $isGif, 0, 4 ) === "gif")
+    $response = $response . 'dovrebbe essere una gif';
+  else
+    $response = $response . $isGif;
+  
 }
 
 // FIGA
@@ -203,7 +208,7 @@ else if(strpos($text, 'buongiorno') !== false)
   $figa02 = 'hot bikini models';
   $figa03 = 'stunning non nude girls';
   $figa04 = 'suicide girl sexy shot';
-  $figa05 = 'sexy model';
+  $figa05 = 'sexy remy lacroix non nude';
   $figa06 = 'beach bikini hot';
   $figa07 = 'mia khalifa sexy non nude';
   $figa08 = 'leanna decker hot';
