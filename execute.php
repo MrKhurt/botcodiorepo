@@ -106,9 +106,9 @@ if(strpos($text, 'culo') !== false)
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
   if(substr( $isGif, 0, 4 ) === "gif")
-    $response = $response . 'dovrebbe essere una gif';
+    $response = $response . ' dovrebbe essere una gif';
   else
-    $response = $response . $isGif;
+    $response = $response . ' mmmh';
   
 }
 
