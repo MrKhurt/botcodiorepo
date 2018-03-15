@@ -121,11 +121,11 @@ else if(strpos($text, 'figa') !== false ||
    strpos($text, 'zozza') !== false)
 {
   $figa01 = 'lingerie model';
-  $figa02 = 'hot bikini models';
-  $figa03 = 'stunning non nude girls';
+  $figa02 = 'elizabeth elam playboy nude';
+  $figa03 = 'remy lacroix non nude';
   $figa04 = 'suicide girl sexy shot';
-  $figa05 = 'sexy model';
-  $figa06 = 'beach bikini hot';
+  $figa05 = 'elsie hewitt playboy nude';
+  $figa06 = 'lada kravchenko playboy nude';
   $figa07 = 'mia khalifa sexy non nude';
   $figa08 = 'leanna decker hot';
   $figa09 = 'lexi belle non nude sexy';
