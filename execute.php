@@ -610,6 +610,12 @@ else if(strpos($text, 'chi?') !== false)
   $response = 'Stocazzo!';
 }
 
+// BUONANOTTE
+else if(strpos($text, 'buonanotte') !== false)
+{
+  $response = '...al cazzo!';
+}
+
 // INSULTA
 else if(strpos($text, 'insulta') !== false || 
           strpos($text, 'offendi') !== false)
