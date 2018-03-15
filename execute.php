@@ -174,7 +174,28 @@ else if(strpos($text, 'figa') !== false ||
     \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   }
-  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
+  
+  if(strpos($text, 'figa') !== false)
+    $split = 'figa';
+  else if(strpos($text, 'fica') !== false)
+    $split = 'fica';
+  else if(strpos($text, 'gnocca') !== false)
+    $split = 'gnocca';
+  else if(strpos($text, 'gnagna') !== false)
+    $split = 'gnagna';
+  else if(strpos($text, 'zozzerellona') !== false)
+    $split = 'zozzerellona';
+  else if(strpos($text, 'zozza') !== false)
+    $split = 'zozza';
+  $isGif = '';
+  $arr = explode($split, $text);
+  $isGif = $arr[1];
+  trim($isGif);
+  $isGif = strtolower($isGif);
+  if(substr( $isGif, 0, 4 ) === " gif")
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'gif']);
+  else
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'png,jpg']);
   $min=1;
   $max=10;
   $randomNumber = rand($min, $max);
@@ -331,7 +352,29 @@ else if(strpos($text, 'tette') !== false ||
     \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   }
-  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
+  if(strpos($text, 'tette') !== false)
+    $split = 'tette';
+  else if(strpos($text, 'poppe') !== false)
+    $split = 'poppe';
+  else if(strpos($text, 'zinne') !== false)
+    $split = 'zinne';
+  else if(strpos($text, 'tettona') !== false)
+    $split = 'tettona';
+  else if(strpos($text, 'mammelle') !== false)
+    $split = 'mammelle';
+  else if(strpos($text, 'capezzoli') !== false)
+    $split = 'capezzoli';
+  else if(strpos($text, 'capezzolo') !== false)
+    $split = 'capezzolo';
+  $isGif = '';
+  $arr = explode($split, $text);
+  $isGif = $arr[1];
+  trim($isGif);
+  $isGif = strtolower($isGif);
+  if(substr( $isGif, 0, 4 ) === " gif")
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'gif']);
+  else
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'png,jpg']);
   $min=1;
   $max=10;
   $randomNumber = rand($min, $max);
