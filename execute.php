@@ -108,7 +108,7 @@ if(strpos($text, 'culo') !== false)
   if(substr( $isGif, 0, 4 ) === "gif")
     $response = $response . ' dovrebbe essere una gif';
   else
-    $response = $response . ' mmmh';
+    $response = $response . ' mmmh ' . $isGif;
   
 }
 
