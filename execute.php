@@ -46,6 +46,8 @@ if(strpos($text, 'comandi') !== false)
       'nonno '.chr(10).'proverbio '.chr(10).'poesia '.chr(10).'saluta '
       .chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
 }
+
+// CULO
 if(strpos($text, 'culo') !== false)
 {
   $culo01 = 'ass model girl';
@@ -96,13 +98,14 @@ if(strpos($text, 'culo') !== false)
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
 }
-if(strpos($text, 'figa') !== false || 
+
+// FIGA
+else if(strpos($text, 'figa') !== false || 
    strpos($text, 'fica') !== false || 
    strpos($text, 'gnocca') !== false || 
    strpos($text, 'gnagna') !== false ||
    strpos($text, 'zozzerellona') !== false || 
-   strpos($text, 'zozza') !== false || 
-   strpos($text, 'buongiorno') !== false)
+   strpos($text, 'zozza') !== false)
 {
   $figa01 = 'lingerie model';
   $figa02 = 'hot bikini models';
@@ -184,7 +187,76 @@ if(strpos($text, 'figa') !== false ||
       $response = $response . '  ' . $resto;
     }
 }
-if(strpos($text, 'tette') !== false || 
+
+// BUONGIORNO
+else if(strpos($text, 'buongiorno') !== false)
+{
+  $figa01 = 'piper fawn sexy';
+  $figa02 = 'hot bikini models';
+  $figa03 = 'stunning non nude girls';
+  $figa04 = 'suicide girl sexy shot';
+  $figa05 = 'sexy model';
+  $figa06 = 'beach bikini hot';
+  $figa07 = 'mia khalifa sexy non nude';
+  $figa08 = 'leanna decker hot';
+  $figa09 = 'lexi belle non nude sexy';
+  $figa10 = 'katie fey hot';
+  $min=1;
+  $max=10;
+  srand(mktime(0, 0, 0));
+  $randomNumber = rand(0, 10);
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    $searchKey = $figa01;
+  else if($randomNumber == 2)
+    $searchKey = $figa02;
+  else if($randomNumber == 3)
+    $searchKey = $figa03;
+  else if($randomNumber == 4)
+    $searchKey = $figa04;
+  else if($randomNumber == 5)
+    $searchKey = $figa05;
+  else if($randomNumber == 6)
+    $searchKey = $figa06;
+  else if($randomNumber == 7)
+    $searchKey = $figa07;
+  else if($randomNumber == 8)
+    $searchKey = $figa08;
+  else if($randomNumber == 9)
+    $searchKey = $figa09;
+  else if($randomNumber == 10)
+    $searchKey = $figa10;
+  else if($randomNumber == 11)
+    $searchKey = $figa11;
+  else if($randomNumber == 12)
+    $searchKey = $figa12;
+  \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
+  \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
+  $min=1;
+  $max=10;
+  $randomNumber = rand($min, $max);
+  $response = $images["items"][$randomNumber]["link"];
+  $buongiorno01 = 'buongiorno cani!';
+  $buongiorno02 = 'buongiorno morti de figa!';
+  $buongiorno03 = 'buongiorno froci!';
+  $buongiorno04 = 'buongiorno merdacce!';
+  $min=1;
+  $max=4;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    $resto = $buongiorno01;
+  else if($randomNumber == 2)
+    $resto = $buongiorno02;
+  else if($randomNumber == 3)
+    $resto = $buongiorno03;
+  else if($randomNumber == 4)
+    $resto = $buongiorno04;
+    $response = $response . '  ' . $resto;
+}
+
+// TETTE
+else if(strpos($text, 'tette') !== false || 
    strpos($text, 'poppe') !== false || 
    strpos($text, 'zinne') !== false || 
    strpos($text, 'tettona') !== false ||
@@ -252,7 +324,9 @@ if(strpos($text, 'tette') !== false ||
   $randomNumber = rand($min, $max);
   $response = $images["items"][$randomNumber]["link"];
 }
-if(strpos($text, 'ratajkovski') !== false || 
+
+// RATAJKOWSKI SBAGLIATO
+else if(strpos($text, 'ratajkovski') !== false || 
    strpos($text, 'ratajkovsky') !== false ||
    strpos($text, 'ratajkowsky') !== false ||
    strpos($text, 'rataykowsky') !== false ||
@@ -261,11 +335,15 @@ if(strpos($text, 'ratajkovski') !== false ||
 {
   $response = 'Si scrive Ratajkowski, cane!';
 }
-if(strpos($text, 'pazzo') !== false)
+
+// PAZZO
+else if(strpos($text, 'pazzo') !== false)
 {
   $response = 'Aaaah sono pazzaaa!';
 }
-if(strpos($text, 'ratajkowski') !== false)
+
+// RATAJKOWSKI
+else if(strpos($text, 'ratajkowski') !== false)
 {
     // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
     $min=1;
@@ -287,7 +365,9 @@ if(strpos($text, 'ratajkowski') !== false)
     $randomNumber = rand($min, $max);
     $response = $images["items"][$randomNumber]["link"];
 }
-if(strpos($text, 'nargi') !== false)
+
+// NARGI
+else if(strpos($text, 'nargi') !== false)
 {   
     // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
     $min=1;
@@ -309,7 +389,9 @@ if(strpos($text, 'nargi') !== false)
     $randomNumber = rand($min, $max);
     $response = $images["items"][$randomNumber]["link"];
 }
-if(strpos($text, 'decker') !== false)
+
+// DECKER
+else if(strpos($text, 'decker') !== false)
 {
     // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
     $min=1;
@@ -331,7 +413,9 @@ if(strpos($text, 'decker') !== false)
     $randomNumber = rand($min, $max);
     $response = $images["items"][$randomNumber]["link"];
 }
-if(strpos($text, 'nonno fiorucci') !== false)
+
+// NONNO FIORUCCI
+else if(strpos($text, 'nonno fiorucci') !== false)
 {
   $fiorucci01 = 'dio tubercoloso fracio';
   $fiorucci02 = 'dio serpente avvelenato';
@@ -362,6 +446,8 @@ if(strpos($text, 'nonno fiorucci') !== false)
   else if($randomNumber == 8)
     $response = $fiorucci08;
 }
+
+// BEK
 else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
 {
   $beck01 = 'prlrlrendo lo stegagno!!';
@@ -393,6 +479,8 @@ else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
   else if($randomNumber == 8)
     $response = $beck08;
 }
+
+// BESTEMMIA
 else if(strpos($text, 'bestemmia') !== false || 
            strpos($text, 'bestemmione') !== false || 
            strpos($text, 'blasfemia') !== false)
@@ -450,6 +538,8 @@ else if(strpos($text, 'bestemmia') !== false ||
   else if($randomNumber == 16)
     $response = $bestemmia16;
 }
+
+// NONNO
 else if(strpos($text, 'nonno') !== false || 
           strpos($text, 'proverbio') !== false || 
           strpos($text, 'poesia') !== false)
@@ -507,14 +597,20 @@ else if(strpos($text, 'nonno') !== false ||
   else if($randomNumber == 16)
     $response = $proverbio16;
 }
+
+// SALUTA
 else if(strpos($text, 'saluta') !== false)
 {
   $response = 'Sai chi ti saluta?';
 }
+
+// CHI?
 else if(strpos($text, 'chi?') !== false)
 {
   $response = 'Stocazzo!';
 }
+
+// INSULTA
 else if(strpos($text, 'insulta') !== false || 
           strpos($text, 'offendi') !== false)
 {
@@ -577,6 +673,8 @@ else if(strpos($text, 'insulta') !== false ||
     $response = $offeso . $offesa14;
 }
 
+
+// INVIO RISPOSTA
 if($response != '')
 {
   // mi preparo a restitutire al chiamante la mia risposta che è un oggetto JSON
