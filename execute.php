@@ -629,6 +629,13 @@ else if(strpos($text, 'buonanotte') !== false)
   $response = '...al cazzo!';
 }
 
+// INSULTA BOT
+else if(strpos($text, 'insulta botcodio') !== false || 
+          strpos($text, 'offendi botcodio') !== false)
+{
+  $response = 'Chi é che vuoi offendere eh frocetto? Ti schiaffeggio con il cazzo!';
+}
+
 // INSULTA
 else if(strpos($text, 'insulta') !== false || 
           strpos($text, 'offendi') !== false)
