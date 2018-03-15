@@ -93,7 +93,7 @@ if(strpos($text, 'culo') !== false)
     \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   }
   $isGif = '';
-  $arr = explode('insulta', $text);
+  $arr = explode('culo', $text);
   $isGif = $arr[1];
   trim($isGif);
   $isGif = strtolower($isGif);
