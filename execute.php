@@ -615,6 +615,72 @@ else if(strpos($text, 'decker') !== false)
     $response = $images["items"][$randomNumber]["link"];
 }
 
+// EMMA WATSON
+else if(strpos($text, 'emma watson') !== false)
+{
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
+    $min=1;
+    $max=2;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    }
+    else
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    }
+    $split = 'emma watson';
+    $isGif = '';
+    $arr = explode($split, $text);
+    $isGif = $arr[1];
+    trim($isGif);
+    $isGif = strtolower($isGif);
+    if(substr( $isGif, 0, 4 ) === " gif")
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emma watson hot', [fileType => 'gif']);
+    else
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emma watson hot', [fileType => 'png,jpg']);
+    $min=1;
+    $max=10;
+    $randomNumber = rand($min, $max);
+    $response = $images["items"][$randomNumber]["link"];
+}
+
+// KATIE PERRY
+else if(strpos($text, 'katie perry') !== false)
+{
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
+    $min=1;
+    $max=2;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    }
+    else
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    }
+    $split = 'katie perry';
+    $isGif = '';
+    $arr = explode($split, $text);
+    $isGif = $arr[1];
+    trim($isGif);
+    $isGif = strtolower($isGif);
+    if(substr( $isGif, 0, 4 ) === " gif")
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('katie perry hot', [fileType => 'gif']);
+    else
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('katie perry hot', [fileType => 'png,jpg']);
+    $min=1;
+    $max=10;
+    $randomNumber = rand($min, $max);
+    $response = $images["items"][$randomNumber]["link"];
+}
+
 // NONNO FIORUCCI
 else if(strpos($text, 'nonno fiorucci') !== false)
 {
