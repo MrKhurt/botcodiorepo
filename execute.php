@@ -73,7 +73,8 @@ else if(substr($text, 0, 11) === 'cerca foto ')
     {
       if (substr($resto, -4) === ' gif')
       {
-        $resto = substr($resto, $length - 4);
+        $arr2 = explode(' gif', $resto);
+        $resto = $arr2[0];
         $images = \odannyc\GoogleImageSearch\ImageSearch::search($resto, [fileType => 'gif']);
       }
       else
