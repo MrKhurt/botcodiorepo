@@ -309,7 +309,7 @@ else if(strpos($text, 'buongiorno') !== false)
     $response = $response . '  ' . $resto;
     // oggi è sabato o domenica?
     if(date('D') === 'Sat' || date('D') === 'Sun') 
-      $response = $response . '  ' . 'Com\'è andata ieri sera? Caccagialla?';
+      $response = $response . ' Fatto merdon ieri sera? Caccagialla?';
 }
 
 // TETTE
@@ -404,15 +404,18 @@ else if(strpos($text, 'tette') !== false ||
   $response = $images["items"][$randomNumber]["link"];
 }
 
-
 // MILF
 else if(strpos($text, 'milf') !== false || 
    strpos($text, 'milfona') !== false)
 {
   $milf01 = 'sexy hot cougar posing';
   $milf02 = 'topless sexy cougar';
-  $milf03 = 'bikini sexy cougar';
-  $milf04 = 'sexy milf model';
+  $milf03 = 'hot cougar model posing';
+  $milf04 = 'esperanza gomez posing';
+  $milf05 = 'raylene sexy posing';
+  $milf06 = 'austin kincaid sexy';
+  $milf07 = 'angelina valentine sexy';
+  $milf08 = 'angelica raven sexy';
   $min=1;
   $max=12;
   $randomNumber = rand($min, $max);
@@ -424,6 +427,14 @@ else if(strpos($text, 'milf') !== false ||
     $searchKey = $milf03;
   else if($randomNumber == 4)
     $searchKey = $milf04;
+  else if($randomNumber == 5)
+    $searchKey = $milf05;
+  else if($randomNumber == 6)
+    $searchKey = $milf06;
+  else if($randomNumber == 7)
+    $searchKey = $milf07;
+  else if($randomNumber == 8)
+    $searchKey = $milf08;
   
   // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
   $min=1;
@@ -458,6 +469,36 @@ else if(strpos($text, 'milf') !== false ||
   $response = $images["items"][$randomNumber]["link"];
 }
 
+// MILF DEL MILLENNIO
+else if(strpos($text, 'milf del millennio') !== false)
+{
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
+    $min=1;
+    $max=2;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    }
+    else
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    }
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search('cristina d\'avena hot sexy');
+    $min=1;
+    $max=10;
+    $randomNumber = rand($min, $max);
+    $response = $images["items"][$randomNumber]["link"] . ' è solo una';
+}
+
+// GILF
+else if(strpos($text, 'gilf') !== false)
+{
+  $response = 'C\'è un limite a tutto butei';
+}
+
 // RATAJKOWSKI SBAGLIATO
 else if(strpos($text, 'ratajkovski') !== false || 
    strpos($text, 'ratajkovsky') !== false ||
@@ -470,7 +511,7 @@ else if(strpos($text, 'ratajkovski') !== false ||
 }
 
 // PAZZO
-else if(strpos($text, 'pazzo') !== false)
+else if(strpos($text, 'pazzo') !== false || strpos($text, 'pazza') !== false)
 {
   $response = 'Aaaah sono pazzaaa!';
 }
@@ -492,7 +533,16 @@ else if(strpos($text, 'ratajkowski') !== false)
       \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
     }
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude');
+    $split = 'ratajkowski';
+    $isGif = '';
+    $arr = explode($split, $text);
+    $isGif = $arr[1];
+    trim($isGif);
+    $isGif = strtolower($isGif);
+    if(substr( $isGif, 0, 4 ) === " gif")
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', [fileType => 'gif']);
+    else
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', [fileType => 'png,jpg']);
     $min=1;
     $max=10;
     $randomNumber = rand($min, $max);
@@ -516,7 +566,16 @@ else if(strpos($text, 'nargi') !== false)
       \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
     }
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude');
+    $split = 'nargi';
+    $isGif = '';
+    $arr = explode($split, $text);
+    $isGif = $arr[1];
+    trim($isGif);
+    $isGif = strtolower($isGif);
+    if(substr( $isGif, 0, 4 ) === " gif")
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude', [fileType => 'gif']);
+    else
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude', [fileType => 'png,jpg']);
     $min=1;
     $max=10;
     $randomNumber = rand($min, $max);
@@ -540,7 +599,16 @@ else if(strpos($text, 'decker') !== false)
       \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
       \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
     }
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude');
+    $split = 'decker';
+    $isGif = '';
+    $arr = explode($split, $text);
+    $isGif = $arr[1];
+    trim($isGif);
+    $isGif = strtolower($isGif);
+    if(substr( $isGif, 0, 4 ) === " gif")
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude', [fileType => 'gif']);
+    else
+      $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude', [fileType => 'png,jpg']);
     $min=1;
     $max=10;
     $randomNumber = rand($min, $max);
