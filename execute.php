@@ -306,7 +306,7 @@ else if(strpos($text, 'buongiorno') !== false)
     $resto = $buongiorno03;
   else if($randomNumber == 4)
     $resto = $buongiorno04;
-    $response = $response . '  ' . $resto . ' ' . date('d');
+    $response = $response . '  ' . $resto . ' ' . date('D');
     // oggi è sabato o domenica?
     if(date('D', $timestamp) === 'Sat' || date('D', $timestamp) === 'Sun') 
       $response = $response . '  ' . 'Com\'è andata ieri sera? Caccagialla?';
