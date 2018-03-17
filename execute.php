@@ -674,6 +674,12 @@ else if(strpos($text, 'chi?') !== false)
   $response = 'Stocazzo!';
 }
 
+// PIOVE?
+else if(strpos($text, 'piove') !== false)
+{
+  $response = 'https://i.pinimg.com/736x/35/6e/95/356e954c36268ae6caa5700251932891--wet-t-shirt-wet-wet-wet.jpg governo ladro!';
+}
+
 // BUONANOTTE
 else if(strpos($text, 'buonanotte') !== false)
 {
