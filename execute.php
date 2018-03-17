@@ -53,11 +53,11 @@ if(strpos($text, 'culo') !== false)
   $culo01 = 'ass model girl';
   $culo02 = 'lingerie model ass';
   $culo03 = 'bonjourmadame ass';
-  $culo04 = 'non nude ass';
+  $culo04 = 'non nude model sexy ass';
   $culo05 = 'sexy bottom girl';
   $culo06 = 'bikini model ass';
   $culo07 = 'hottest ass girl';
-  $culo08 = 'tanga girl bum';
+  $culo08 = 'underwear model sexy ass girl';
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
@@ -121,17 +121,18 @@ else if(strpos($text, 'figa') !== false ||
    strpos($text, 'zozza') !== false)
 {
   $figa01 = 'lingerie model';
-  $figa02 = 'elizabeth elam playboy nude';
-  $figa03 = 'remy lacroix non nude';
+  $figa02 = 'little caprice non nude sexy';
+  $figa03 = 'nude sexy cosplay girl';
   $figa04 = 'suicide girl sexy shot';
-  $figa05 = 'elsie hewitt playboy nude';
-  $figa06 = 'lada kravchenko playboy nude';
+  $figa05 = 'katie jordan hot';
+  $figa06 = 'sexy underwear model ass girl';
   $figa07 = 'mia khalifa sexy non nude';
   $figa08 = 'leanna decker hot';
   $figa09 = 'lexi belle non nude sexy';
   $figa10 = 'katie fey hot';
   $figa11 = 'faye reagan sexy';
   $figa12 = 'piper fawn sexy';
+  $figa13 = 'jessica nigri hot';
   $min=1;
   $max=12;
   $randomNumber = rand($min, $max);
@@ -159,6 +160,8 @@ else if(strpos($text, 'figa') !== false ||
     $searchKey = $figa11;
   else if($randomNumber == 12)
     $searchKey = $figa12;
+  else if($randomNumber == 13)
+    $searchKey = $figa13;
   
   // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
   $min=1;
@@ -225,16 +228,19 @@ else if(strpos($text, 'figa') !== false ||
 // BUONGIORNO
 else if(strpos($text, 'buongiorno') !== false)
 {
-  $figa01 = 'piper fawn sexy';
-  $figa02 = 'hot bikini models';
-  $figa03 = 'stunning non nude girls';
+  $figa01 = 'lingerie model';
+  $figa02 = 'little caprice non nude sexy';
+  $figa03 = 'nude sexy cosplay girl';
   $figa04 = 'suicide girl sexy shot';
-  $figa05 = 'sexy remy lacroix non nude';
-  $figa06 = 'beach bikini hot';
+  $figa05 = 'katie jordan hot';
+  $figa06 = 'sexy underwear model ass girl';
   $figa07 = 'mia khalifa sexy non nude';
   $figa08 = 'leanna decker hot';
   $figa09 = 'lexi belle non nude sexy';
   $figa10 = 'katie fey hot';
+  $figa11 = 'faye reagan sexy';
+  $figa12 = 'piper fawn sexy';
+  $figa13 = 'jessica nigri hot';
   $min=1;
   $max=10;
   srand(mktime(0, 0, 0));
@@ -264,6 +270,8 @@ else if(strpos($text, 'buongiorno') !== false)
     $searchKey = $figa11;
   else if($randomNumber == 12)
     $searchKey = $figa12;
+  else if($randomNumber == 13)
+    $searchKey = $figa13;
   \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
   \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large']);
@@ -307,9 +315,9 @@ else if(strpos($text, 'tette') !== false ||
   $tette07 = 'topless hot girl';
   $tette08 = 'leanna decker topless';
   $tette09 = 'katie fey tits';
-  $tette10 = 'tits sexy girl';
+  $tette10 = 'bouncing tits sexy solo';
   $tette11 = 'tits topless model';
-  $tette12 = 'mia khalifa hot';
+  $tette12 = 'boobs topless sexy girl';
   $min=1;
   $max=12;
   $randomNumber = rand($min, $max);
