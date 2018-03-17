@@ -47,7 +47,7 @@ if(strpos($text, 'comandi') !== false)
       .chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
 }
 // CERCA FOTO
-else if(substr($text, 0, 10) === 'cerca foto ')
+if(substr($text, 0, 10) === 'cerca foto ')
 {
     // cerco foto con chiave = resto del messaggio dopo 'cerca foto'
     // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
@@ -84,7 +84,7 @@ else if(substr($text, 0, 10) === 'cerca foto ')
 }
 
 // CULO
-if(strpos($text, 'culo') !== false)
+else if(strpos($text, 'culo') !== false)
 {
   $culo01 = 'ass model girl';
   $culo02 = 'lingerie model ass';
