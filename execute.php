@@ -296,8 +296,8 @@ else if(strpos($text, 'buongiorno') !== false)
     $resto = $buongiorno04;
     $response = $response . '  ' . $resto;
     // oggi è sabato o domenica?
-    if(date('D', $timestamp) === 'Sat' || date('D', $timestamp) === 'Sun') 
-      $response = $response . '  ' . 'Com\'è andata ieri sera? Caccagialla?';
+    //if(date('D', $timestamp) === 'Sat' || date('D', $timestamp) === 'Sun') 
+      //$response = $response . '  ' . 'Com\'è andata ieri sera? Caccagialla?';
 }
 
 // TETTE
