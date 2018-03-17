@@ -46,6 +46,42 @@ if(strpos($text, 'comandi') !== false)
       'nonno '.chr(10).'proverbio '.chr(10).'poesia '.chr(10).'saluta '
       .chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
 }
+// CERCA FOTO
+else if(substr($text, 0, 10) === 'cerca foto ')
+{
+    // cerco foto con chiave = resto del messaggio dopo 'cerca foto'
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
+    $min=1;
+    $max=2;
+    $randomNumber = rand($min, $max);
+    if($randomNumber == 1)
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+    }
+    else
+    {
+      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
+      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    }
+    $split = 'cerca foto ';
+    $arr = explode($split, $text);
+    $resto = $arr[1];
+    // termina con ' gif'? allora cerco una gif
+    $length = strlen($resto);
+    if(length !== 0)
+    {
+      if (substr($resto, -4) === ' gif')
+        $resto = substr($resto, $length - 4);
+        $images = \odannyc\GoogleImageSearch\ImageSearch::search($resto, [fileType => 'gif']);
+      else
+        $images = \odannyc\GoogleImageSearch\ImageSearch::search($resto, [fileType => 'png,jpg']);
+      $min=1;
+      $max=10;
+      $randomNumber = rand($min, $max);
+      $response = $images["items"][$randomNumber]["link"];
+    }
+}
 
 // CULO
 if(strpos($text, 'culo') !== false)
