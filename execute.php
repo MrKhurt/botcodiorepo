@@ -389,6 +389,60 @@ else if(strpos($text, 'tette') !== false ||
   $response = $images["items"][$randomNumber]["link"];
 }
 
+
+// MILF
+else if(strpos($text, 'milf') !== false || 
+   strpos($text, 'milfona') !== false)
+{
+  $milf01 = 'sexy hot cougar posing';
+  $milf02 = 'topless sexy cougar';
+  $milf03 = 'bikini sexy cougar';
+  $milf04 = 'sexy milf model';
+  $min=1;
+  $max=12;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+    $searchKey = $milf01;
+  else if($randomNumber == 2)
+    $searchKey = $milf02;
+  else if($randomNumber == 3)
+    $searchKey = $milf03;
+  else if($randomNumber == 4)
+    $searchKey = $milf04;
+  
+  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
+  $min=1;
+  $max=2;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  }
+  else
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+  }
+  if(strpos($text, 'milf') !== false)
+    $split = 'milf';
+  else if(strpos($text, 'milfona') !== false)
+    $split = 'milfona';
+  $isGif = '';
+  $arr = explode($split, $text);
+  $isGif = $arr[1];
+  trim($isGif);
+  $isGif = strtolower($isGif);
+  if(substr( $isGif, 0, 4 ) === " gif")
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'gif']);
+  else
+    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, ['imgSize' => 'large', fileType => 'png,jpg']);
+  $min=1;
+  $max=10;
+  $randomNumber = rand($min, $max);
+  $response = $images["items"][$randomNumber]["link"];
+}
+
 // RATAJKOWSKI SBAGLIATO
 else if(strpos($text, 'ratajkovski') !== false || 
    strpos($text, 'ratajkovsky') !== false ||
