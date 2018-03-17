@@ -272,8 +272,20 @@ else if(strpos($text, 'buongiorno') !== false)
     $searchKey = $figa12;
   else if($randomNumber == 13)
     $searchKey = $figa13;
-  \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-  \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
+  $min=1;
+  $max=2;
+  $randomNumber = rand($min, $max);
+  if($randomNumber == 1)
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
+  }
+  else
+  {
+    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
+    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
+  }
   $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey);
   $min=1;
   $max=10;
@@ -294,10 +306,10 @@ else if(strpos($text, 'buongiorno') !== false)
     $resto = $buongiorno03;
   else if($randomNumber == 4)
     $resto = $buongiorno04;
-    $response = $response . '  ' . $resto;
+    $response = $response . '  ' . $resto . ' ' . date('D', $timestamp);
     // oggi è sabato o domenica?
-    //if(date('D', $timestamp) === 'Sat' || date('D', $timestamp) === 'Sun') 
-      //$response = $response . '  ' . 'Com\'è andata ieri sera? Caccagialla?';
+    if(date('D', $timestamp) === 'Sat' || date('D', $timestamp) === 'Sun') 
+      $response = $response . '  ' . 'Com\'è andata ieri sera? Caccagialla?';
 }
 
 // TETTE
