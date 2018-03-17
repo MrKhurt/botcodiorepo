@@ -812,7 +812,7 @@ else if(strpos($text, 'chi?') !== false)
 }
 
 // PIOVE?
-else if(strpos($text, 'piove') !== false)
+else if(strpos($text, 'piove') !== false || strpos($text, 'pioggia') !== false)
 {
   $response = 'https://i.pinimg.com/736x/35/6e/95/356e954c36268ae6caa5700251932891--wet-t-shirt-wet-wet-wet.jpg governo ladro!';
 }
