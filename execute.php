@@ -47,7 +47,7 @@ if(strpos($text, 'comandi') !== false)
       .chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
 }
 // CERCA FOTO
-if(substr($text, 0, 10) === 'cerca foto ')
+else if(substr($text, 0, 10) === 'cerca foto ')
 {
     // cerco foto con chiave = resto del messaggio dopo 'cerca foto'
     // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
@@ -72,10 +72,14 @@ if(substr($text, 0, 10) === 'cerca foto ')
     if(length !== 0)
     {
       if (substr($resto, -4) === ' gif')
+      {
         $resto = substr($resto, $length - 4);
         $images = \odannyc\GoogleImageSearch\ImageSearch::search($resto, [fileType => 'gif']);
+      }
       else
+      {
         $images = \odannyc\GoogleImageSearch\ImageSearch::search($resto, [fileType => 'png,jpg']);
+      }
       $min=1;
       $max=10;
       $randomNumber = rand($min, $max);
