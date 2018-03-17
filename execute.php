@@ -425,7 +425,7 @@ else if(strpos($text, 'milf del millennio') !== false)
     $min=1;
     $max=10;
     $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"] . ' è solo una';
+    $response = $images["items"][$randomNumber]["link"] . ' ebeh!';
 }
 
 // MILF
