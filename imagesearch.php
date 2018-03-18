@@ -46,7 +46,7 @@ function imagesearch($key, $gif)
       $min=1;
       $max=10;
       $randomNumber = rand($min, $max);
-      var_dump($images);
+      echo var_dump($images);
       return $images["items"][$randomNumber]["link"] . '  qwant';
     }
 }
