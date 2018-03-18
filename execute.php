@@ -84,7 +84,7 @@ else if(substr($text, 0, 11) === 'cerca foto ')
       $min=1;
       $max=10;
       $randomNumber = rand($min, $max);
-      $response = $images["items"][$randomNumber]["link"] . $resto;
+      $response = $images["items"][$randomNumber]["link"];
     }
 }
 
