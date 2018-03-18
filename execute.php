@@ -1,6 +1,8 @@
 <?php
-// includo il file imagessearch.php per la ricerca immagini da google images
 require_once 'vendor/autoload.php';
+use FilippoToso\QwantUnofficialAPI\Client as QwantClient;
+include ./imagesearch.php;
+
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
 // converto il contenuto da JSON ad array PHP
@@ -28,9 +30,6 @@ $text = trim($text);
 // converto tutti i caratteri alfanumerici del messaggio in minuscolo
 $text = strtolower($text);
 $response = '';
-// inizializzo il motore di ricerca
-\odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-// AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM
 
 // INIZIO
 if(strpos($text, 'comandi') !== false)
@@ -46,24 +45,11 @@ if(strpos($text, 'comandi') !== false)
       'nonno '.chr(10).'proverbio '.chr(10).'poesia '.chr(10).'saluta '
       .chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
 }
+
 // CERCA FOTO
 else if(substr($text, 0, 11) === 'cerca foto ')
 {
     // cerco foto con chiave = resto del messaggio dopo 'cerca foto'
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-    $min=1;
-    $max=2;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    }
-    else
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-    }
     $split = 'cerca foto ';
     $arr = explode($split, $text);
     $resto = $arr[1];
@@ -75,16 +61,12 @@ else if(substr($text, 0, 11) === 'cerca foto ')
       {
         $arr2 = explode(' gif', $resto);
         $resto = $arr2[0];
-        $images = \odannyc\GoogleImageSearch\ImageSearch::search($resto, [fileType => 'gif']);
+        $response = imagesearch($resto, true);
       }
       else
       {
-        $images = \odannyc\GoogleImageSearch\ImageSearch::search($resto, [fileType => 'png,jpg']);
+        $response = imagesearch($resto, false);
       }
-      $min=1;
-      $max=10;
-      $randomNumber = rand($min, $max);
-      $response = $images["items"][$randomNumber]["link"];
     }
 }
 
@@ -119,38 +101,15 @@ else if(strpos($text, 'culo') !== false)
   else if($randomNumber == 8)
     $searchKey = $culo08;
   
-  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-  $min=1;
-  $max=2;
-  $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-  }
-  else
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-  }
   $isGif = '';
   $arr = explode('culo', $text);
   $isGif = $arr[1];
   trim($isGif);
   $isGif = strtolower($isGif);
   if(substr( $isGif, 0, 4 ) === " gif")
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'gif']);
+    $response = imagesearch($searchKey, true);
   else
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'png,jpg']);
-  $min=1;
-  $max=10;
-  $randomNumber = rand($min, $max);
-  $response = $images["items"][$randomNumber]["link"];
-  //if(substr( $isGif, 0, 4 ) === "gif")
-  //  $response = $response . ' dovrebbe essere una gif';
-  //else
-  //  $response = $response . ' mmmh ' . $isGif;
-  
+    $response = imagesearch($searchKey, false);
 }
 
 // FIGA
@@ -203,22 +162,7 @@ else if(strpos($text, 'figa') !== false ||
     $searchKey = $figa12;
   else if($randomNumber == 13)
     $searchKey = $figa13;
-  
-  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-  $min=1;
-  $max=2;
-  $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-  }
-  else
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-  }
-  
+  // devo cercare una gif?
   if(strpos($text, 'figa') !== false)
     $split = 'figa';
   else if(strpos($text, 'fica') !== false)
@@ -237,33 +181,9 @@ else if(strpos($text, 'figa') !== false ||
   trim($isGif);
   $isGif = strtolower($isGif);
   if(substr( $isGif, 0, 4 ) === " gif")
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'gif']);
+    $response = imagesearch($searchKey, true);
   else
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'png,jpg']);
-  $min=1;
-  $max=10;
-  $randomNumber = rand($min, $max);
-  $response = $images["items"][$randomNumber]["link"];
-  
-  if(strpos($text, 'buongiorno') !== false)
-  {
-    $buongiorno01 = 'buongiorno cani!';
-    $buongiorno02 = 'buongiorno morti de figa!';
-    $buongiorno03 = 'buongiorno froci!';
-    $buongiorno04 = 'buongiorno merdacce!';
-    $min=1;
-    $max=4;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-      $resto = $buongiorno01;
-    else if($randomNumber == 2)
-      $resto = $buongiorno02;
-    else if($randomNumber == 3)
-      $resto = $buongiorno03;
-    else if($randomNumber == 4)
-      $resto = $buongiorno04;
-      $response = $response . '  ' . $resto;
-    }
+    $response = imagesearch($searchKey, false);
 }
 
 // BUONGIORNO
@@ -313,25 +233,9 @@ else if(strpos($text, 'buongiorno') !== false)
     $searchKey = $figa12;
   else if($randomNumber == 13)
     $searchKey = $figa13;
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-  $min=1;
-  $max=2;
-  $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-  }
-  else
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-  }
-  $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey);
-  $min=1;
-  $max=10;
-  $randomNumber = rand($min, $max);
-  $response = $images["items"][$randomNumber]["link"];
+    
+  $response = imagesearch($searchKey, false);
+  
   $buongiorno01 = 'buongiorno cani!';
   $buongiorno02 = 'buongiorno morti de figa!';
   $buongiorno03 = 'buongiorno froci!';
@@ -401,21 +305,7 @@ else if(strpos($text, 'tette') !== false ||
     $searchKey = $tette11;
   else if($randomNumber == 12)
     $searchKey = $tette12;
-  
-  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-  $min=1;
-  $max=2;
-  $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-  }
-  else
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-  }
+
   if(strpos($text, 'tette') !== false)
     $split = 'tette';
   else if(strpos($text, 'poppe') !== false)
@@ -436,37 +326,15 @@ else if(strpos($text, 'tette') !== false ||
   trim($isGif);
   $isGif = strtolower($isGif);
   if(substr( $isGif, 0, 4 ) === " gif")
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'gif']);
+    $response = imagesearch($searchKey, true);
   else
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'png,jpg']);
-  $min=1;
-  $max=10;
-  $randomNumber = rand($min, $max);
-  $response = $images["items"][$randomNumber]["link"];
+    $response = imagesearch($searchKey, false);
 }
 
 // MILF DEL MILLENNIO
 else if(strpos($text, 'milf del millennio') !== false)
 {
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-    $min=1;
-    $max=2;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    }
-    else
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-    }
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search('cristina d\'avena hot sexy');
-    $min=1;
-    $max=10;
-    $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"] . ' ebeh!';
+    $response = imagesearch('cristina d\'avena hot sexy', false) . ' ebeh!';
 }
 
 // MILF
@@ -500,21 +368,7 @@ else if(strpos($text, 'milf') !== false ||
     $searchKey = $milf07;
   else if($randomNumber == 8)
     $searchKey = $milf08;
-  
-  // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-  $min=1;
-  $max=2;
-  $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-  }
-  else
-  {
-    \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-    \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-  }
+
   if(strpos($text, 'milf') !== false)
     $split = 'milf';
   else if(strpos($text, 'milfona') !== false)
@@ -525,13 +379,9 @@ else if(strpos($text, 'milf') !== false ||
   trim($isGif);
   $isGif = strtolower($isGif);
   if(substr( $isGif, 0, 4 ) === " gif")
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'gif']);
+    $response = imagesearch($searchKey, true);
   else
-    $images = \odannyc\GoogleImageSearch\ImageSearch::search($searchKey, [fileType => 'png,jpg']);
-  $min=1;
-  $max=10;
-  $randomNumber = rand($min, $max);
-  $response = $images["items"][$randomNumber]["link"];
+    $response = imagesearch($searchKey, false);
 }
 
 // GILF
@@ -560,20 +410,6 @@ else if(strpos($text, 'pazzo') !== false || strpos($text, 'pazza') !== false)
 // RATAJKOWSKI
 else if(strpos($text, 'ratajkowski') !== false)
 {
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-    $min=1;
-    $max=2;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    }
-    else
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-    }
     $split = 'ratajkowski';
     $isGif = '';
     $arr = explode($split, $text);
@@ -581,32 +417,14 @@ else if(strpos($text, 'ratajkowski') !== false)
     trim($isGif);
     $isGif = strtolower($isGif);
     if(substr( $isGif, 0, 4 ) === " gif")
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', [fileType => 'gif']);
+      $response = imagesearch('emily ratajkowski nude', true);
     else
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emily ratajkowski nude', [fileType => 'png,jpg']);
-    $min=1;
-    $max=10;
-    $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"];
+      $response = imagesearch('emily ratajkowski nude', false);
 }
 
 // NARGI
 else if(strpos($text, 'nargi') !== false)
 {   
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-    $min=1;
-    $max=2;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    }
-    else
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-    }
     $split = 'nargi';
     $isGif = '';
     $arr = explode($split, $text);
@@ -614,32 +432,14 @@ else if(strpos($text, 'nargi') !== false)
     trim($isGif);
     $isGif = strtolower($isGif);
     if(substr( $isGif, 0, 4 ) === " gif")
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude', [fileType => 'gif']);
+      $response = imagesearch('nargi nude', true);
     else
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('nargi nude', [fileType => 'png,jpg']);
-    $min=1;
-    $max=10;
-    $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"];
+      $response = imagesearch('nargi nude', false);
 }
 
 // DECKER
 else if(strpos($text, 'decker') !== false)
 {
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-    $min=1;
-    $max=2;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    }
-    else
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-    }
     $split = 'decker';
     $isGif = '';
     $arr = explode($split, $text);
@@ -647,32 +447,14 @@ else if(strpos($text, 'decker') !== false)
     trim($isGif);
     $isGif = strtolower($isGif);
     if(substr( $isGif, 0, 4 ) === " gif")
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude', [fileType => 'gif']);
+      $response = imagesearch('leanna decker nude', true);
     else
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('leanna decker nude', [fileType => 'png,jpg']);
-    $min=1;
-    $max=10;
-    $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"];
+      $response = imagesearch('leanna decker nude', false);
 }
 
 // EMMA WATSON
 else if(strpos($text, 'emma watson') !== false)
 {
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-    $min=1;
-    $max=2;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    }
-    else
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-    }
     $split = 'emma watson';
     $isGif = '';
     $arr = explode($split, $text);
@@ -680,32 +462,14 @@ else if(strpos($text, 'emma watson') !== false)
     trim($isGif);
     $isGif = strtolower($isGif);
     if(substr( $isGif, 0, 4 ) === " gif")
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emma watson hot', [fileType => 'gif']);
+      $response = imagesearch('emma watson hot', true);
     else
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('emma watson hot', [fileType => 'png,jpg']);
-    $min=1;
-    $max=10;
-    $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"];
+      $response = imagesearch('emma watson hot', false);
 }
 
 // KATIE PERRY
 else if(strpos($text, 'katie perry') !== false)
 {
-    // uso due api key diverse e due custom search engine diversi per ovviare un po' al limite delle 100 query al giorno
-    $min=1;
-    $max=2;
-    $randomNumber = rand($min, $max);
-    if($randomNumber == 1)
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyChwnAsJAEgWgbj06tNHIa54KgC95n5O_Y');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:ox4wv57es20');
-    }
-    else
-    {
-      \odannyc\GoogleImageSearch\ImageSearch::config()->apiKey('AIzaSyCAYtdoL8_dUauZHusuqaLdJIiwyAHxlzM');
-      \odannyc\GoogleImageSearch\ImageSearch::config()->cx('016485041220097449938:iw7k0abtlsc');
-    }
     $split = 'katie perry';
     $isGif = '';
     $arr = explode($split, $text);
@@ -713,13 +477,9 @@ else if(strpos($text, 'katie perry') !== false)
     trim($isGif);
     $isGif = strtolower($isGif);
     if(substr( $isGif, 0, 4 ) === " gif")
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('katie perry hot', [fileType => 'gif']);
+      $response = imagesearch('katie perry hot', true);
     else
-      $images = \odannyc\GoogleImageSearch\ImageSearch::search('katie perry hot', [fileType => 'png,jpg']);
-    $min=1;
-    $max=10;
-    $randomNumber = rand($min, $max);
-    $response = $images["items"][$randomNumber]["link"];
+      $response = imagesearch('katie perry hot', false);
 }
 
 // NONNO FIORUCCI

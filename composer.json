@@ -1,5 +1,6 @@
 {
     "require": {
-        "odannyc/google-image-search": "^1.0"
+        "odannyc/google-image-search": "^1.0",
+        "filippo-toso/qwant-unofficial-api": "^1.0"
     }
 }
