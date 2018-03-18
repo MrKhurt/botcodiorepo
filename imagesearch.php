@@ -5,7 +5,7 @@ include 'qwantclient.php';
 function imagesearch($key, $gif)
 {
 	$min=1;
-    $max=3;
+    $max=2;
     $randomNumber = rand($min, $max);
     if($randomNumber === 1)
     {
