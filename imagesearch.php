@@ -49,7 +49,7 @@ function imagesearch($key, $gif)
       
       var_dump($images);
       error_log(ob_get_clean());
-      return $images["items"][$randomNumber]["link"] . '  qwant';
+      return $images["items"][$randomNumber]["url"] . '  qwant';
     }
 }
 ?>
