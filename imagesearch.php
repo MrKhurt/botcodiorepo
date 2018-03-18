@@ -1,7 +1,6 @@
 <?php 
 require_once 'vendor/autoload.php';
 include 'qwantclient.php'
-use ufo\QwantUfo\Client as QwantClient;
 
 function imagesearch($key, $gif)
 {
@@ -38,7 +37,7 @@ function imagesearch($key, $gif)
     {  
       // ricerca immagini Qwant
       // Create the client
-      $client = new QwantClient('en_US');
+      $client = new \ufo\QwantUfo\QwantClient('en_US');
       // Get all the images about the provided query
       if($gif === true)
         $images = $client->images($key . ' gif');
