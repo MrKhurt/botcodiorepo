@@ -37,7 +37,7 @@ function imagesearch($key, $gif)
     {  
       // ricerca immagini Qwant
       // Create the client
-      $client = new \ufo\QwantUfo\QwantClient('en_US');
+      $client = new \ufo\QwantUfo\Client('en_US');
       // Get all the images about the provided query
       if($gif === true)
         $images = $client->images($key . ' gif');
