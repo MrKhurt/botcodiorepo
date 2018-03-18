@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 use FilippoToso\QwantUnofficialAPI\Client as QwantClient;
-include ./imagesearch.php;
+include imagesearch.php;
 
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
