@@ -44,8 +44,11 @@ function imagesearch($key, $gif)
       else
         $images = $client->images($key);
       $min=1;
-      $max=10;
+      $max=5;
       $randomNumber = rand($min, $max);
+      
+      var_dump($images);
+      error_log(ob_get_clean());
       return $images["items"][$randomNumber]["url"] . '  qwant';
     }
 }
