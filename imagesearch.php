@@ -1,4 +1,7 @@
 <?php 
+require_once 'vendor/autoload.php';
+use FilippoToso\QwantUnofficialAPI\Client as QwantClient;
+
 function imagesearch($key, $gif)
 {
 	$min=1;
