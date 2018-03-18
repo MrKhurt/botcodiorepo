@@ -1,6 +1,6 @@
 <?php 
 require_once 'vendor/autoload.php';
-include 'qwantclient.php'
+include 'qwantclient.php';
 
 function imagesearch($key, $gif)
 {
