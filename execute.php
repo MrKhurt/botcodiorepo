@@ -66,6 +66,10 @@ else if(substr($text, 0, 6) === 'debug ')
     var_dump($update);
     $response = ob_get_clean();
   }
+  else if(strpos($text, 'user') !== false)
+  {
+    $response = 'current user = ' . $updates['message']['chat']['first_name'];
+  }
   else if(strpos($text, 'users') !== false)
   {
     foreach($users as $value)
