@@ -45,6 +45,16 @@ if(strpos($text, 'comandi') !== false)
       .chr(10).'chi? '.chr(10).'insulta '.chr(10).'offendi';
 }
 
+// DEBUG
+else if(substr($text, 0, 6) === 'debug ')
+{
+  if(strpos($text, 'message') !== false)
+  {
+    var_dump($update);
+    $response = ob_get_clean();
+  }
+}
+
 // CERCA FOTO
 else if(substr($text, 0, 11) === 'cerca foto ')
 {
