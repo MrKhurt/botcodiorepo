@@ -547,6 +547,61 @@ else if(strpos($text, 'nonno fiorucci') !== false)
     $response = $fiorucci08;
 }
 
+// ZIZZANIA
+else if(strpos($text, 'zizzania') !== false)
+{
+  if(count($users) < 2)
+  {
+    $response = 'troppo pochi utenti';
+  }
+  else
+  {
+    foreach($users as $value)
+     array_push($usersCopy, $value);
+    $countUsers = count($usersCopy);
+    $min=1;
+    $max=$countUsers;
+    $randomNumber = rand($min, $max);
+    $user1 = $usersCopy[$randomNumber];
+    if (($key = array_search($user1, $usersCopy)) !== false)
+      unset($usersCopy[$key]);
+    $countUsers = count($usersCopy);
+    $min=1;
+    $max=$countUsers;
+    $randomNumber = rand($min, $max);
+    $user2 = $usersCopy[$randomNumber];
+    
+    $zizzania01 = $user1 . ' ha detto al Bek che ' . $user2 . ' ha fatto un gruppo segreto di Whatsapp senza di lui';
+    $zizzania02 = $user1 . ' mi ha detto che a ' . $user2 . ' gli puzza il pisello da distante 2 metri';
+    $zizzania03 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $zizzania04 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $zizzania05 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $zizzania06 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $zizzania07 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $zizzania08 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $min=1;
+    $max=8;
+    $randomNumber = rand($min, $max);
+    
+    if($randomNumber == 1)
+      $response = $zizzania01;
+    else if($randomNumber == 2)
+      $response = $zizzania02;
+    else if($randomNumber == 3)
+      $response = $zizzania03;
+    else if($randomNumber == 4)
+      $response = $zizzania04;
+    else if($randomNumber == 5)
+      $response = $zizzania05;
+    else if($randomNumber == 6)
+      $response = $zizzania06;
+    else if($randomNumber == 7)
+      $response = $zizzania07;
+    else if($randomNumber == 8)
+      $response = $zizzania08;
+  }
+}
+
 // BEK
 else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
 {
