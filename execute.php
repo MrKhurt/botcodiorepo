@@ -33,10 +33,10 @@ $response = '';
 // USERS
 $file = file_get_contents('./users.txt', true);
 $users = explode(',', $file);
-if(!in_array($updates['message']['chat']['first_name'], $users, true))
+if(!in_array($firstname, $users, true))
 {
   // l'utente corrente non c'é nella lista, lo aggiungo e salvo
-  array_push($users, $updates['message']['chat']['first_name']);
+  array_push($users, $firstname);
   foreach($users as $value)
   {
     fwrite('./users.txt', $value . ',');
@@ -68,7 +68,7 @@ else if(substr($text, 0, 6) === 'debug ')
   }
   else if(strpos($text, 'user') !== false)
   {
-    $response = 'current user = ' . $updates['message']['chat']['first_name'];
+    $response = 'current user = ' . $firstname;
   }
   else if(strpos($text, 'users') !== false)
   {
