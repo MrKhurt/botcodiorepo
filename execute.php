@@ -48,6 +48,12 @@ if(!in_array($firstname, $users, true))
   }
 }
 
+// ESCAPE PER BYPASSARE IL BOT: "... "
+if(substr($text, 0, 4) === '... ')
+{
+  exit(0);
+}
+
 // INIZIO
 if(strpos($text, 'comandi') !== false)
 {
@@ -604,6 +610,61 @@ else if(strpos($text, 'zizzania') !== false)
       $response = $zizzania07;
     else if($randomNumber == 8)
       $response = $zizzania08;
+  }
+}
+
+// SEGRETO
+else if(strpos($text, 'segreto') !== false)
+{
+  if($usersCount < 2)
+  {
+    $response = 'troppo pochi utenti';
+  }
+  else
+  {
+    foreach($users as $value)
+     array_push($usersCopy, $value);
+    $countUsers = count($usersCopy);
+    $min=1;
+    $max=$countUsers;
+    $randomNumber = rand($min, $max);
+    $user1 = $usersCopy[$randomNumber];
+    if (($key = array_search($user1, $usersCopy)) !== false)
+      unset($usersCopy[$key]);
+    $countUsers = count($usersCopy);
+    $min=1;
+    $max=$countUsers;
+    $randomNumber = rand($min, $max);
+    $user2 = $usersCopy[$randomNumber];
+    
+    $segreto01 = $user1 . ' vuole portare ' . $user2 . ' alle terme per scopare in acqua';
+    $segreto02 = 'a ' . $user1 . ' piacerebbe leccare i piedi di ' . $user2;
+    $segreto03 = $user1 . ' ha una malsana ossessione per i capezzoli di ' . $user2;
+    $segreto04 = $user1 . ' ha rubato un paio di mutande usate di ' . $user2 . ' per annusarsele';
+    $segreto05 = $user1 . ' vorrebbe andare al pride village con ' . $user2;
+    $segreto06 = 'a ' . $user1 . ' piace l\'odore delle scoregge di ' . $user2;
+    $segreto07 = $user1 . ' vorrebbe essere frustato da ' . $user2;
+    $segreto08 = 'a ' . $user1 . ' piacerebbe essere posseduto da ' . $user2;
+    $min=1;
+    $max=8;
+    $randomNumber = rand($min, $max);
+    
+    if($randomNumber == 1)
+      $response = $segreto01;
+    else if($randomNumber == 2)
+      $response = $segreto02;
+    else if($randomNumber == 3)
+      $response = $segreto03;
+    else if($randomNumber == 4)
+      $response = $segreto04;
+    else if($randomNumber == 5)
+      $response = $segreto05;
+    else if($randomNumber == 6)
+      $response = $segreto06;
+    else if($randomNumber == 7)
+      $response = $segreto07;
+    else if($randomNumber == 8)
+      $response = $segreto08;
   }
 }
 
