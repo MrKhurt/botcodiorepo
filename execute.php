@@ -30,6 +30,19 @@ $text = trim($text);
 $text = strtolower($text);
 $response = '';
 
+// USERS
+$file = file_get_contents('./users.txt', true);
+$users = explode(',', $file);
+if(!in_array($updates['message']['chat']['first_name'], $users, true))
+{
+  // l'utente corrente non c'é nella lista, lo aggiungo e salvo
+  array_push($users, $updates['message']['chat']['first_name']);
+  foreach($users as $value)
+  {
+    fwrite('./users.txt', $value . ',');
+  }
+}
+
 // INIZIO
 if(strpos($text, 'comandi') !== false)
 {
@@ -52,6 +65,11 @@ else if(substr($text, 0, 6) === 'debug ')
   {
     var_dump($update);
     $response = ob_get_clean();
+  }
+  else if(strpos($text, 'users') !== false)
+  {
+    foreach($users as $value)
+      $response = $response . $value . ' ':
   }
 }
 
