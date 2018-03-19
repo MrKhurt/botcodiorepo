@@ -574,11 +574,11 @@ else if(strpos($text, 'zizzania') !== false)
     $zizzania01 = $user1 . ' ha detto al Bek che ' . $user2 . ' ha fatto un gruppo segreto di Whatsapp senza di lui';
     $zizzania02 = $user1 . ' mi ha detto che a ' . $user2 . ' gli puzza il pisello da distante 2 metri';
     $zizzania03 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
-    $zizzania04 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
-    $zizzania05 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $zizzania04 = $user1 . ' mi ha detto che a ' . $user2 . ' piace rasare le palle ai negri';
+    $zizzania05 = $user1 . ' dice in giro che ' . $user2 . ' ne prende in culo due alla volta';
     $zizzania06 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
-    $zizzania07 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
-    $zizzania08 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
+    $zizzania07 = $user1 . ' tira le loffe e da la colpa a ' . $user2;
+    $zizzania08 = $user1 . ' mi dice sempre che a ' . $user2 . ' piace il cazzo';
     $min=1;
     $max=8;
     $randomNumber = rand($min, $max);
