@@ -70,6 +70,7 @@ else if(substr($text, 0, 6) === 'debug ')
   {
     foreach($users as $value)
       $response = $response . $value . ' ';
+    $response = $response . ' BASTA';
   }
 }
 
