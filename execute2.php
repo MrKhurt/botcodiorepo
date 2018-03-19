@@ -309,61 +309,46 @@ else if(strpos($text, 'tette') !== false ||
    strpos($text, 'capezzoli') !== false || 
    strpos($text, 'capezzolo') !== false)
 {
-  array_push($tetteArray, $firstname);
-  array_push($tetteArray, 'https://i.pinimg.com/originals/df/b1/53/dfb153a926acbaee97a6c7aba8247db1.jpg');
-  array_push($tetteArray, 'http://www.juggsjoy.com/promo/brittney_white_btra.jpg');
-  array_push($tetteArray, 'https://img2.3movs.com/contents/videos_screenshots/32000/32982/preview.mp4.jpg');
-  array_push($tetteArray, 'https://i.pinimg.com/474x/ce/88/3d/ce883ded5627d491e713508ceb8afc45--exotic-women-sexy-poses.jpg');
-  array_push($tetteArray, 'https://i.pinimg.com/originals/5a/5e/0e/5a5e0e8e511bcc8b00ccc8bb7344a297.jpg');
-  array_push($tetteArray, 'http://content.erooups.com/img3/20101022/24/hot_model_with_nice_tits_5.jpg?1288325820');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQugyxNiM3WRMKl_Aym2ACY7FSV1WbIHG_OdAPNGBUvck5GDwdZKQ');
-  array_push($tetteArray, 'https://ftopx.com/images/201403/ftop.ru_93132.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NmXZ36OK0fAyEt8ujNV43cJscTRZwcMkSeSmif2nflQ4DeU2');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigkwpPVLa6C3zmZWMNanxKXftO-VA5Vi4jIO9LgwYb8o3O6ZT');
-  array_push($tetteArray, 'http://content4.novojoy.com/upload/main/4/2911824.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOz615ht5dZLK5ge3Ago7oYWoWasQHKdbhajMG6mPDfr6pkibGvQ');
-  array_push($tetteArray, 'https://ftopx.com/large/201106/21531.jpg');
-  array_push($tetteArray, 'https://hugetits.win/pics/e4/23902.jpg');
-  array_push($tetteArray, 'https://y2.pichunter.com/2935017_4_o.jpg');
-  array_push($tetteArray, 'https://i0-hw.twistyscontent.com/models/1586/m250x400.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6whGkgaldVoJvKACzSsF0TYcGwuNZ7xTifO4FtC6CWdthO_T');
-  array_push($tetteArray, 'http://timdir.com/brea_lynn_hold_up_stockings/brea_lynn_17.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTntLE-n8ldcr5MzzX78ruy7USxPrH_X76-IHbBBg-9nFXXMP2u');
-  array_push($tetteArray, 'http://www.tobeporn.com/wp-content/uploads/2015/10/super-hot-teen-naked-big-boobs.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBCPht5rTIhSbMvG0R-hoLmOXqk-vV2AF_k-amZblastBE61ya');
-  array_push($tetteArray, 'http://www.big-teen-tits.com/wp-content/uploads/sites/17/2018/02/bigteentits-jade-ftvgirls.jpg');
-  array_push($tetteArray, 'https://hottieoftheday.files.wordpress.com/2013/08/tumblr_mor7v4efil1qh0a33o1_5002.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHS8Occ3HhuwQfNeFv9iF27snWiMw7f2A8t-CmfcBzxredf5LC');
-  array_push($tetteArray, 'https://i.pinimg.com/236x/c3/b4/12/c3b4129d4d39d724412b6ef5db4e4c25--sexy-red-head-faye-valentine.jpg');
-  array_push($tetteArray, 'https://files.sexyandfunny.com/img_disp/img50bc25627c7ac.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROacT_SqfGycx39vTOyGuvTuzJ0AGOthCNq40S2UE39q06dxPf');
-  array_push($tetteArray, 'http://images.luscious.net/30/cute_scene_girl_with_huge_boobs_1248412003.png');
-  array_push($tetteArray, 'https://img-hw.xvideos-cdn.com/videos/thumbslll/23/b1/61/23b161c012f5a8e5563d3647c29f2cbd/23b161c012f5a8e5563d3647c29f2cbd.3.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy8AffoTsERyZSKsNuJ1yeucowcpd7jrHZUCK129Aw8aYjCQrg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotsuPbxujr6dLVUoKXxfN3Kk-b5zpbwVbZunNNe62oaLzU1crPg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPps9j4yc7UnwRcP2vpmqu-yixDoreWbUWquvCYPdV13SS0ghA');
-  array_push($tetteArray, 'https://www.freesexyindians.com/wp-content/uploads/2016/04/060416_14.jpg');
-  array_push($tetteArray, 'https://cdnio.luscious.net/470/lusciousnet_suicide_girls_have_the__1729812036.jpg');
-  array_push($tetteArray, 'http://redbust.com/stuff/suicide-girls-vol-7/suicide-girls-tattoos-naked-vol7-45-800x1200.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYOz2JuGSh1Od6skhY8-_2y26csvL75m2R3Jja2QMCJIhTCe1O');
-  array_push($tetteArray, 'http://redbust.com/stuff/suicide-girls-vol-6/suicide-girls-tattoos-nude-vol6-35-boobs-800x1200.jpg');
-  array_push($tetteArray, 'http://cdn-so.fantasti.cc/big/s/t/u/stubob72556/stubob72556_02f345.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToY-9VGItfjz4WR9qyOi6SBO1V8Id0mZBDBTljEgW272qwLtX4AA');
-  array_push($tetteArray, 'http://www.boobpedia.com/wiki/images/thumb/a/a1/Milou_%28SuicideGirls%29_01.jpg/240px-Milou_%28SuicideGirls%29_01.jpg');
-  array_push($tetteArray, 'http://cdn-so.fantasti.cc/big/e/l/s/elstiffler/elstiffler_ef9c84.jpg');
-  array_push($tetteArray, 'https://files.sexyandfunny.com/img_disp/img50bc25631483b.jpg');
-  array_push($tetteArray, 'https://i4.fuskator.com/large/nGKHHEZL0DM/Busty-Shaved-Brunette-Babe-Katie-Fey-with-Inverted-Nipples-4.jpg');
-  array_push($tetteArray, 'http://www.rhinosgirls.com/wp-content/uploads/2013/08/12.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScntUJr-lUL2Z07l9MPt9_lnkmRy_TJwri4Ez1O-UYOFSaAngbFg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0I36wmw3r7iT19qHhi1pxbHVINC9l5hhf72Ml4x7wo0uSB3FE');
-  array_push($tetteArray, 'https://thechive.files.wordpress.com/2017/10/boobs-bad-ideas-fubar-10_13_17-600-12.jpg?quality=85&strip=info&w=600');
-  array_push($tetteArray, 'https://ci.phncdn.com/videos/201611/18/96538231/original/(m=eaf8Ggaaaa)(mh=ZfwIOQ4yTo__Xb0L)10.jpg');
-  array_push($tetteArray, 'https://i.pinimg.com/originals/52/54/d8/5254d80385fabe399e635261b74e4a2c.jpg');
-  array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1tHbcVf_aVuMSDxoUg1ALQqqoK_FP9SQUuiZtVY8Q02lz1Roaqg');
+  $tette01 = 'topless lexi belle';
+  $tette02 = 'topless jenya d';
+  $tette03 = 'topless ratajkovsky';
+  $tette04 = 'topless denise milani';
+  $tette05 = 'piper fawn tits';
+  $tette06 = 'topless playmate';
+  $tette07 = 'topless hot girl';
+  $tette08 = 'leanna decker topless';
+  $tette09 = 'katie fey tits';
+  $tette10 = 'bouncing tits sexy solo';
+  $tette11 = 'tits topless model';
+  $tette12 = 'boobs topless sexy girl';
   $min=1;
-  $max=50;
+  $max=12;
   $randomNumber = rand($min, $max);
-  
+  if($randomNumber == 1)
+    $searchKey = $tette01;
+  else if($randomNumber == 2)
+    $searchKey = $tette02;
+  else if($randomNumber == 3)
+    $searchKey = $tette03;
+  else if($randomNumber == 4)
+    $searchKey = $tette04;
+  else if($randomNumber == 5)
+    $searchKey = $tette05;
+  else if($randomNumber == 6)
+    $searchKey = $tette06;
+  else if($randomNumber == 7)
+    $searchKey = $tette07;
+  else if($randomNumber == 8)
+    $searchKey = $tette08;
+  else if($randomNumber == 9)
+    $searchKey = $tette09;
+  else if($randomNumber == 10)
+    $searchKey = $tette10;
+  else if($randomNumber == 11)
+    $searchKey = $tette11;
+  else if($randomNumber == 12)
+    $searchKey = $tette12;
+
   if(strpos($text, 'tette') !== false)
     $split = 'tette';
   else if(strpos($text, 'poppe') !== false)
@@ -384,9 +369,9 @@ else if(strpos($text, 'tette') !== false ||
   trim($isGif);
   $isGif = strtolower($isGif);
   if(substr( $isGif, 0, 4 ) === " gif")
-    ; //$response = imagesearch($searchKey, true);
+    $response = imagesearch($searchKey, true);
   else
-    $response = $tetteArray[$randomNumber];
+    $response = imagesearch($searchKey, false);
 }
 
 // MILF DEL MILLENNIO
