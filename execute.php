@@ -37,9 +37,14 @@ if(!in_array($firstname, $users, true))
 {
   // l'utente corrente non c'é nella lista, lo aggiungo e salvo
   array_push($users, $firstname);
+  $usersCount = 0;
   foreach($users as $value)
   {
-    fwrite('./users.txt', $value . ',');
+    if($value !== '')
+    {
+      fwrite('./users.txt', $value . ',');
+      $usersCount = $usersCount + 1;
+    }
   }
 }
 
@@ -550,7 +555,7 @@ else if(strpos($text, 'nonno fiorucci') !== false)
 // ZIZZANIA
 else if(strpos($text, 'zizzania') !== false)
 {
-  if(count($users) < 2)
+  if($usersCount < 2)
   {
     $response = 'troppo pochi utenti';
   }
