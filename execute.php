@@ -309,7 +309,7 @@ else if(strpos($text, 'tette') !== false ||
    strpos($text, 'capezzoli') !== false || 
    strpos($text, 'capezzolo') !== false)
 {
-  array_push($tetteArray, $firstname);
+  $tetteArray = array(1 => 'https://i.pinimg.com/originals/df/b1/53/dfb153a926acbaee97a6c7aba8247db1.jpg');
   array_push($tetteArray, 'https://i.pinimg.com/originals/df/b1/53/dfb153a926acbaee97a6c7aba8247db1.jpg');
   array_push($tetteArray, 'http://www.juggsjoy.com/promo/brittney_white_btra.jpg');
   array_push($tetteArray, 'https://img2.3movs.com/contents/videos_screenshots/32000/32982/preview.mp4.jpg');
