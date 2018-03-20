@@ -87,6 +87,8 @@ else if(substr($text, 0, 6) === 'debug ')
   }
   else if(strpos($text, 'users') !== false)
   {
+    $file = file_get_contents('users.txt', true);
+    $users = explode(',', $file);
     foreach($users as $value)
       $response = $response . $value . ' ';
     $response = $response . ' BASTA';
