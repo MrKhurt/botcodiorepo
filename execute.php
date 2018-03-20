@@ -31,7 +31,15 @@ $text = strtolower($text);
 $response = '';
 
 // USERS
-$file = file_get_contents('./users.txt', true);
+$file = 'users.txt';
+//Use the function is_file to check if the file already exists or not.
+if(!is_file($file)){
+    //Some simple example content.
+    $contents = '';
+    //Save our content to the file.
+    file_put_contents($file, $contents);
+}
+$file = file_get_contents('users.txt', true);
 $users = explode(',', $file);
 if(!in_array($firstname, $users, true))
 {
