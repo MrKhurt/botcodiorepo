@@ -764,6 +764,21 @@ else if(strpos($text, 'chi?') !== false)
   $response = 'Stocazzo!';
 }
 
+// GAY
+else if(strpos($text, 'gay') !== false || 
+        strpos($text, 'froci') !== false ||
+        strpos($text, 'frocio') !== false)
+{
+  $response = 'se vuoi il mio pisellone meccanico sai dove trovarmi!';
+}
+
+// VIBRATORE
+else if(strpos($text, 'vibratore') !== false || 
+        strpos($text, 'dildo') !== false)
+{
+  $response = 'quando tremo non é mai per paura 8===D';
+}
+
 // PIOVE?
 else if(strpos($text, 'piove') !== false || strpos($text, 'pioggia') !== false)
 {
