@@ -100,6 +100,14 @@ else if(substr($text, 0, 6) === 'debug ')
   }
 }
 
+// NONDEFINIZIONE
+else if(substr($text, 0, 15) === 'nondefinizione ')
+{
+  $vocabolo = str_replace('nondefinizione ', '', $text);
+  $vocabolo = str_replace(' ', '_', $vocabolo);
+  $response = 'http://nonciclopedia.wikia.com/wiki/' . ucfirst($vocabolo);
+}
+
 // DEFINIZIONE
 else if(substr($text, 0, 12) === 'definizione ')
 {
