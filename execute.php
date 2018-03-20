@@ -50,7 +50,8 @@ if(!in_array($firstname, $users, true))
   {
     if($value !== '')
     {
-      fwrite('./users.txt', $value . ',');
+      file_put_contents('users.txt', $value . ',' , FILE_APPEND | LOCK_EX);
+      //fwrite('./users.txt', $value . ',');
       $usersCount = $usersCount + 1;
     }
   }
