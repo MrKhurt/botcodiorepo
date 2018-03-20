@@ -619,15 +619,15 @@ else if(strpos($text, 'meteo') !== false ||
   $localita = trim($localita);
   $response = $localita;
   
-  //if($localita === '')
-  //{
-    //$response = 'https://www.ilmeteo.it/meteo/Verona';
-  //}
-  //else
-  //{
-    //$localita = str_replace(' ', '%20', $text);
-    //$response = 'https://www.ilmeteo.it/meteo/' . $localita;
-  //}
+  if($localita === '')
+  {
+    $response = 'https://www.ilmeteo.it/meteo/Verona';
+  }
+  else
+  {
+    $localita = str_replace(' ', '%20', $localita);
+    $response = 'https://www.ilmeteo.it/meteo/' . $localita;
+  }
 }
 
 // BUONANOTTE
