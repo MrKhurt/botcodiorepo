@@ -104,7 +104,7 @@ else if(substr($text, 0, 6) === 'debug ')
 else if(substr($text, 0, 12) === 'definizione ')
 {
   $vocabolo = str_replace('definizione ', '', $text);
-  $vocabolo = str_replace(' ', '', $text);
+  $vocabolo = str_replace(' ', '', $vocabolo);
   $response = 'http://dizionari.corriere.it/dizionario_italiano/' . $vocabolo[0] . '/' . $vocabolo . '.shtml';
 }
 
