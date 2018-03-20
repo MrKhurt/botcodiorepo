@@ -116,33 +116,18 @@ else if(substr($text, 0, 11) === 'cerca foto ')
 // CULO
 else if(strpos($text, 'culo') !== false)
 {
-  $culo01 = 'ass model girl';
-  $culo02 = 'lingerie model ass';
-  $culo03 = 'bonjourmadame ass';
-  $culo04 = 'non nude model sexy ass';
-  $culo05 = 'sexy bottom girl';
-  $culo06 = 'bikini model ass';
-  $culo07 = 'hottest ass girl';
-  $culo08 = 'underwear model sexy ass girl';
+  $culoArray = array(1 => 'ass model girl');
+  array_push($culoArray, 'lingerie model ass');
+  array_push($culoArray, 'bonjourmadame ass');
+  array_push($culoArray, 'non nude model sexy ass');
+  array_push($culoArray, 'sexy bottom girl');
+  array_push($culoArray, 'bikini model ass');
+  array_push($culoArray, 'hottest ass girl');
+  array_push($culoArray, 'underwear model sexy ass girl');
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-    $searchKey = $culo01;
-  else if($randomNumber == 2)
-    $searchKey = $culo02;
-  else if($randomNumber == 3)
-    $searchKey = $culo03;
-  else if($randomNumber == 4)
-    $searchKey = $culo04;
-  else if($randomNumber == 5)
-    $searchKey = $culo05;
-  else if($randomNumber == 6)
-    $searchKey = $culo06;
-  else if($randomNumber == 7)
-    $searchKey = $culo07;
-  else if($randomNumber == 8)
-    $searchKey = $culo08;
+  $searchKey = $culoArray[$randomNumber];
   
   $isGif = '';
   $arr = explode('culo', $text);
@@ -163,48 +148,24 @@ else if(strpos($text, 'figa') !== false ||
    strpos($text, 'zozzerellona') !== false || 
    strpos($text, 'zozza') !== false)
 {
-  $figa01 = 'lingerie model';
-  $figa02 = 'little caprice non nude sexy';
-  $figa03 = 'nude sexy cosplay girl';
-  $figa04 = 'suicide girl sexy shot';
-  $figa05 = 'katie jordan hot';
-  $figa06 = 'sexy underwear model ass girl';
-  $figa07 = 'mia khalifa sexy non nude';
-  $figa08 = 'leanna decker hot';
-  $figa09 = 'lexi belle non nude sexy';
-  $figa10 = 'katie fey hot';
-  $figa11 = 'faye reagan sexy';
-  $figa12 = 'piper fawn sexy';
-  $figa13 = 'jessica nigri hot';
+  $figaArray = array(1 => 'lingerie model');
+  array_push($figaArray, 'little caprice non nude sexy');
+  array_push($figaArray, 'nude sexy cosplay girl');
+  array_push($figaArray, 'suicide girl sexy shot');
+  array_push($figaArray, 'katie jordan hot');
+  array_push($figaArray, 'sexy underwear model ass girl');
+  array_push($figaArray, 'mia khalifa sexy non nude');
+  array_push($figaArray, 'leanna decker hot');
+  array_push($figaArray, 'lexi belle non nude sexy');
+  array_push($figaArray, 'katie fey hot');
+  array_push($figaArray, 'faye reagan sexy');
+  array_push($figaArray, 'piper fawn sexy');
+  array_push($figaArray, 'jessica nigri hot');
   $min=1;
   $max=12;
   $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-    $searchKey = $figa01;
-  else if($randomNumber == 2)
-    $searchKey = $figa02;
-  else if($randomNumber == 3)
-    $searchKey = $figa03;
-  else if($randomNumber == 4)
-    $searchKey = $figa04;
-  else if($randomNumber == 5)
-    $searchKey = $figa05;
-  else if($randomNumber == 6)
-    $searchKey = $figa06;
-  else if($randomNumber == 7)
-    $searchKey = $figa07;
-  else if($randomNumber == 8)
-    $searchKey = $figa08;
-  else if($randomNumber == 9)
-    $searchKey = $figa09;
-  else if($randomNumber == 10)
-    $searchKey = $figa10;
-  else if($randomNumber == 11)
-    $searchKey = $figa11;
-  else if($randomNumber == 12)
-    $searchKey = $figa12;
-  else if($randomNumber == 13)
-    $searchKey = $figa13;
+  $searchKey = $figaArray[$randomNumber];
+  
   // devo cercare una gif?
   if(strpos($text, 'figa') !== false)
     $split = 'figa';
@@ -232,51 +193,23 @@ else if(strpos($text, 'figa') !== false ||
 // BUONGIORNO
 else if(strpos($text, 'buongiorno') !== false)
 {
-  $figa01 = 'lingerie model';
-  $figa02 = 'little caprice non nude sexy';
-  $figa03 = 'nude sexy cosplay girl';
-  $figa04 = 'suicide girl sexy shot';
-  $figa05 = 'katie jordan hot';
-  $figa06 = 'sexy underwear model ass girl';
-  $figa07 = 'mia khalifa sexy non nude';
-  $figa08 = 'leanna decker hot';
-  $figa09 = 'lexi belle non nude sexy';
-  $figa10 = 'katie fey hot';
-  $figa11 = 'faye reagan sexy';
-  $figa12 = 'piper fawn sexy';
-  $figa13 = 'jessica nigri hot';
+  $figaArray = array(1 => 'lingerie model');
+  array_push($figaArray, 'little caprice non nude sexy');
+  array_push($figaArray, 'nude sexy cosplay girl');
+  array_push($figaArray, 'suicide girl sexy shot');
+  array_push($figaArray, 'katie jordan hot');
+  array_push($figaArray, 'sexy underwear model ass girl');
+  array_push($figaArray, 'mia khalifa sexy non nude');
+  array_push($figaArray, 'leanna decker hot');
+  array_push($figaArray, 'lexi belle non nude sexy');
+  array_push($figaArray, 'katie fey hot');
+  array_push($figaArray, 'faye reagan sexy');
+  array_push($figaArray, 'piper fawn sexy');
+  array_push($figaArray, 'jessica nigri hot');
   $min=1;
-  $max=10;
-  srand(mktime(0, 0, 0));
-  $randomNumber = rand(0, 10);
+  $max=12;
   $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-    $searchKey = $figa01;
-  else if($randomNumber == 2)
-    $searchKey = $figa02;
-  else if($randomNumber == 3)
-    $searchKey = $figa03;
-  else if($randomNumber == 4)
-    $searchKey = $figa04;
-  else if($randomNumber == 5)
-    $searchKey = $figa05;
-  else if($randomNumber == 6)
-    $searchKey = $figa06;
-  else if($randomNumber == 7)
-    $searchKey = $figa07;
-  else if($randomNumber == 8)
-    $searchKey = $figa08;
-  else if($randomNumber == 9)
-    $searchKey = $figa09;
-  else if($randomNumber == 10)
-    $searchKey = $figa10;
-  else if($randomNumber == 11)
-    $searchKey = $figa11;
-  else if($randomNumber == 12)
-    $searchKey = $figa12;
-  else if($randomNumber == 13)
-    $searchKey = $figa13;
-    
+  $searchKey = $figaArray[$randomNumber];    
   $response = imagesearch($searchKey, false);
   
   $buongiorno01 = 'buongiorno cani!';
@@ -399,33 +332,18 @@ else if(strpos($text, 'milf del millennio') !== false)
 else if(strpos($text, 'milf') !== false || 
    strpos($text, 'milfona') !== false)
 {
-  $milf01 = 'sexy hot cougar posing';
-  $milf02 = 'topless sexy cougar';
-  $milf03 = 'hot cougar model posing';
-  $milf04 = 'esperanza gomez posing';
-  $milf05 = 'raylene sexy posing';
-  $milf06 = 'austin kincaid sexy';
-  $milf07 = 'angelina valentine sexy';
-  $milf08 = 'angelica raven sexy';
+  $milfArray = array(1 => 'sexy hot cougar posing');
+  array_push($milfArray, 'topless sexy cougar');
+  array_push($milfArray, 'hot cougar model posing');
+  array_push($milfArray, 'esperanza gomez posing');
+  array_push($milfArray, 'raylene sexy posing');
+  array_push($milfArray, 'austin kincaid sexy');
+  array_push($milfArray, 'angelina valentine sexy');
+  array_push($milfArray, 'angelica raven sexy');
   $min=1;
   $max=12;
   $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-    $searchKey = $milf01;
-  else if($randomNumber == 2)
-    $searchKey = $milf02;
-  else if($randomNumber == 3)
-    $searchKey = $milf03;
-  else if($randomNumber == 4)
-    $searchKey = $milf04;
-  else if($randomNumber == 5)
-    $searchKey = $milf05;
-  else if($randomNumber == 6)
-    $searchKey = $milf06;
-  else if($randomNumber == 7)
-    $searchKey = $milf07;
-  else if($randomNumber == 8)
-    $searchKey = $milf08;
+  $searchKey = $milfArray[$randomNumber];
 
   if(strpos($text, 'milf') !== false)
     $split = 'milf';
