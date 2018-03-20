@@ -774,7 +774,7 @@ else if(strpos($text, 'piove') !== false || strpos($text, 'pioggia') !== false)
 else if(strpos($text, 'meteo') !== false || 
         strpos($text, 'che tempo fa') !== false)
 {
-    $response = https://www.ilmeteo.it/meteo/Verona;
+    $response = 'https://www.ilmeteo.it/meteo/Verona';
 }
 
 // BUONANOTTE
