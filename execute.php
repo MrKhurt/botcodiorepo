@@ -335,6 +335,20 @@ else if(strpos($text, 'pazzo') !== false || strpos($text, 'pazza') !== false)
   $response = 'Aaaah sono pazzaaa!';
 }
 
+// SCOPARE
+else if(strpos($text, 'scopare') !== false || 
+        strpos($text, 'bombare') !== false || 
+        strpos($text, 'trombare') !== false || 
+        strpos($text, 'scoparti') !== false || 
+        strpos($text, 'scoparvi') !== false || 
+        strpos($text, 'trombarti') !== false || 
+        strpos($text, 'trombarvi') !== false || 
+        strpos($text, 'bombarvi') !== false || 
+        strpos($text, 'bombarti') !== false)
+{
+  $response = 'io porto frustino e manette!';
+}
+
 // RATAJKOWSKI
 else if(strpos($text, 'ratajkowski') !== false)
 {
