@@ -306,13 +306,64 @@ else if(strpos($text, 'tette') !== false ||
   array_push($tetteArray, 'https://ci.phncdn.com/videos/201611/18/96538231/original/(m=eaf8Ggaaaa)(mh=ZfwIOQ4yTo__Xb0L)10.jpg');
   array_push($tetteArray, 'https://i.pinimg.com/originals/52/54/d8/5254d80385fabe399e635261b74e4a2c.jpg');
   array_push($tetteArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1tHbcVf_aVuMSDxoUg1ALQqqoK_FP9SQUuiZtVY8Q02lz1Roaqg');
+  
+  $tetteGIFArray = array(1 => 'http://www.gifsfor.com/uploads/2014/11/Gifs-for-Tumblr-1444.gif');
+  array_push($tetteGIFArray, 'http://scene-porn.com/wp-content/uploads/2010/07/Nude-hot-emo-girl.gif');
+  array_push($tetteGIFArray, 'http://www.hugetitsgif.com/wp-content/uploads/2017/04/tumblr_nl1dd5kj1k1tj0ia8o1_500.gif');
+  array_push($tetteGIFArray, 'http://78.media.tumblr.com/e517aea9af2001234007e49573bc8645/tumblr_nk2qummCw31u53hc4o1_1280.gif');
+  array_push($tetteGIFArray, 'http://pornpictures.xxx/wp-content/uploads/2016/03/tits-gif-hot-nude-teen-girl-1456901756c8lp4.gif');
+  array_push($tetteGIFArray, 'http://cdn4.images.motherlessmedia.com/images/D27E6DF.gif?fs=opencloud');
+  array_push($tetteGIFArray, 'http://gfpics.com/wp-content/uploads/4-54.gif');
+  array_push($tetteGIFArray, 'https://media.tits-guru.com/images?uuid=3f0e3423-3c3b-4131-96af-5575c01b65d4');
+  array_push($tetteGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNikUmFE5SENuNUO7J2F8UXNDcTTpbZCDtq1eq65EF90FdG9pJAg');
+  array_push($tetteGIFArray, 'http://i2.xxgifs.com/galleries/2015/03/27/big/47334-hot-amateur-bouncing-tits.gif');
+  array_push($tetteGIFArray, 'https://files.shroomery.org/files/16-34/233356419-7624-hot-girl-flashing-boobs-in-a-parking-lot.gif');
+  array_push($tetteGIFArray, 'https://im-01.gifer.com/55.gif');
+  array_push($tetteGIFArray, 'http://www.sexvideogif.com/wp-content/uploads/2013/07/09/sexy-girl-dance-nude.gif');
+  array_push($tetteGIFArray, 'https://i.pinimg.com/originals/81/8a/53/818a531e542742ae07e8fe88c232eff0.gif');
+  array_push($tetteGIFArray, 'https://file.publicflashing.me/2016/02/flashing-boobs-smiling-girlfriend.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2015/12/22/620/14605434.gif');
+  array_push($tetteGIFArray, 'https://static-ca-cdn.eporner.com/photos/46216.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2017/05/23/300/17806815.gif');
+  array_push($tetteGIFArray, 'http://tubeteencam.com/king-include/uploads/tumblr_o57j1athu51u3yq93o1_540-4563202024.gif');
+  array_push($tetteGIFArray, 'https://angrygif.com/wp-content/uploads/2017/08/asian-girl-with-big-boobs.gif');
+  array_push($tetteGIFArray, 'http://78.media.tumblr.com/167d638cebe2fff0217e6473043d76d3/tumblr_o4ue0dmtQC1vnock8o1_400.gif');
+  array_push($tetteGIFArray, 'https://www.snbabes.com/wp-content/uploads/2017/10/Kendra-showing-her-large-tits.gif');
+  array_push($tetteGIFArray, 'https://78.media.tumblr.com/419a83dd12f47d250ac56498e7c5a15b/tumblr_ozz9nbQdys1tlslo2o1_500.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2016/03/03/300/15139020.gif');
+  array_push($tetteGIFArray, 'https://3.bp.blogspot.com/-nYhD1qJPOtg/VwlQDNeArvI/AAAAAAAAAVs/LNjiGXVZzzET2E8mbjN33sduikhxbtFnw/s1600/Showing%2Bher%2Bboobs.gif');
+  array_push($tetteGIFArray, 'https://file.publicflashing.me/2016/02/beach-boobs-flashing-two-college-girls.gif');
+  array_push($tetteGIFArray, 'http://gfpics.com/wp-content/uploads/WatchMyTits_31.gif');
+  array_push($tetteGIFArray, 'http://juicygif.com/albums/userpics/2014y/08/31/13/1/7064-katie-fey-water-fun.gif');
+  array_push($tetteGIFArray, 'https://78.media.tumblr.com/44620ea140156998cc4d18bc72333d1e/tumblr_o973npW28X1v4mi9vo1_1280.gif');
+  array_push($tetteGIFArray, 'https://s.smutty.com/media_smutty_2/w/h/o/s/m/whosdatbabe-3vpgt-94c536.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2017/01/28/300/17283515.gif');
+  array_push($tetteGIFArray, 'http://eugeniadiordiychuk.com/static/forum/1167/2014/03/13/jenya-24a.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2014/07/11/300/6888891.gif');
+  array_push($tetteGIFArray, 'http://78.media.tumblr.com/7e501dc1eaeb646977e9de6573c6ecb3/tumblr_nivok9Urz91u53hc4o1_1280.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2014/08/03/300/7267497.gif');
+  array_push($tetteGIFArray, 'https://78.media.tumblr.com/168d812f42bd52543e7487b5a5eaa3c4/tumblr_os0rj5QcSK1w27avio1_400.gif');
+  array_push($tetteGIFArray, 'https://static-ca-cdn.eporner.com/photos/118238.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2015/02/18/620/10558157.gif');
+  array_push($tetteGIFArray, 'https://78.media.tumblr.com/e1c306c7fe98fda0f142dea5d4fcfdce/tumblr_onu819bYyw1w27avio1_400.gif');
+  array_push($tetteGIFArray, 'https://the-sex.me/wp-content/uploads/2013/12/B2zcNaN.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2016/09/27/300/16621316.gif');
+  array_push($tetteGIFArray, 'https://i.imgur.com/PNp4S3v.gif');
+  array_push($tetteGIFArray, 'https://i.pinimg.com/originals/7d/1c/51/7d1c51e4485c9fc645e9ee755c3eff4d.gif');
+  array_push($tetteGIFArray, 'http://juicygif.com/albums/userpics/2016y/12/30/7/1/1975-little-caprice.gif');
+  array_push($tetteGIFArray, 'https://images.sex.com/images/pinporn/2016/08/10/620/16336377.gif');
+  array_push($tetteGIFArray, 'https://78.media.tumblr.com/2fb97869c9e8b29d0ce0d11daddd1fe5/tumblr_o381vbtPV41u66f05o1_400.gif');
+  array_push($tetteGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIooR6Sq6i3egBjIGZ2WbgHDkbzt7k7xCxU49lbooxrSzXr0Raag');
+  array_push($tetteGIFArray, 'https://78.media.tumblr.com/488967b28410a360d72afd50f7e12cd7/tumblr_o3u00yKVeX1u66f05o1_500.gif');
+  array_push($tetteGIFArray, 'http://juicygif.com/albums/userpics/2015y/09/13/8/1/9271-hottie-shows-her-big-boobs.gif');
+  array_push($tetteGIFArray, 'http://juicygif.com/albums/userpics/2014y/06/04/13/1/small_5670-gif-with-awesome-babe-having-naturally-big-tits-and-a-perfect-pretty-face.gif');
   $min=1;
   $max=50;
   $randomNumber = rand($min, $max);
   
   // devo cercare una gif?
   if(strpos($text, 'gif') !== false)
-    ; //$response = imagesearch($searchKey, true);
+    $response = $tetteGIFArray[$randomNumber];
   else
     $response = $tetteArray[$randomNumber];
 }
