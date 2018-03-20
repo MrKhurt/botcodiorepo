@@ -614,7 +614,7 @@ else if(strpos($text, 'meteo') !== false ||
         strpos($text, 'che tempo fa a') !== false)
 {
   $localita = str_replace('meteo', '', $text);
-  $localita = str_replace('che tempo fa a', '', $text);
+  $localita = str_replace('che tempo fa a', '', $localita);
   $localita = trim($localita);
   if($localita === '')
   {
