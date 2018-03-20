@@ -611,9 +611,20 @@ else if(strpos($text, 'piove') !== false || strpos($text, 'pioggia') !== false)
 
 // METEO
 else if(strpos($text, 'meteo') !== false || 
-        strpos($text, 'che tempo fa') !== false)
+        strpos($text, 'che tempo fa a') !== false)
 {
+  $localita = str_replace('meteo', '', $text);
+  $localita = str_replace('che tempo fa a', '', $text);
+  $localita = trim($localita);
+  if($localita === '')
+  {
     $response = 'https://www.ilmeteo.it/meteo/Verona';
+  }
+  else
+  {
+    $localita = str_replace(' ', '%20', $text);
+    $response = 'https://www.ilmeteo.it/meteo/' . $localita;
+  }
 }
 
 // BUONANOTTE
