@@ -100,11 +100,11 @@ else if(substr($text, 0, 11) === 'cerca foto ')
     $length = strlen($resto);
     if(length !== 0)
     {
-      if (substr($resto, -4) === ' gif')
+      if (strpos($resto, 'gif') !== false)
       {
         $arr2 = explode(' gif', $resto);
         $resto = $arr2[0];
-        $response = imagesearch($resto, true);
+        $response = imagesearch(str_replace('gif', '', $resto), true);
       }
       else
       {
@@ -129,12 +129,7 @@ else if(strpos($text, 'culo') !== false)
   $randomNumber = rand($min, $max);
   $searchKey = $culoArray[$randomNumber];
   
-  $isGif = '';
-  $arr = explode('culo', $text);
-  $isGif = $arr[1];
-  trim($isGif);
-  $isGif = strtolower($isGif);
-  if(substr( $isGif, 0, 4 ) === " gif")
+  if(strpos($test, 'gif') !== false)
     $response = imagesearch($searchKey, true);
   else
     $response = imagesearch($searchKey, false);
@@ -167,24 +162,7 @@ else if(strpos($text, 'figa') !== false ||
   $searchKey = $figaArray[$randomNumber];
   
   // devo cercare una gif?
-  if(strpos($text, 'figa') !== false)
-    $split = 'figa';
-  else if(strpos($text, 'fica') !== false)
-    $split = 'fica';
-  else if(strpos($text, 'gnocca') !== false)
-    $split = 'gnocca';
-  else if(strpos($text, 'gnagna') !== false)
-    $split = 'gnagna';
-  else if(strpos($text, 'zozzerellona') !== false)
-    $split = 'zozzerellona';
-  else if(strpos($text, 'zozza') !== false)
-    $split = 'zozza';
-  $isGif = '';
-  $arr = explode($split, $text);
-  $isGif = $arr[1];
-  trim($isGif);
-  $isGif = strtolower($isGif);
-  if(substr( $isGif, 0, 4 ) === " gif")
+  if(strpos($text, 'gif') !== false)
     $response = imagesearch($searchKey, true);
   else
     $response = imagesearch($searchKey, false);
@@ -297,26 +275,8 @@ else if(strpos($text, 'tette') !== false ||
   $max=50;
   $randomNumber = rand($min, $max);
   
-  if(strpos($text, 'tette') !== false)
-    $split = 'tette';
-  else if(strpos($text, 'poppe') !== false)
-    $split = 'poppe';
-  else if(strpos($text, 'zinne') !== false)
-    $split = 'zinne';
-  else if(strpos($text, 'tettona') !== false)
-    $split = 'tettona';
-  else if(strpos($text, 'mammelle') !== false)
-    $split = 'mammelle';
-  else if(strpos($text, 'capezzoli') !== false)
-    $split = 'capezzoli';
-  else if(strpos($text, 'capezzolo') !== false)
-    $split = 'capezzolo';
-  $isGif = '';
-  $arr = explode($split, $text);
-  $isGif = $arr[1];
-  trim($isGif);
-  $isGif = strtolower($isGif);
-  if(substr( $isGif, 0, 4 ) === " gif")
+  // devo cercare una gif?
+  if(strpos($text, 'gif') !== false)
     ; //$response = imagesearch($searchKey, true);
   else
     $response = $tetteArray[$randomNumber];
@@ -345,16 +305,8 @@ else if(strpos($text, 'milf') !== false ||
   $randomNumber = rand($min, $max);
   $searchKey = $milfArray[$randomNumber];
 
-  if(strpos($text, 'milf') !== false)
-    $split = 'milf';
-  else if(strpos($text, 'milfona') !== false)
-    $split = 'milfona';
-  $isGif = '';
-  $arr = explode($split, $text);
-  $isGif = $arr[1];
-  trim($isGif);
-  $isGif = strtolower($isGif);
-  if(substr( $isGif, 0, 4 ) === " gif")
+  // devo cercare una gif?
+  if(strpos($text, 'gif') !== false)
     $response = imagesearch($searchKey, true);
   else
     $response = imagesearch($searchKey, false);
@@ -386,13 +338,7 @@ else if(strpos($text, 'pazzo') !== false || strpos($text, 'pazza') !== false)
 // RATAJKOWSKI
 else if(strpos($text, 'ratajkowski') !== false)
 {
-    $split = 'ratajkowski';
-    $isGif = '';
-    $arr = explode($split, $text);
-    $isGif = $arr[1];
-    trim($isGif);
-    $isGif = strtolower($isGif);
-    if(substr( $isGif, 0, 4 ) === " gif")
+    if(strpos($text, 'gif') !== false)
       $response = imagesearch('emily ratajkowski nude', true);
     else
       $response = imagesearch('emily ratajkowski nude', false);
@@ -401,13 +347,7 @@ else if(strpos($text, 'ratajkowski') !== false)
 // NARGI
 else if(strpos($text, 'nargi') !== false)
 {   
-    $split = 'nargi';
-    $isGif = '';
-    $arr = explode($split, $text);
-    $isGif = $arr[1];
-    trim($isGif);
-    $isGif = strtolower($isGif);
-    if(substr( $isGif, 0, 4 ) === " gif")
+    if(strpos($text, 'gif') !== false)
       $response = imagesearch('nargi nude', true);
     else
       $response = imagesearch('nargi nude', false);
@@ -416,13 +356,7 @@ else if(strpos($text, 'nargi') !== false)
 // DECKER
 else if(strpos($text, 'decker') !== false)
 {
-    $split = 'decker';
-    $isGif = '';
-    $arr = explode($split, $text);
-    $isGif = $arr[1];
-    trim($isGif);
-    $isGif = strtolower($isGif);
-    if(substr( $isGif, 0, 4 ) === " gif")
+    if(strpos($text, 'gif') !== false)
       $response = imagesearch('leanna decker nude', true);
     else
       $response = imagesearch('leanna decker nude', false);
@@ -431,13 +365,7 @@ else if(strpos($text, 'decker') !== false)
 // EMMA WATSON
 else if(strpos($text, 'emma watson') !== false)
 {
-    $split = 'emma watson';
-    $isGif = '';
-    $arr = explode($split, $text);
-    $isGif = $arr[1];
-    trim($isGif);
-    $isGif = strtolower($isGif);
-    if(substr( $isGif, 0, 4 ) === " gif")
+    if(strpos($text, 'gif') !== false)
       $response = imagesearch('emma watson hot', true);
     else
       $response = imagesearch('emma watson hot', false);
@@ -446,13 +374,7 @@ else if(strpos($text, 'emma watson') !== false)
 // KATIE PERRY
 else if(strpos($text, 'katie perry') !== false)
 {
-    $split = 'katie perry';
-    $isGif = '';
-    $arr = explode($split, $text);
-    $isGif = $arr[1];
-    trim($isGif);
-    $isGif = strtolower($isGif);
-    if(substr( $isGif, 0, 4 ) === " gif")
+    if(strpos($text, 'gif') !== false)
       $response = imagesearch('katie perry hot', true);
     else
       $response = imagesearch('katie perry hot', false);
@@ -461,34 +383,19 @@ else if(strpos($text, 'katie perry') !== false)
 // NONNO FIORUCCI
 else if(strpos($text, 'nonno fiorucci') !== false)
 {
-  $fiorucci01 = 'dio tubercoloso fracio';
-  $fiorucci02 = 'dio serpente avvelenato';
-  $fiorucci03 = 'madonna sta troia sta zzingara';
-  $fiorucci04 = 'scemo! scemo! scemo!';
-  $fiorucci05 = 'dio serpente bove';
-  $fiorucci06 = 'io te porto a Villa Candida punto, e basta!';
-  $fiorucci07 = 'sta stu stronzo!';
-  $fiorucci08 = 'noooooooddiocane!';
+  $fiorucciArray = array(1 => 'dio tubercoloso fracio');
+  array_push($fiorucciArray, 'dio serpente avvelenato');
+  array_push($fiorucciArray, 'madonna sta troia sta zzingara');
+  array_push($fiorucciArray, 'scemo! scemo! scemo!');
+  array_push($fiorucciArray, 'dio serpente bove');
+  array_push($fiorucciArray, 'io te porto a Villa Candida punto, e basta!');
+  array_push($fiorucciArray, 'sta stu stronzo!');
+  array_push($fiorucciArray, 'noooooooddiocane!');
+  array_push($fiorucciArray, '\'staccio ladro naltra volta!');
   $min=1;
-  $max=8;
+  $max=9;
   $randomNumber = rand($min, $max);
-  
-  if($randomNumber == 1)
-    $response = $fiorucci01;
-  else if($randomNumber == 2)
-    $response = $fiorucci02;
-  else if($randomNumber == 3)
-    $response = $fiorucci03;
-  else if($randomNumber == 4)
-    $response = $fiorucci04;
-  else if($randomNumber == 5)
-    $response = $fiorucci05;
-  else if($randomNumber == 6)
-    $response = $fiorucci06;
-  else if($randomNumber == 7)
-    $response = $fiorucci07;
-  else if($randomNumber == 8)
-    $response = $fiorucci08;
+  $response = $fiorucciArray[$randomNumber];
 }
 
 // ZIZZANIA
@@ -515,34 +422,18 @@ else if(strpos($text, 'zizzania') !== false)
     $randomNumber = rand($min, $max);
     $user2 = $usersCopy[$randomNumber];
     
-    $zizzania01 = $user1 . ' ha detto al Bek che ' . $user2 . ' ha fatto un gruppo segreto di Whatsapp senza di lui';
-    $zizzania02 = $user1 . ' mi ha detto che a ' . $user2 . ' gli puzza il pisello da distante 2 metri';
-    $zizzania03 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
-    $zizzania04 = $user1 . ' mi ha detto che a ' . $user2 . ' piace rasare le palle ai negri';
-    $zizzania05 = $user1 . ' dice in giro che ' . $user2 . ' ne prende in culo due alla volta';
-    $zizzania06 = $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni';
-    $zizzania07 = $user1 . ' tira le loffe e da la colpa a ' . $user2;
-    $zizzania08 = $user1 . ' mi dice sempre che a ' . $user2 . ' piace il cazzo';
+    $zizzaniaArray = array(1 => $user1 . ' ha detto al Bek che ' . $user2 . ' ha fatto un gruppo segreto di Whatsapp senza di lui');
+    array_push($zizzaniaArray, $user1 . ' mi ha detto che a ' . $user2 . ' gli puzza il pisello da distante 2 metri');
+    array_push($zizzaniaArray, $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni');
+    array_push($zizzaniaArray, $user1 . ' mi ha detto che a ' . $user2 . ' piace rasare le palle ai negri');
+    array_push($zizzaniaArray, $user1 . ' dice in giro che ' . $user2 . ' ne prende in culo due alla volta');
+    array_push($zizzaniaArray, $user1 . ' va in giro a dire che ' . $user2 . ' va a transoni');
+    array_push($zizzaniaArray, $user1 . ' tira le loffe e da la colpa a ' . $user2);
+    array_push($zizzaniaArray, $user1 . ' mi dice sempre che a ' . $user2 . ' piace il cazzo');
     $min=1;
     $max=8;
     $randomNumber = rand($min, $max);
-    
-    if($randomNumber == 1)
-      $response = $zizzania01;
-    else if($randomNumber == 2)
-      $response = $zizzania02;
-    else if($randomNumber == 3)
-      $response = $zizzania03;
-    else if($randomNumber == 4)
-      $response = $zizzania04;
-    else if($randomNumber == 5)
-      $response = $zizzania05;
-    else if($randomNumber == 6)
-      $response = $zizzania06;
-    else if($randomNumber == 7)
-      $response = $zizzania07;
-    else if($randomNumber == 8)
-      $response = $zizzania08;
+    $response = $zizzaniaArray[$randomNumber];
   }
 }
 
@@ -570,68 +461,38 @@ else if(strpos($text, 'segreto') !== false)
     $randomNumber = rand($min, $max);
     $user2 = $usersCopy[$randomNumber];
     
-    $segreto01 = $user1 . ' vuole portare ' . $user2 . ' alle terme per scopare in acqua';
-    $segreto02 = 'a ' . $user1 . ' piacerebbe leccare i piedi di ' . $user2;
-    $segreto03 = $user1 . ' ha una malsana ossessione per i capezzoli di ' . $user2;
-    $segreto04 = $user1 . ' ha rubato un paio di mutande usate di ' . $user2 . ' per annusarsele';
-    $segreto05 = $user1 . ' vorrebbe andare al pride village con ' . $user2;
-    $segreto06 = 'a ' . $user1 . ' piace l\'odore delle scoregge di ' . $user2;
-    $segreto07 = $user1 . ' vorrebbe essere frustato da ' . $user2;
-    $segreto08 = 'a ' . $user1 . ' piacerebbe essere posseduto da ' . $user2;
+    $segretoArray = array(1 => $user1 . ' vuole portare ' . $user2 . ' alle terme per scopare in acqua');
+    array_push($segretoArray, 'a ' . $user1 . ' piacerebbe leccare i piedi di ' . $user2);
+    array_push($segretoArray, $user1 . ' ha una malsana ossessione per i capezzoli di ' . $user2);
+    array_push($segretoArray, $user1 . ' ha rubato un paio di mutande usate di ' . $user2 . ' per annusarsele');
+    array_push($segretoArray, $user1 . ' vorrebbe andare al pride village con ' . $user2);
+    array_push($segretoArray, 'a ' . $user1 . ' piace l\'odore delle scoregge di ' . $user2);
+    array_push($segretoArray, $user1 . ' vorrebbe essere frustato da ' . $user2);
+    array_push($segretoArray, 'a ' . $user1 . ' piacerebbe essere posseduto da ' . $user2);
     $min=1;
     $max=8;
     $randomNumber = rand($min, $max);
     
-    if($randomNumber == 1)
-      $response = $segreto01;
-    else if($randomNumber == 2)
-      $response = $segreto02;
-    else if($randomNumber == 3)
-      $response = $segreto03;
-    else if($randomNumber == 4)
-      $response = $segreto04;
-    else if($randomNumber == 5)
-      $response = $segreto05;
-    else if($randomNumber == 6)
-      $response = $segreto06;
-    else if($randomNumber == 7)
-      $response = $segreto07;
-    else if($randomNumber == 8)
-      $response = $segreto08;
+    $response = $segretoArray[$randomNumber];
   }
 }
 
 // BEK
 else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
 {
-  $beck01 = 'prlrlrendo lo stegagno!!';
-  $beck02 = 'sbobdadgli dentbdooo..';
-  $beck03 = 'io ci sarlrloooooo';
-  $beck04 = '..e la lasci piena iihiihiihh';
-  $beck05 = 'meto in leto la tigrbdee';
-  $beck06 = 'e quell\'altrlra trlrloia che da in girlro la carlblta igienicaaa!';
-  $beck07 = 'cosa fai mangi la pancetta con le mani come i marbrlrocchini!?!';
-  $beck08 = 'tanti augubrlrlri anche alle donne brlrutte!';
+  $beckArray = array(1 => 'prlrlrendo lo stegagno!!');
+  array_push($beckArray, 'sbobdadgli dentbdooo..');
+  array_push($beckArray, 'io ci sarlrloooooo');
+  array_push($beckArray, '..e la lasci piena iihiihiihh');
+  array_push($beckArray, 'meto in leto la tigrbdee');
+  array_push($beckArray, 'e quell\'altrlra trlrloia che da in girlro la carlblta igienicaaa!');
+  array_push($beckArray, 'cosa fai mangi la pancetta con le mani come i marbrlrocchini!?!');
+  array_push($beckArray, 'tanti augubrlrlri anche alle donne brlrutte!');
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
   
-  if($randomNumber == 1)
-    $response = $beck01;
-  else if($randomNumber == 2)
-    $response = $beck02;
-  else if($randomNumber == 3)
-    $response = $beck03;
-  else if($randomNumber == 4)
-    $response = $beck04;
-  else if($randomNumber == 5)
-    $response = $beck05;
-  else if($randomNumber == 6)
-    $response = $beck06;
-  else if($randomNumber == 7)
-    $response = $beck07;
-  else if($randomNumber == 8)
-    $response = $beck08;
+  $response = $beckArray[$randomNumber];
 }
 
 // BESTEMMIA
@@ -639,58 +500,27 @@ else if(strpos($text, 'bestemmia') !== false ||
            strpos($text, 'bestemmione') !== false || 
            strpos($text, 'blasfemia') !== false)
 {
-  $bestemmia01 = 'dio scappato di casa';
-  $bestemmia02 = 'dio cane abbandonato in autostrada';
-  $bestemmia03 = 'madonna scalza in un paese di puntine';
-  $bestemmia04 = 'dio camion di ghiaia e per ogni sasso un porco';
-  $bestemmia05 = 'madonna porcodiona';
-  $bestemmia06 = 'dio sushi nella valle dei giapponesi a dieta';
-  $bestemmia07 = 'gesù pecora nella valle dei sardi arrapati';
-  $bestemmia08 = 'gesù spazzino nelle valli partenopee';
-  $bestemmia09 = 'gesù paglia nella valle degli incendi spontanei';
-  $bestemmia10 = 'dio cucitore di scarpe della Nike sottopagato';
-  $bestemmia11 = 'gesù bagno nella valle dell\'influenza intestinale';
-  $bestemmia12 = 'gesù donna nella valle dei benzinai self-service';
-  $bestemmia13 = 'madonna extravergine d\'oliva';
-  $bestemmia14 = 'dio mondial casa';
-  $bestemmia15 = 'cristo imbianchino';
-  $bestemmia16 = 'CristoMcBacon';
+  $bestemmiaArray = array(1 => 'dio scappato di casa');
+  array_push($bestemmiaArray, 'dio cane abbandonato in autostrada');
+  array_push($bestemmiaArray, 'madonna scalza in un paese di puntine');
+  array_push($bestemmiaArray, 'dio camion di ghiaia e per ogni sasso un porco');
+  array_push($bestemmiaArray, 'madonna porcodiona');
+  array_push($bestemmiaArray, 'dio sushi nella valle dei giapponesi a dieta');
+  array_push($bestemmiaArray, 'gesù pecora nella valle dei sardi arrapati');
+  array_push($bestemmiaArray, 'gesù spazzino nelle valli partenopee');
+  array_push($bestemmiaArray, 'gesù paglia nella valle degli incendi spontanei');
+  array_push($bestemmiaArray, 'dio cucitore di scarpe della Nike sottopagato');
+  array_push($bestemmiaArray, 'gesù bagno nella valle dell\'influenza intestinale');
+  array_push($bestemmiaArray, 'gesù donna nella valle dei benzinai self-service');
+  array_push($bestemmiaArray, 'madonna extravergine d\'oliva');
+  array_push($bestemmiaArray, 'dio mondial casa');
+  array_push($bestemmiaArray, 'cristo imbianchino');
+  array_push($bestemmiaArray, 'CristoMcBacon');
   $min=1;
   $max=16;
   $randomNumber = rand($min, $max);
   
-  if($randomNumber == 1)
-    $response = $bestemmia01;
-  else if($randomNumber == 2)
-    $response = $bestemmia02;
-  else if($randomNumber == 3)
-    $response = $bestemmia03;
-  else if($randomNumber == 4)
-    $response = $bestemmia04;
-  else if($randomNumber == 5)
-    $response = $bestemmia05;
-  else if($randomNumber == 6)
-    $response = $bestemmia06;
-  else if($randomNumber == 7)
-    $response = $bestemmia07;
-  else if($randomNumber == 8)
-    $response = $bestemmia08;
-  else if($randomNumber == 9)
-    $response = $bestemmia09;
-  else if($randomNumber == 10)
-    $response = $bestemmia10;
-  else if($randomNumber == 11)
-    $response = $bestemmia11;
-  else if($randomNumber ==12)
-    $response = $bestemmia12;
-  else if($randomNumber == 13)
-    $response = $bestemmia13;
-  else if($randomNumber == 14)
-    $response = $bestemmia14;
-  else if($randomNumber == 15)
-    $response = $bestemmia15;
-  else if($randomNumber == 16)
-    $response = $bestemmia16;
+  $response = $bestemmiaArray[$randomNumber];
 }
 
 // NONNO
@@ -698,58 +528,27 @@ else if(strpos($text, 'nonno') !== false ||
           strpos($text, 'proverbio') !== false || 
           strpos($text, 'poesia') !== false)
 {
-  $proverbio01 = 'Se la lengua nn sa de vacca ..la bocca non se stracca';
-  $proverbio02 = 'Fidati della volpe fidati del tasso, ma mai della donna col culo basso';
-  $proverbio03 = 'Ne per scherzo ne per burla dentro al culo non ci voglio nulla';
-  $proverbio04 = 'A cazzo dritto è difficile mantenere la calma';
-  $proverbio05 = 'Geloso de culo frocio sicuro';
-  $proverbio06 = 'Le figlie di Maria son le prime a darla via';
-  $proverbio07 = 'Quando s\'ha ben magnà e ben bevù se zerca el buso indò nar su';
-  $proverbio08 = 'Ala de capon, culo de castron e tete de massara xe na roba rara';
-  $proverbio09 = 'Ale done, ai sassi e ai bissi, colpi ciari e fissi';
-  $proverbio10 = 'Co l\'età, l\'omo fa panza e la femena fa stomego';
-  $proverbio11 = 'Co\'l cavéjo tra al bianchin, assa la dona e tiente el vin';
-  $proverbio12 = 'In istà la vache va in montagna a fare le siore, e le siore va in montagna a fare le vache';
-  $proverbio13 = 'La mojere xe come na scoreza: o te a moli o te te sofeghi';
-  $proverbio14 = 'Libri, done e cavai no se inpresta mai';
-  $proverbio15 = 'On palo in piè, na stropa domà e na fémena colgà i porta quanto peso che te voi';
-  $proverbio16 = 'Ovo de on\'ora, pan de on dì, vin de on ano, dona de vinti e amigo de trenta';
+  $proverbioArray = array(1 => 'Se la lengua nn sa de vacca ..la bocca non se stracca');
+  array_push($proverbioArray, 'Fidati della volpe fidati del tasso, ma mai della donna col culo basso');
+  array_push($proverbioArray, 'Ne per scherzo ne per burla dentro al culo non ci voglio nulla');
+  array_push($proverbioArray, 'A cazzo dritto è difficile mantenere la calma');
+  array_push($proverbioArray, 'Geloso de culo frocio sicuro');
+  array_push($proverbioArray, 'Le figlie di Maria son le prime a darla via');
+  array_push($proverbioArray, 'Quando s\'ha ben magnà e ben bevù se zerca el buso indò nar su');
+  array_push($proverbioArray, 'Ala de capon, culo de castron e tete de massara xe na roba rara');
+  array_push($proverbioArray, 'Ale done, ai sassi e ai bissi, colpi ciari e fissi');
+  array_push($proverbioArray, 'Co l\'età, l\'omo fa panza e la femena fa stomego');
+  array_push($proverbioArray, 'Co\'l cavéjo tra al bianchin, assa la dona e tiente el vin');
+  array_push($proverbioArray, 'In istà la vache va in montagna a fare le siore, e le siore va in montagna a fare le vache');
+  array_push($proverbioArray, 'La mojere xe come na scoreza: o te a moli o te te sofeghi');
+  array_push($proverbioArray, 'Libri, done e cavai no se inpresta mai');
+  array_push($proverbioArray, 'On palo in piè, na stropa domà e na fémena colgà i porta quanto peso che te voi');
+  array_push($proverbioArray, 'Ovo de on\'ora, pan de on dì, vin de on ano, dona de vinti e amigo de trenta');
   $min=1;
   $max=16;
   $randomNumber = rand($min, $max);
   
-  if($randomNumber == 1)
-    $response = $proverbio01;
-  else if($randomNumber == 2)
-    $response = $proverbio02;
-  else if($randomNumber == 3)
-    $response = $proverbio03;
-  else if($randomNumber == 4)
-    $response = $proverbio04;
-  else if($randomNumber == 5)
-    $response = $proverbio05;
-  else if($randomNumber == 6)
-    $response = $proverbio06;
-  else if($randomNumber == 7)
-    $response = $proverbio07;
-  else if($randomNumber == 8)
-    $response = $proverbio08;
-  else if($randomNumber == 9)
-    $response = $proverbio09;
-  else if($randomNumber == 10)
-    $response = $proverbio10;
-  else if($randomNumber == 11)
-    $response = $proverbio11;
-  else if($randomNumber ==12)
-    $response = $proverbio12;
-  else if($randomNumber == 13)
-    $response = $proverbio13;
-  else if($randomNumber == 14)
-    $response = $proverbio14;
-  else if($randomNumber == 15)
-    $response = $proverbio15;
-  else if($randomNumber == 16)
-    $response = $proverbio16;
+  $response = $proverbioArray[$randomNumber];
 }
 
 // SALUTA
@@ -820,52 +619,26 @@ else if(strpos($text, 'insulta') !== false ||
     $arr = explode('offendi', $text);
     $offeso = $arr[1];
   }
-  $offesa01 = ' chissá che ti cadano le braccia e inizi a pruderti il culo nello stesso istante';
-  $offesa02 = ' non capisci un cazzo neanche se ne ingoi un mazzo';
-  $offesa03 = ' sei come la minchia sempre tra le palle';
-  $offesa04 = ' perché mi fai porcodiare?';
-  $offesa05 = ' sei un diomas\'cio';
-  $offesa06 = ' sei così brutto che quando sei nato tua mamma ha inviato i biglietti di scuse a tutti';
-  $offesa07 = ' si fa prima a finire un cubo di rubik che a trovarti il cazzo tanto é piccolo';
-  $offesa08 = ' darti dello stupido è oltraggiare gli stupidi, perciò per offenderti è urgente cercare una nuova parola';
-  $offesa09 = ' che cos\'è una disgrazia? Conoscerti e incontrarti hahaha ..diocan';
-  $offesa10 = ' sei come una nuvola, se ti levi dalle palle diventa una bella giornata';
-  $offesa11 = ' sei così brutto che se i testimoni di geova vengono a casa tua, si chiudono la porta in faccia da soli';
-  $offesa12 = ' sei così brutto che se qualcuno ti guarda il culo ti chiede perchè stai facendo la verticale';
-  $offesa13 = ' sei così brutto che quando preghi Gesù si mette su invisibile';
-  $offesa14 = ' sei falso come i soldi del monopoli';
+  
+  $offesaArray = array(1 => ' chissá che ti cadano le braccia e inizi a pruderti il culo nello stesso istante');
+  array_push($offesaArray, ' non capisci un cazzo neanche se ne ingoi un mazzo');
+  array_push($offesaArray, ' sei come la minchia sempre tra le palle');
+  array_push($offesaArray, ' perché mi fai porcodiare?');
+  array_push($offesaArray, ' sei un diomas\'cio');
+  array_push($offesaArray, ' sei così brutto che quando sei nato tua mamma ha inviato i biglietti di scuse a tutti');
+  array_push($offesaArray, ' si fa prima a finire un cubo di rubik che a trovarti il cazzo tanto é piccolo');
+  array_push($offesaArray, ' darti dello stupido è oltraggiare gli stupidi, perciò per offenderti è urgente cercare una nuova parola');
+  array_push($offesaArray, ' che cos\'è una disgrazia? Conoscerti e incontrarti hahaha ..diocan');
+  array_push($offesaArray, ' sei come una nuvola, se ti levi dalle palle diventa una bella giornata');
+  array_push($offesaArray, ' sei così brutto che se i testimoni di geova vengono a casa tua, si chiudono la porta in faccia da soli');
+  array_push($offesaArray, ' sei così brutto che se qualcuno ti guarda il culo ti chiede perchè stai facendo la verticale');
+  array_push($offesaArray, ' sei così brutto che quando preghi Gesù si mette su invisibile');
+  array_push($offesaArray, ' sei falso come i soldi del monopoli');
   
   $min=1;
   $max=14;
   $randomNumber = rand($min, $max);
-  if($randomNumber == 1)
-    $response = $offeso . $offesa01;
-  else if($randomNumber == 2)
-    $response = $offeso . $offesa02;
-  else if($randomNumber == 3)
-    $response = $offeso . $offesa03;
-  else if($randomNumber == 4)
-    $response = $offeso . $offesa04;
-  else if($randomNumber == 5)
-    $response = $offeso . $offesa05;
-  else if($randomNumber == 6)
-    $response = $offeso . $offesa06;
-  else if($randomNumber == 7)
-    $response = $offeso . $offesa07;
-  else if($randomNumber == 8)
-    $response = $offeso . $offesa08;
-  else if($randomNumber == 9)
-    $response = $offeso . $offesa09;
-  else if($randomNumber == 10)
-    $response = $offeso . $offesa10;
-  else if($randomNumber == 11)
-    $response = $offeso . $offesa11;
-  else if($randomNumber ==12)
-    $response = $offeso . $offesa12;
-  else if($randomNumber == 13)
-    $response = $offeso . $offesa13;
-  else if($randomNumber == 14)
-    $response = $offeso . $offesa14;
+  $response = $offeso . $offesaArray[$randomNumber];
 }
 
 
