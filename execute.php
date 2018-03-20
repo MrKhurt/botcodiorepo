@@ -100,6 +100,12 @@ else if(substr($text, 0, 6) === 'debug ')
   }
 }
 
+// DEFINIZIONE
+else if(substr($text, 0, 12) === 'definizione ')
+{
+  $response = 'https://www.google.it/search?q=dizionario&oq=dizionario&aqs=chrome.0.0l6.1772j1j7&sourceid=chrome&ie=UTF-8#dobs=' . str_replace('definizione ', '', $text);
+}
+
 // CERCA FOTO
 else if(substr($text, 0, 11) === 'cerca foto ')
 {
