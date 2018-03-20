@@ -617,15 +617,17 @@ else if(strpos($text, 'meteo') !== false ||
   $localita = str_replace('meteo', '', $localita);
   $localita = str_replace('che tempo fa a', '', $localita);
   $localita = trim($localita);
-  if($localita === '')
-  {
-    $response = 'https://www.ilmeteo.it/meteo/Verona';
-  }
-  else
-  {
-    $localita = str_replace(' ', '%20', $text);
-    $response = 'https://www.ilmeteo.it/meteo/' . $localita;
-  }
+  $response = $localita;
+  
+  //if($localita === '')
+  //{
+    //$response = 'https://www.ilmeteo.it/meteo/Verona';
+  //}
+  //else
+  //{
+    //$localita = str_replace(' ', '%20', $text);
+    //$response = 'https://www.ilmeteo.it/meteo/' . $localita;
+  //}
 }
 
 // BUONANOTTE
