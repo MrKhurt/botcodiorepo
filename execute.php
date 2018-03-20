@@ -109,7 +109,7 @@ else if(substr($text, 0, 12) === 'definizione ')
 }
 
 // PREZZO
-else if(substr($text, 0, 12) === 'prezzo ')
+else if(substr($text, 0, 7) === 'prezzo ')
 {
   $vocabolo = str_replace('prezzo ', '', $text);
   $vocabolo = str_replace(' ', '+', $vocabolo);
