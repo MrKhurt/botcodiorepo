@@ -440,8 +440,8 @@ else if(strpos($text, 'buongiorno') !== false)
   array_push($figaArray, 'http://redbust.com/wp-content/uploads/sadie_jones6/sadie_jones_09.jpg');
   $min=1;
   $max=50;
-  $randomNumber = rand($min, $max);
-  $searchKey = $figaArray[$randomNumber];    
+  srand(mktime(0, 0, 0));
+  $randomNumber = rand($min, $max); 
   $response = $figaArray[$randomNumber];
   
   $buongiorno01 = 'buongiorno cani!';
