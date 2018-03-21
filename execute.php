@@ -151,23 +151,117 @@ else if(substr($text, 0, 11) === 'cerca foto ')
 // CULO
 else if(strpos($text, 'culo') !== false)
 {
-  $culoArray = array(1 => 'ass model girl');
-  array_push($culoArray, 'lingerie model ass');
-  array_push($culoArray, 'bonjourmadame ass');
-  array_push($culoArray, 'non nude model sexy ass');
-  array_push($culoArray, 'sexy bottom girl');
-  array_push($culoArray, 'bikini model ass');
-  array_push($culoArray, 'hottest ass girl');
-  array_push($culoArray, 'underwear model sexy ass girl');
+  $culoArray = array(1 => 'https://i.pinimg.com/736x/df/91/34/df9134279f5a17c71e72df746d9e10ed.jpg');
+  array_push($culoArray, 'http://media11.break.com/dnet/media/208/760/2760208/remy-lacroix-in-booty-shorts-thumb.jpg');
+  array_push($culoArray, 'http://www.imagesyoulike.com/images/j/32x24/j1113.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/5a/f7/23/5af723ad351653dc39226587a9dc915e.jpg');
+  array_push($culoArray, 'https://www.walldevil.com/wallpapers/u11/hot--sexy--ass--woman--girl.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/80/78/51/80785173dd055bd5261cd14f0b6236c5.jpg');
+  array_push($culoArray, 'http://www.imagesyoulike.com/images/j/32x24/j1462.jpg');
+  array_push($culoArray, 'https://static.bikehub.co.za/uploads/monthly_09_2015/post-36275-0-33502700-1441365641.jpg');
+  array_push($culoArray, 'https://pbs.twimg.com/media/BkWEZHUCAAAVINW.jpg:large');
+  array_push($culoArray, 'http://picture-cdn.wheretoget.it/oe1ckd-l-610x610-shorts-claudiatihan-hot-sexy-black-ass.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/84/c0/35/84c035524a2e6657ed7cb062cafd081b.jpg');
+  array_push($culoArray, 'http://therynoshorn.com/wp-content/uploads/2012/08/HumpDay-great-butt-sexy-girl-so-hot-4.jpg');
+  array_push($culoArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYGPNn-8wcu_mvtEsdr2Pqeky-i3opoKlyn0jDhbQNk3S3gRy');
+  array_push($culoArray, 'https://pbs.twimg.com/profile_images/762787767499751424/W_WBnsOx.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/564x/ee/cd/a1/eecda1a277c9db940fb7f4ac4c2edd56--ireland-baldwin-rear-view.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/db/d3/2d/dbd32dc15798d5238b118720c3df5835.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/736x/58/fb/62/58fb6214c4b3bb00764b1cce05e5db63--sporty-girls-sexy-girls.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/0d/00/e8/0d00e882d3aad9c536f70ed53193f5dd.jpg');
+  array_push($culoArray, 'https://s3.envato.com/files/191224816/preview.jpg');
+  array_push($culoArray, 'https://pbs.twimg.com/media/By8olSxIEAEHfK7.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/ba/3b/36/ba3b3642506656f0b3ac99870a70a61d.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/d1/e3/6c/d1e36c2d1693b5cf87b0fa189c143d85.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/60/4a/5a/604a5a0499068947c9565a62b56c9796.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/d6/24/8f/d6248f81a9ccfd1186d192e1b628f652.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/e1/79/da/e179dae7daa0388cd4f9cfbac32113e1.jpg');
+  array_push($culoArray, 'https://images-cdn.9gag.com/photo/aERLWxG_700b.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/56/a6/f3/56a6f319de3c05691029efdfa048ab58.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/54/f1/3f/54f13fa1b658b702ae00e9d8127c2045.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/09/ea/5e/09ea5ed6e9e043a320b545182c91dbc3.jpg');
+  array_push($culoArray, 'https://tepegaste.com/wp-content/uploads/2016/09/13725739_1736801579915953_241351714_n.jpg');
+  array_push($culoArray, 'https://i.ebayimg.com/images/g/ZWsAAOSw1DtXKfsc/s-l300.jpg');
+  array_push($culoArray, 'https://www.dhresource.com/0x0s/f2-albu-g1-M00-92-60-rBVaGFT3GDuAYCd_AAEdpPGY4Ng225.jpg/24x35inch-the-temptation-ass-poster-hd-home.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/2a/75/df/2a75df26b15796884df4b942a8a2eccb.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/736x/eb/4c/77/eb4c77e58f281ddd7b96768002358e8c--sexy-women-sexy-girls.jpg');
+  array_push($culoArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_V4EtV8-e6FwMoACJndzrqxMNYgDwqSd-uCqVc7pBAtr_dIa');
+  array_push($culoArray, 'https://i.pinimg.com/originals/41/bc/a1/41bca1807e91c6c4a24860d70347b229.jpg');
+  array_push($culoArray, 'https://c.wallhere.com/photos/69/dd/women_model_ass_blonde_women_outdoors_black_panties_thong_black_tops-303094.jpg!d');
+  array_push($culoArray, 'https://i.pinimg.com/originals/1f/6b/d9/1f6bd9f20326bbd6843e48140cc8a110.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/0e/cf/3d/0ecf3d1eac92024e8a2679022d21d124.jpg');
+  array_push($culoArray, 'https://c.wallhere.com/photos/da/62/women_model_Tianna_Gregory_back_bikini_ass_swimming_pool_women_outdoors-319701.jpg!d');
+  array_push($culoArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkz2JcFAYfxv0ZwfrPvv_5u19BAY2slHG5SUjahgxvSP0owe0qBQ');
+  array_push($culoArray, 'https://www.zupimages.net/up/16/01/yi28.jpg');
+  array_push($culoArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VQeiSnjqRYuvyeAMYMKnza_XbaUuHYTSFLDdF-sKejSqSA_BKg');
+  array_push($culoArray, 'http://i.imgur.com/ZYxworT.png');
+  array_push($culoArray, 'https://i.pinimg.com/originals/bc/0d/86/bc0d86fedf0c3d234b24addfa7ed904d.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/e8/bb/5d/e8bb5d4da7b5aa669c07902681c954f2.jpg');
+  array_push($culoArray, 'http://skywaynews.net/wp-content/uploads/2016/01/sexy-babes-yoga-pants-19-2.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/c9/4b/f5/c94bf52eaca8a8c65689ccbead8f54be.jpg');
+  array_push($culoArray, 'https://i.pinimg.com/originals/fa/cc/bd/faccbdae19a197980cf5cf7fb30a8240.jpg');
+  array_push($culoArray, 'https://thechive.files.wordpress.com/2017/05/8d21e481a039c81e6fda68394d79cb46.jpg?quality=85&strip=info&w=600');
+  
+  $culoGIFArray = array(1 => 'https://media.giphy.com/media/11PTws6DP5t2Kc/giphy.gif');
+  array_push($culoGIFArray, 'https://media.giphy.com/media/On0SVGCQGnj3i/giphy.gif');
+  array_push($culoGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMMmuydwnBEDY-qyNgFLNMLVUgky83AhjkBehwjQe5fmz6-GrKPA');
+  array_push($culoGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvcdK5IIC0lNEjuDi99No1m2_QC507x-RI7zCD-yO1ddTyn-V_-Q');
+  array_push($culoGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRYCkZImVla8AlIy_i9c_9hIXU0GGVlK8HLGN3y5BKbGp16kPs3A');
+  array_push($culoGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GuuUkZQdQhbRE2p_Sct8CAo-reJZomNZYC8DjrA0bWyVjKHL');
+  array_push($culoGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphrU23-8FSG0G8FPn9JhAgqiC8Z7_bTh-YvLjmWqvOdAgnRcuFg');
+  array_push($culoGIFArray, 'http://www.lowbird.com/data/images/2009/12/selena-schoolgirl.gif');
+  array_push($culoGIFArray, 'https://images.contentful.com/ogz4nxetbde6/2AhpyOGZKU2Oi882ekAiMo/0f0a7485b342568af5ac33abccbae01d/16_girls_boobs_butts.gif?w=600&fit=scale');
+  array_push($culoGIFArray, 'https://media.giphy.com/media/qiGRxIgHhOzCw/giphy.gif');
+  array_push($culoGIFArray, 'http://juicygif.com/albums/userpics/2015y/10/17/4/1/3526-white-stockings.gif');
+  array_push($culoGIFArray, 'http://68.media.tumblr.com/321e75880b948b9d9ae3553c9378fcbd/tumblr_ntq4mtrdy61u5aupto1_500.gif');
+  array_push($culoGIFArray, 'http://hotcelebrities-vk.com/images/MODELS/GIFs/Asses/Asses-2/ass-shake.gif');
+  array_push($culoGIFArray, 'https://elrecavorfabron.files.wordpress.com/2011/07/calzon-chino.gif');
+  array_push($culoGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKPErHs5ESnOqA1kOCpC2BD3ZDVWVPqLnHihyN5uqpxGHUFI_qg');
+  array_push($culoGIFArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcGX4oAQ-1C5tXfSgdEvvbtfhsxGY2X1tsB0bAyYLE2Ken7lEzSw');
+  array_push($culoGIFArray, 'https://steamusercontent-a.akamaihd.net/ugc/859475009946183029/13A897980FC7EC7B1B200F934DB04A0035FED4C2/');
+  array_push($culoGIFArray, 'https://steamusercontent-a.akamaihd.net/ugc/45379514988025659/DCC3578AE173FF73140AB5E76601649D10A05B17/');
+  array_push($culoGIFArray, 'https://m.popkey.co/1bb27d/A6Gby_s-200x150.gif');
+  array_push($culoGIFArray, 'https://i.pinimg.com/originals/1f/53/be/1f53be27affcd8b673af8535d6b297ce.gif');
+  array_push($culoGIFArray, 'https://i.pinimg.com/originals/10/96/bd/1096bd1c681a8210387dbe7e5cced1bc.jpg');
+  array_push($culoGIFArray, 'https://i1.kwejk.pl/k/obrazki/2011/11/aa9f4779a7495dc63eb9d6af381f4abd.gif');
+  array_push($culoGIFArray, 'https://media.giphy.com/media/nZvxbksUffPUI/source.gif');
+  array_push($culoGIFArray, 'https://media.giphy.com/media/Qgt2KUHFkhRAs/giphy.gif');
+  array_push($culoGIFArray, 'https://i.pinimg.com/originals/e0/7e/cf/e07ecf7f6168cead1f0a1499041eaed2.gif');
+  array_push($culoGIFArray, 'http://iv1.lisimg.com/image/14773249/400full-galina-dubenenko.jpg');
+  array_push($culoGIFArray, 'https://78.media.tumblr.com/e127b1baca88e21be052e74264bfc288/tumblr_nll2fyhg0Y1u1o5cfo1_500.gif');
+  array_push($culoGIFArray, 'http://www.letstalkabout.co.uk/wp-content/uploads/2014/03/sexy-ass-shake.gif');
+  array_push($culoGIFArray, 'https://i.pinimg.com/originals/42/aa/de/42aade5d0a0269274712062247505720.gif');
+  array_push($culoGIFArray, 'https://steamusercontent-a.akamaihd.net/ugc/261588346130453038/C05AB61CF3D1CFAD7BB889A0A9E1E4AC15011A44/');
+  array_push($culoGIFArray, 'http://www.bravogif.com/wp-content/uploads/2014/09/20140928-sexy-ass-shakes-back-pants.gif');
+  array_push($culoGIFArray, 'https://78.media.tumblr.com/f47e31bb208c6c337ecfad8998355e26/tumblr_no6k0gRs1H1r426i4o2_400.gif');
+  array_push($culoGIFArray, 'http://3.bp.blogspot.com/-sBgX-_QTOKI/UqmZ7Z55cNI/AAAAAAAAqvU/mj_2FWqld_c/s1600/bunda+malha.gif');
+  array_push($culoGIFArray, 'http://images4.hiboox.com/images/4708/b3b167b621e3c0625fed2b0b44c22cdb.gif');
+  array_push($culoGIFArray, 'https://media.giphy.com/media/x4eeiMJGrAgtG/giphy.gif');
+  array_push($culoGIFArray, 'https://cs.pikabu.ru/post_img/2013/12/08/11/1386528781_1474389051.gif');
+  array_push($culoGIFArray, 'https://galeri12.uludagsozluk.com/500/puding-gotlu-kizlar_988212.gif');
+  array_push($culoGIFArray, 'https://media.giphy.com/media/GXYU4sye1ztwk/giphy.gif');
+  array_push($culoGIFArray, 'https://steamusercontent-a.akamaihd.net/ugc/856103543875325447/6254429AF60E58318EE9AC9592933EB34AB794FA/');
+  array_push($culoGIFArray, 'https://i.imgur.com/ti0h0A9.gif');
+  array_push($culoGIFArray, 'http://www.retecool.com/wp-content/uploads/2015/01/dat-ass-gif.gif');
+  array_push($culoGIFArray, 'http://oi58.tinypic.com/2njhidy.jpg');
+  array_push($culoGIFArray, 'http://img1.reactor.cc/pics/post/%D0%B3%D0%B8%D1%84%D0%BA%D0%B8-%D0%AD%D1%80%D0%BE%D1%82%D0%B8%D0%BA%D0%B0-%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-%D1%8D%D1%80%D0%BE%D1%82%D0%B8%D0%BA%D0%B8-%D0%BF%D0%BE%D0%BF%D0%BA%D0%B0-3042373.gif');
+  array_push($culoGIFArray, 'https://choualbox.com/Img/138879369427.gif');
+  array_push($culoGIFArray, 'http://78.media.tumblr.com/tumblr_me7ey83T6P1rvcputo1_1280.gif');
+  array_push($culoGIFArray, 'https://vader.joemonster.org/upload/rba/16484947248a4d5Postrzepione_.gif');
+  array_push($culoGIFArray, 'https://steamusercontent-a.akamaihd.net/ugc/264973755071179763/EDCE18FF7C78F105F4214A9D286274AF07282EAE/');
+  array_push($culoGIFArray, 'https://angrygif.com/wp-content/uploads/2017/02/tumblr_oenhgoA85y1vohst2o1_400.gif');
+  array_push($culoGIFArray, 'https://images.sex.com/images/pinporn/2015/10/15/300/14048102.gif');
+  array_push($culoGIFArray, 'https://j.gifs.com/yN4dGa.gif');
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
   $searchKey = $culoArray[$randomNumber];
   
-  if(strpos($test, 'gif') !== false)
-    $response = imagesearch($searchKey, true);
+  // devo cercare una gif?
+  if(strpos($text, 'gif') !== false)
+    $response = $culoGIFArray[$randomNumber];
   else
-    $response = imagesearch($searchKey, false);
+    $response = $culoArray[$randomNumber];
 }
 
 // FIGA
