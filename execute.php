@@ -835,8 +835,11 @@ else if(strpos($text, 'bestemmia') !== false ||
   array_push($bestemmiaArray, 'dio mondial casa');
   array_push($bestemmiaArray, 'cristo imbianchino');
   array_push($bestemmiaArray, 'CristoMcBacon');
+  array_push($bestemmiaArray, 'dio lampione nella valle dei guasti dell\'enel');
+  array_push($bestemmiaArray, 'dio maiale a Montagnana a fine dicembre');
+  
   $min=1;
-  $max=16;
+  $max=18;
   $randomNumber = rand($min, $max);
   
   $response = $bestemmiaArray[$randomNumber];
