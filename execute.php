@@ -254,6 +254,7 @@ else if(strpos($text, 'culo') !== false)
   array_push($culoGIFArray, 'https://j.gifs.com/yN4dGa.gif');
   $min=1;
   $max=8;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   //shuffle the array
   shuffle($culoArray);
@@ -377,6 +378,7 @@ else if(strpos($text, 'figa') !== false ||
   array_push($figaGIFArray, 'https://lh3.googleusercontent.com/-zj0thQQ3LQE/U800Fz9ZJXI/AAAAAAAAMIQ/QXHDEszqU1A/w530-h299-n/ShelbyChesnes.gif');
   $min=1;
   $max=12;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   //shuffle the array
   shuffle($figaArray);
@@ -446,7 +448,6 @@ else if(strpos($text, 'buongiorno') !== false)
   $max=50;
   srand(mktime(0, 0, 0));
   $randomNumber = rand($min, $max); 
-  shuffle($figaArray);
   $response = $figaArray[$randomNumber];
   
   $buongiorno01 = 'buongiorno cani!';
@@ -585,6 +586,7 @@ else if(strpos($text, 'tette') !== false ||
   $max=50;
   shuffle($tetteArray);
   shuffle($tetteGIFArray);
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   
   // devo cercare una gif?
@@ -614,6 +616,7 @@ else if(strpos($text, 'milf') !== false ||
   array_push($milfArray, 'angelica raven sexy');
   $min=1;
   $max=12;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   shuffle($milfArray);
   $searchKey = $milfArray[$randomNumber];
@@ -721,6 +724,7 @@ else if(strpos($text, 'nonno fiorucci') !== false)
   array_push($fiorucciArray, '\'staccio ladro naltra volta!');
   $min=1;
   $max=9;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   shuffle($fiorucciArray);
   $response = $fiorucciArray[$randomNumber];
@@ -740,6 +744,7 @@ else if(strpos($text, 'zizzania') !== false)
     $countUsers = count($usersCopy);
     $min=1;
     $max=$countUsers;
+    mt_srand(microtome());
     $randomNumber = rand($min, $max);
     shuffle($usersCopy);
     $user1 = $usersCopy[$randomNumber];
@@ -748,6 +753,7 @@ else if(strpos($text, 'zizzania') !== false)
     $countUsers = count($usersCopy);
     $min=1;
     $max=$countUsers;
+    mt_srand(microtome());
     $randomNumber = rand($min, $max);
     shuffle($usersCopy);
     $user2 = $usersCopy[$randomNumber];
@@ -762,6 +768,7 @@ else if(strpos($text, 'zizzania') !== false)
     array_push($zizzaniaArray, $user1 . ' mi dice sempre che a ' . $user2 . ' piace il cazzo');
     $min=1;
     $max=8;
+    mt_srand(microtome());
     $randomNumber = rand($min, $max);
     shuffle($zizzaniaArray);
     $response = $zizzaniaArray[$randomNumber];
@@ -783,6 +790,7 @@ else if(strpos($text, 'segreto') !== false)
     $min=1;
     $max=$countUsers;
     shuffle($usersCopy);
+    mt_srand(microtome());
     $randomNumber = rand($min, $max);
     $user1 = $usersCopy[$randomNumber];
     if (($key = array_search($user1, $usersCopy)) !== false)
@@ -790,6 +798,7 @@ else if(strpos($text, 'segreto') !== false)
     $countUsers = count($usersCopy);
     $min=1;
     $max=$countUsers;
+    mt_srand(microtome());
     $randomNumber = rand($min, $max);
     shuffle($usersCopy);
     $user2 = $usersCopy[$randomNumber];
@@ -804,6 +813,7 @@ else if(strpos($text, 'segreto') !== false)
     array_push($segretoArray, 'a ' . $user1 . ' piacerebbe essere posseduto da ' . $user2);
     $min=1;
     $max=8;
+    mt_srand(microtome());
     $randomNumber = rand($min, $max);
     shuffle($segretoArray);
     
@@ -824,6 +834,7 @@ else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
   array_push($beckArray, 'tanti augubrlrlri anche alle donne brlrutte!');
   $min=1;
   $max=8;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   shuffle($beckArray);
   
@@ -856,6 +867,7 @@ else if(strpos($text, 'bestemmia') !== false ||
   
   $min=1;
   $max=18;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   shuffle($bestemmiaArray);
   
@@ -885,6 +897,7 @@ else if(strpos($text, 'nonno') !== false ||
   array_push($proverbioArray, 'Ovo de on\'ora, pan de on dì, vin de on ano, dona de vinti e amigo de trenta');
   $min=1;
   $max=16;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   shuffle($proverbioArray);
   
@@ -991,6 +1004,7 @@ else if(strpos($text, 'insulta') !== false ||
   
   $min=1;
   $max=14;
+  mt_srand(microtome());
   $randomNumber = rand($min, $max);
   shuffle($offesaArray);
   $response = $offeso . $offesaArray[$randomNumber];
