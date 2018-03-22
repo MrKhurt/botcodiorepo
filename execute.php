@@ -253,7 +253,7 @@ else if(strpos($text, 'culo') !== false)
   array_push($culoGIFArray, 'https://images.sex.com/images/pinporn/2015/10/15/300/14048102.gif');
   array_push($culoGIFArray, 'https://j.gifs.com/yN4dGa.gif');
   $min=1;
-  $max=8;
+  $max=50;
   srand(microtime());
   $randomNumber = rand($min, $max);
   //shuffle the array
@@ -377,7 +377,7 @@ else if(strpos($text, 'figa') !== false ||
   array_push($figaGIFArray, 'http://list.lisimg.com/image/8554738/500full.jpg');
   array_push($figaGIFArray, 'https://lh3.googleusercontent.com/-zj0thQQ3LQE/U800Fz9ZJXI/AAAAAAAAMIQ/QXHDEszqU1A/w530-h299-n/ShelbyChesnes.gif');
   $min=1;
-  $max=12;
+  $max=50;
   srand(microtime());
   $randomNumber = rand($min, $max);
   //shuffle the array
