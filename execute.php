@@ -255,6 +255,8 @@ else if(strpos($text, 'culo') !== false)
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
+  //shuffle the array
+  shuffle($culoArray);
   $searchKey = $culoArray[$randomNumber];
   
   // devo cercare una gif?
@@ -376,7 +378,9 @@ else if(strpos($text, 'figa') !== false ||
   $min=1;
   $max=12;
   $randomNumber = rand($min, $max);
-  $searchKey = $figaArray[$randomNumber];
+  //shuffle the array
+  shuffle($figaArray);
+  shuffle($figaGIFArray);
   
   // devo cercare una gif?
   if(strpos($text, 'gif') !== false)
@@ -442,6 +446,7 @@ else if(strpos($text, 'buongiorno') !== false)
   $max=50;
   srand(mktime(0, 0, 0));
   $randomNumber = rand($min, $max); 
+  shuffle($figaArray);
   $response = $figaArray[$randomNumber];
   
   $buongiorno01 = 'buongiorno cani!';
@@ -578,6 +583,8 @@ else if(strpos($text, 'tette') !== false ||
   array_push($tetteGIFArray, 'http://juicygif.com/albums/userpics/2014y/06/04/13/1/small_5670-gif-with-awesome-babe-having-naturally-big-tits-and-a-perfect-pretty-face.gif');
   $min=1;
   $max=50;
+  shuffle($tetteArray);
+  shuffle($tetteGIFArray);
   $randomNumber = rand($min, $max);
   
   // devo cercare una gif?
@@ -608,6 +615,7 @@ else if(strpos($text, 'milf') !== false ||
   $min=1;
   $max=12;
   $randomNumber = rand($min, $max);
+  shuffle($milfArray);
   $searchKey = $milfArray[$randomNumber];
 
   // devo cercare una gif?
@@ -714,6 +722,7 @@ else if(strpos($text, 'nonno fiorucci') !== false)
   $min=1;
   $max=9;
   $randomNumber = rand($min, $max);
+  shuffle($fiorucciArray);
   $response = $fiorucciArray[$randomNumber];
 }
 
@@ -732,6 +741,7 @@ else if(strpos($text, 'zizzania') !== false)
     $min=1;
     $max=$countUsers;
     $randomNumber = rand($min, $max);
+    shuffle($usersCopy);
     $user1 = $usersCopy[$randomNumber];
     if (($key = array_search($user1, $usersCopy)) !== false)
       unset($usersCopy[$key]);
@@ -739,6 +749,7 @@ else if(strpos($text, 'zizzania') !== false)
     $min=1;
     $max=$countUsers;
     $randomNumber = rand($min, $max);
+    shuffle($usersCopy);
     $user2 = $usersCopy[$randomNumber];
     
     $zizzaniaArray = array(1 => $user1 . ' ha detto al Bek che ' . $user2 . ' ha fatto un gruppo segreto di Whatsapp senza di lui');
@@ -752,6 +763,7 @@ else if(strpos($text, 'zizzania') !== false)
     $min=1;
     $max=8;
     $randomNumber = rand($min, $max);
+    shuffle($zizzaniaArray);
     $response = $zizzaniaArray[$randomNumber];
   }
 }
@@ -770,6 +782,7 @@ else if(strpos($text, 'segreto') !== false)
     $countUsers = count($usersCopy);
     $min=1;
     $max=$countUsers;
+    shuffle($usersCopy);
     $randomNumber = rand($min, $max);
     $user1 = $usersCopy[$randomNumber];
     if (($key = array_search($user1, $usersCopy)) !== false)
@@ -778,6 +791,7 @@ else if(strpos($text, 'segreto') !== false)
     $min=1;
     $max=$countUsers;
     $randomNumber = rand($min, $max);
+    shuffle($usersCopy);
     $user2 = $usersCopy[$randomNumber];
     
     $segretoArray = array(1 => $user1 . ' vuole portare ' . $user2 . ' alle terme per scopare in acqua');
@@ -791,6 +805,7 @@ else if(strpos($text, 'segreto') !== false)
     $min=1;
     $max=8;
     $randomNumber = rand($min, $max);
+    shuffle($segretoArray);
     
     $response = $segretoArray[$randomNumber];
   }
@@ -810,6 +825,7 @@ else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
   $min=1;
   $max=8;
   $randomNumber = rand($min, $max);
+  shuffle($beckArray);
   
   $response = $beckArray[$randomNumber];
 }
@@ -841,6 +857,7 @@ else if(strpos($text, 'bestemmia') !== false ||
   $min=1;
   $max=18;
   $randomNumber = rand($min, $max);
+  shuffle($bestemmiaArray);
   
   $response = $bestemmiaArray[$randomNumber];
 }
@@ -869,6 +886,7 @@ else if(strpos($text, 'nonno') !== false ||
   $min=1;
   $max=16;
   $randomNumber = rand($min, $max);
+  shuffle($proverbioArray);
   
   $response = $proverbioArray[$randomNumber];
 }
@@ -974,6 +992,7 @@ else if(strpos($text, 'insulta') !== false ||
   $min=1;
   $max=14;
   $randomNumber = rand($min, $max);
+  shuffle($offesaArray);
   $response = $offeso . $offesaArray[$randomNumber];
 }
 
