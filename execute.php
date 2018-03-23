@@ -97,7 +97,8 @@ else if(substr($text, 0, 6) === 'debug ')
 // CINA
 else if($text === 'cina')
 {
-  $response = 'Sarà in divano che dorme el mona!';
+  if(date('D') === 'Sat' || date('D') === 'Fri')
+    $response = 'Sarà in divano che dorme el mona!';
 }
 
 // NONDEFINIZIONE
