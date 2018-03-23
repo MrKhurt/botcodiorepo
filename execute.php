@@ -94,6 +94,12 @@ else if(substr($text, 0, 6) === 'debug ')
   $response = Debug($text);
 }
 
+// CINA
+else if($text === 'cina')
+{
+  $response = 'Sarà in divano che dorme el mona!';
+}
+
 // NONDEFINIZIONE
 else if(substr($text, 0, 15) === 'nondefinizione ')
 {
