@@ -21,6 +21,7 @@ include 'funcs/grandpa.php';
 include 'funcs/insult.php';
 include 'funcs/blasf.php';
 include 'funcs/weather.php';
+use \Statickidz\GoogleTranslate;
 
 // recupero il contenuto inviato da Telegram
 $content = file_get_contents("php://input");
@@ -106,11 +107,11 @@ else if($text === 'cina')
 else if(substr($text, 0, 8) === 'traduci ')
 {
   $arr = explode('traduci ', $text);
-  $source = 'null';
+  $source = 'en';
   $target = 'it';
   $texttr = $arr[1];
 
-  $trans = new \Statickidz\GoogleTranslate\GoogleTranslate();
+  $trans = new GoogleTranslate();
   $result = $trans->translate($source, $target, $texttr) + '  ciao';
 }
 
