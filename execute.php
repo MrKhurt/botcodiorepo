@@ -1,5 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
+use \Statickidz\GoogleTranslate;
 include 'funcs/imagesearch.php';
 include 'funcs/debug.php';
 include 'funcs/nondef.php';
