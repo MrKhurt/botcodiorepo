@@ -102,6 +102,18 @@ else if($text === 'cina')
     $response = 'Sarà in divano che dorme el mona!';
 }
 
+// TRADUCI
+else if(substr($text, 0, 8) === 'traduci ')
+{
+  $arr = explode('traduci ', $text);
+  $source = null;
+  $target = 'it';
+  $text = $arr[1];
+
+  $trans = new GoogleTranslate();
+  $result = $trans->translate($source, $target, $text);
+}
+
 // NONDEFINIZIONE
 else if(substr($text, 0, 15) === 'nondefinizione ')
 {
