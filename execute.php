@@ -107,7 +107,7 @@ else if($text === 'cina')
 else if(substr($text, 0, 8) === 'traduci ')
 {
   $arr = explode('traduci ', $text);
-  $source = null;
+  $source = 'null';
   $target = 'it';
   $text = $arr[1];
 
