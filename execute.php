@@ -107,12 +107,12 @@ else if($text === 'cina')
 else if(substr($text, 0, 8) === 'traduci ')
 {
   $arr = explode('traduci ', $text);
-  $source = 'en';
+  $source = 'null';
   $target = 'it';
   $texttr = $arr[1];
-
-  $trans = new GoogleTranslate();
-  $result = $trans->translate($source, $target, $texttr) + '  ciao';
+  $response = $arr[1];
+  //$trans = new GoogleTranslate();
+  //$response = $trans->translate($source, $target, $texttr) + '  ciao';
 }
 
 // NONDEFINIZIONE
