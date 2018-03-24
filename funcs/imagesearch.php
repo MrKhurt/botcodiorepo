@@ -26,7 +26,7 @@ function imagesearch($key, $gif)
       else
         $images = \odannyc\GoogleImageSearch\ImageSearch::search($key, [fileType => 'png,jpg']);
       $min=1;
-      $max=10;
+      $max=15;
       $randomNumber = rand($min, $max);
       return $images["items"][$randomNumber]["link"];
     }
