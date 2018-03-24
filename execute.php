@@ -18,6 +18,7 @@ include 'funcs/zizzan.php';
 include 'funcs/secret.php';
 include 'funcs/bek.php';
 include 'funcs/grandpa.php';
+include 'insult.php';
 include 'funcs/blasf.php';
 include 'funcs/weather.php';
 
