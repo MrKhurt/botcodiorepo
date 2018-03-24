@@ -99,7 +99,7 @@ else if(substr($text, 0, 6) === 'debug ')
 // CINA
 else if($text === 'cina')
 {
-  if(date('D') === 'Sat' || date('D') === 'Fri')
+  if((date('D') === 'Sat' || date('D') === 'Fri') && date('H') > 18)
     $response = 'Sarà in divano che dorme el mona!';
 }
 
