@@ -109,10 +109,10 @@ else if(substr($text, 0, 8) === 'traduci ')
   $arr = explode('traduci ', $text);
   $source = 'null';
   $target = 'it';
-  $text = $arr[1];
+  $texttr = $arr[1];
 
-  $trans = new GoogleTranslate();
-  $result = $trans->translate($source, $target, $text) + '  ciao';
+  $trans = new \Statickidz\GoogleTranslate\GoogleTranslate();
+  $result = $trans->translate($source, $target, $texttr) + '  ciao';
 }
 
 // NONDEFINIZIONE
