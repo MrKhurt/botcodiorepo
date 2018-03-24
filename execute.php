@@ -472,7 +472,8 @@ else if(strpos($text, 'tette') !== false ||
    strpos($text, 'tettona') !== false ||
    strpos($text, 'mammelle') !== false || 
    strpos($text, 'capezzoli') !== false || 
-   strpos($text, 'capezzolo') !== false)
+   strpos($text, 'capezzolo') !== false || 
+   strpos($text, 'zizze') !== false)
 {
   $tetteArray = array(1 => 'https://i.pinimg.com/originals/df/b1/53/dfb153a926acbaee97a6c7aba8247db1.jpg');
   array_push($tetteArray, 'https://i.pinimg.com/originals/df/b1/53/dfb153a926acbaee97a6c7aba8247db1.jpg');
