@@ -1,7 +1,4 @@
 <?php 
-require_once '../vendor/autoload.php';
-include 'qwantclient.php';
-
 function imagesearch($key, $gif)
 {
 	$min=1;
@@ -32,24 +29,6 @@ function imagesearch($key, $gif)
       $max=10;
       $randomNumber = rand($min, $max);
       return $images["items"][$randomNumber]["link"];
-    }
-    else
-    {  
-      // ricerca immagini Qwant
-      // Create the client
-      $client = new \ufo\QwantUfo\Client('en_US');
-      // Get all the images about the provided query
-      if($gif === true)
-        $images = $client->images($key . ' gif');
-      else
-        $images = $client->images($key);
-      $min=1;
-      $max=5;
-      $randomNumber = rand($min, $max);
-      
-      var_dump($images);
-      error_log(ob_get_clean());
-      return $images["items"][$randomNumber]["url"] . '  qwant';
     }
 }
 ?>
