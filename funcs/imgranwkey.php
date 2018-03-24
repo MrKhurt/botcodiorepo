@@ -1,5 +1,5 @@
 <?php
-include 'imagesearch.php';
+//include 'imagesearch.php';
 
 function CercaFoto($text)
 {
