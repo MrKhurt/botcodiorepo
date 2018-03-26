@@ -3,6 +3,7 @@ function Culo($text)
 {
   $response = '';
   $culoArray = array(1 => 'https://i.pinimg.com/736x/df/91/34/df9134279f5a17c71e72df746d9e10ed.jpg');
+  array_push($culoArray, 'http://www.imgrum.org/user/ophelia_doom/655096051/1206137408577368801_655096051');
   array_push($culoArray, 'http://media11.break.com/dnet/media/208/760/2760208/remy-lacroix-in-booty-shorts-thumb.jpg');
   array_push($culoArray, 'http://www.imagesyoulike.com/images/j/32x24/j1113.jpg');
   array_push($culoArray, 'https://i.pinimg.com/originals/5a/f7/23/5af723ad351653dc39226587a9dc915e.jpg');
@@ -103,8 +104,9 @@ function Culo($text)
   array_push($culoGIFArray, 'https://angrygif.com/wp-content/uploads/2017/02/tumblr_oenhgoA85y1vohst2o1_400.gif');
   array_push($culoGIFArray, 'https://images.sex.com/images/pinporn/2015/10/15/300/14048102.gif');
   array_push($culoGIFArray, 'https://j.gifs.com/yN4dGa.gif');
+  array_push($culoGIFArray, 'https://j.gifs.com/yN4dGa.gif');
   $min=1;
-  $max=50;
+  $max=51;
   $randomNumber = rand($min, $max);
   //shuffle the array
   shuffle($culoArray);
