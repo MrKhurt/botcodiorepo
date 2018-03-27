@@ -3,7 +3,7 @@ function Culo($text)
 {
   $response = '';
   $culoArray = array(1 => 'https://i.pinimg.com/736x/df/91/34/df9134279f5a17c71e72df746d9e10ed.jpg');
-  array_push($culoArray, 'http://www.imgrum.org/user/ophelia_doom/655096051/1206137408577368801_655096051');
+  array_push($culoArray, 'https://scontent.cdninstagram.com/vp/a4f6b4d4c4fe58ef399ae57d82a008f1/5B32EC09/t51.2885-15/s640x640/sh0.08/e35/12784122_1044403568952602_1311632933_n.jpg');
   array_push($culoArray, 'http://media11.break.com/dnet/media/208/760/2760208/remy-lacroix-in-booty-shorts-thumb.jpg');
   array_push($culoArray, 'http://www.imagesyoulike.com/images/j/32x24/j1113.jpg');
   array_push($culoArray, 'https://i.pinimg.com/originals/5a/f7/23/5af723ad351653dc39226587a9dc915e.jpg');
