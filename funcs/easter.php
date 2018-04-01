@@ -14,7 +14,6 @@ function Pasqua($text)
   $min=1;
   $max=8;
   shuffle($pasquaArray);
-  shuffle($pasquaGIFArray);
   $randomNumber = rand($min, $max);
   $response = $pasquaArray[$randomNumber] . '  Buona pasqua!' ;
   return $response;
