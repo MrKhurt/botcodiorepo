@@ -21,6 +21,7 @@ include 'funcs/grandpa.php';
 include 'funcs/insult.php';
 include 'funcs/blasf.php';
 include 'funcs/weather.php';
+include 'funcs/easter.php';
 use \Statickidz\GoogleTranslate;
 
 // recupero il contenuto inviato da Telegram
@@ -137,6 +138,12 @@ else if(substr($text, 0, 7) === 'prezzo ')
 else if(substr($text, 0, 11) === 'cerca foto ')
 {
 	$response = CercaFoto($text);
+}
+
+// PASQUA
+else if(strpos($text, 'buona pasqua') !== false)
+{
+	$response = Pasqua($text);
 }
 
 // CULO
