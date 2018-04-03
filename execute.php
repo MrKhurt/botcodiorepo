@@ -104,6 +104,12 @@ else if($text === 'cina')
     $response = 'Sarà in divano che dorme el mona!';
 }
 
+// PASQUETTA
+else if($text === 'pasquetta')
+{
+  $response = 'Sa femo a pasquetta? Tanto piove';
+}
+
 // TRADUCI
 else if(substr($text, 0, 8) === 'traduci ')
 {
