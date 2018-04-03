@@ -61,7 +61,7 @@ if(!is_file($file)){
     //Save our content to the file.
     file_put_contents($file, $contents);
 }
-$file = file_get_contents('users.txt', true);
+$file = file_get_contents('funcs/users.txt', true);
 $users = explode(',', $file);
 if(!in_array($firstname, $users, true))
 {
