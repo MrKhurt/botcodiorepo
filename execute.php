@@ -53,7 +53,17 @@ $text = strtolower($text);
 $response = '';
 
 // USERS
-$file = 'funcs/users.txt';
+$con = "dbname=da0sfabjj8slkn host=ec2-54-195-246-59.eu-west-1.compute.amazonaws.com port=5432 user=gitlnvpllfgmfw password=9ae32b181501db8396e04a062c2403085329eb2e11e29c03eff5681c961a9c2e sslmode=require";
+
+if (!$con) 
+{
+ echo "Database connection failed.";
+}
+else 
+{
+ echo "Database connection success.";
+}
+
 //Use the function is_file to check if the file already exists or not.
 if(!is_file($file)){
     //Some simple example content.
