@@ -53,41 +53,40 @@ $text = strtolower($text);
 $response = '';
 
 // USERS
-$con = "dbname=da0sfabjj8slkn host=ec2-54-195-246-59.eu-west-1.compute.amazonaws.com port=5432 user=gitlnvpllfgmfw password=9ae32b181501db8396e04a062c2403085329eb2e11e29c03eff5681c961a9c2e sslmode=require";
+$oDB = new \LibPostgres\LibPostgresDriver(array(
+    'host' => 'ec2-54-195-246-59.eu-west-1.compute.amazonaws.com',
+    'port' => 5432,
+    'user_name' => 'gitlnvpllfgmfw',
+    'user_password' => '9ae32b181501db8396e04a062c2403085329eb2e11e29c03eff5681c961a9c2e',
+    'db_name' => 'da0sfabjj8slkn',
+));
 
-if (!$con) 
-{
- echo "Database connection failed.";
-}
-else 
-{
- echo "Database connection success.";
-}
+// se non esiste giá creo la tabella utenti nel db
+$oDB->startTransaction();
+$oDB->query("
+    CREATE TABLE IF NOT EXISTS users (
+        id bigserial NOT NULL,
+        name varchar(255) NOT NULL,
+        CONSTRAINT users_pkey PRIMARY KEY (id)
+    );
+");
+$oDB->commit();
+// trovo l'id piú alto nel db che é anche il numero di utenti nel db
+$usersCount = $oDB->selectField("
+	SELECT id
+		FROM users 
+		ORDER BY id DESC 
+		LIMIT 1
+");
+// aggiungo l'utente al db
+$oDB->query("
+	INSERT INTO example_table
+		(id, name)
+	SELECT " . userscount + 1 . ", '" . $firstname . "'
+	ON CONFLICT DO NOTHING/UPDATE;
+");
+$oDB->commit();
 
-//Use the function is_file to check if the file already exists or not.
-if(!is_file($file)){
-    //Some simple example content.
-    $contents = '';
-    //Save our content to the file.
-    file_put_contents($file, $contents);
-}
-$file = file_get_contents('funcs/users.txt', true);
-$users = explode(',', $file);
-if(!in_array($firstname, $users, true))
-{
-  // l'utente corrente non c'é nella lista, lo aggiungo e salvo
-  array_push($users, $firstname);
-  $usersCount = 0;
-  foreach($users as $value)
-  {
-    if($value !== '')
-    {
-      file_put_contents('funcs/users.txt', $value . ',' , FILE_APPEND | LOCK_EX);
-      //fwrite('./funcs/users.txt', $value . ',');
-      $usersCount = $usersCount + 1;
-    }
-  }
-}
 
 // ESCAPE PER BYPASSARE IL BOT: "... "
 if(substr($text, 0, 4) === '... ')
@@ -302,7 +301,34 @@ else if(strpos($text, 'nonno fiorucci') !== false)
 // ZIZZANIA
 else if(strpos($text, 'zizzania') !== false)
 {
-	$response = Zizzania($text);
+	$usersCount = $oDB->selectField("
+		SELECT id
+			FROM users 
+			ORDER BY id DESC 
+			LIMIT 1
+	");
+	if($usersCount < 2)
+		$response = "troppo pochi utenti";
+	else
+	{	
+		$min=1;
+		$max=usersCount;
+		$randomNumber = rand($min, $max);
+		$user1 = $oDB->selectField("
+			SELECT name
+				FROM users
+			WHERE
+				id = " . $randomNumber . ";
+		");
+		$randomNumber = rand($min, $max);
+		$user2 = $oDB->selectField("
+			SELECT name
+				FROM users
+			WHERE
+				id = " . $randomNumber . ";
+		");
+		$response = Zizzania($text, user1, user2);
+	}
 }
 
 // SEGRETO
