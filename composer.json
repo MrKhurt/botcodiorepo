@@ -3,6 +3,6 @@
         "odannyc/google-image-search": "^1.0",
         "filippo-toso/qwant-unofficial-api": "^1.0",
         "statickidz/php-google-translate-free": "^1.0",
-		"denismilovanov/libpostgres": "*"
+		"denismilovanov/libpostgres": "1.2.3"
     }
 }
