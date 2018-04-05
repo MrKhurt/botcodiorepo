@@ -52,40 +52,40 @@ $text = trim($text);
 $text = strtolower($text);
 $response = '';
 
-// USERS
-$oDB = new \LibPostgres\LibPostgresDriver(array(
-    'host' => 'ec2-54-195-246-59.eu-west-1.compute.amazonaws.com',
-    'port' => 5432,
-    'user_name' => 'gitlnvpllfgmfw',
-    'user_password' => '9ae32b181501db8396e04a062c2403085329eb2e11e29c03eff5681c961a9c2e',
-    'db_name' => 'da0sfabjj8slkn',
-));
+// // USERS
+// $oDB = new \LibPostgres\LibPostgresDriver(array(
+    // 'host' => 'ec2-54-195-246-59.eu-west-1.compute.amazonaws.com',
+    // 'port' => 5432,
+    // 'user_name' => 'gitlnvpllfgmfw',
+    // 'user_password' => '9ae32b181501db8396e04a062c2403085329eb2e11e29c03eff5681c961a9c2e',
+    // 'db_name' => 'da0sfabjj8slkn',
+// ));
 
-// se non esiste giá creo la tabella utenti nel db
-$oDB->startTransaction();
-$oDB->query("
-    CREATE TABLE IF NOT EXISTS users (
-        id bigserial NOT NULL,
-        name varchar(255) NOT NULL,
-        CONSTRAINT users_pkey PRIMARY KEY (id)
-    );
-");
-$oDB->commit();
-// trovo l'id piú alto nel db che é anche il numero di utenti nel db
-$usersCount = $oDB->selectField("
-	SELECT id
-		FROM users 
-		ORDER BY id DESC 
-		LIMIT 1
-");
-// aggiungo l'utente al db
-$oDB->query("
-	INSERT INTO example_table
-		(id, name)
-	SELECT " . userscount + 1 . ", '" . $firstname . "'
-	ON CONFLICT DO NOTHING/UPDATE;
-");
-$oDB->commit();
+// // se non esiste giá creo la tabella utenti nel db
+// $oDB->startTransaction();
+// $oDB->query("
+    // CREATE TABLE IF NOT EXISTS users (
+        // id bigserial NOT NULL,
+        // name varchar(255) NOT NULL,
+        // CONSTRAINT users_pkey PRIMARY KEY (id)
+    // );
+// ");
+// $oDB->commit();
+// // trovo l'id piú alto nel db che é anche il numero di utenti nel db
+// $usersCount = $oDB->selectField("
+	// SELECT id
+		// FROM users 
+		// ORDER BY id DESC 
+		// LIMIT 1
+// ");
+// // aggiungo l'utente al db
+// $oDB->query("
+	// INSERT INTO example_table
+		// (id, name)
+	// SELECT " . userscount + 1 . ", '" . $firstname . "'
+	// ON CONFLICT DO NOTHING/UPDATE;
+// ");
+// $oDB->commit();
 
 
 // ESCAPE PER BYPASSARE IL BOT: "... "
@@ -100,11 +100,11 @@ if(strpos($text, 'comandi') !== false)
 	$response = Comandi($text);
 }
 
-// DEBUG
-else if(substr($text, 0, 6) === 'debug ')
-{
-  $response = Debug($text);
-}
+// // DEBUG
+// else if(substr($text, 0, 6) === 'debug ')
+// {
+  // $response = Debug($text);
+// }
 
 // CINA
 else if($text === 'cina')
