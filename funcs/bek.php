@@ -10,8 +10,10 @@ function Bek($text)
   array_push($beckArray, 'e quell\'altrlra trlrloia che da in girlro la carlblta igienicaaa!');
   array_push($beckArray, 'cosa fai mangi la pancetta con le mani come i marbrlrocchini!?!');
   array_push($beckArray, 'tanti augubrlrlri anche alle donne brlrutte!');
+  array_push($beckArray, 'io posso!!!');
+  array_push($beckArray, '..madonna inviperlbdritaaa!!!');
   $min=1;
-  $max=8;
+  $max=10;
   $randomNumber = rand($min, $max);
   shuffle($beckArray);
   
