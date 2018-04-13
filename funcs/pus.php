@@ -1,6 +1,25 @@
 <?php
 function Figa($text)
 {
+	$min=1;
+    $max=30;
+    $randomNumber = rand($min, $max);
+    if($randomNumber === 15)
+    {
+    	$response = '';
+  		$neroArray = array(1 => 'http://www.dagospia.com/img/foto/11-2017/il-nero-di-whatsapp-960531.png');
+  		array_push($neroArray, 'https://cdn-img-f.facciabuco.com/13/sg87i2atkk-il-negro-di-whatsapp-al-festival-di-sanremo_a.jpg');
+  		array_push($neroArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Kej6kSAxbyBQ_bg575MtmtG0r5MQ00CDYTneqMPyVmz7Oy156w');
+  		array_push($neroArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxujPjROj4r3uec8FNGmsXNZswjsrtGOzrroEdLFQo3y3PzCDe');
+  		array_push($neroArray, 'https://pbs.twimg.com/media/CdMlPxaWwAELuz1.jpg');
+  		$min=1;
+  		$max=5;
+  		$randomNumber = rand($min, $max);
+  		shuffle($neroArray);
+  		$response = $neroArray[$randomNumber] . '  sorpresa!!';
+  		return $response;
+    }
+    
   $response = '';
   $figaArray = array(1 => 'https://i.pinimg.com/originals/df/79/7b/df797b5fe21cc62ab75584cb4180b24d.jpg');
   array_push($figaArray, 'https://i.pinimg.com/originals/58/b6/8a/58b68a789ef7ce0347431c4bc91973b1.jpg');
