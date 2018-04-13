@@ -2,7 +2,7 @@
 function Figa($text)
 {
 	$min=1;
-    $max=10;
+    $max=7;
     $randomNumber = rand($min, $max);
     if($randomNumber == 5)
     {
