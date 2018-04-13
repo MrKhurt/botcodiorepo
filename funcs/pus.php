@@ -2,9 +2,9 @@
 function Figa($text)
 {
 	$min=1;
-    $max=7;
+    $max=5;
     $randomNumber = rand($min, $max);
-    if($randomNumber == 5)
+    if($randomNumber == 4)
     {
     	$response = '';
   		$neroArray = array(1 => 'http://www.dagospia.com/img/foto/11-2017/il-nero-di-whatsapp-960531.png');
