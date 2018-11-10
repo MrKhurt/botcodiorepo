@@ -7,6 +7,7 @@ include 'funcs/def.php';
 include 'funcs/price.php';
 include 'funcs/imgranwkey.php';
 include 'funcs/ass.php';
+include 'funcs/cosplay.php';
 include 'funcs/pus.php';
 include 'funcs/goodmor.php';
 include 'funcs/commands.php';
@@ -171,6 +172,12 @@ else if(strpos($text, 'pronto?') !== false)
 else if(strpos($text, 'culo') !== false)
 {
 	$response = Culo($text);
+}
+
+// COSPLAY
+else if(strpos($text, 'cosplay') !== false)
+{
+	$response = Cosplay($text);
 }
 
 // FIGA
