@@ -4,21 +4,21 @@ function Figa($text)
 	$min=1;
     $max=5;
     $randomNumber = rand($min, $max);
-    if($randomNumber == 4)
-    {
-    	$response = '';
-  		$neroArray = array(1 => 'http://www.dagospia.com/img/foto/11-2017/il-nero-di-whatsapp-960531.png');
-  		array_push($neroArray, 'https://cdn-img-f.facciabuco.com/13/sg87i2atkk-il-negro-di-whatsapp-al-festival-di-sanremo_a.jpg');
-  		array_push($neroArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Kej6kSAxbyBQ_bg575MtmtG0r5MQ00CDYTneqMPyVmz7Oy156w');
-  		array_push($neroArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxujPjROj4r3uec8FNGmsXNZswjsrtGOzrroEdLFQo3y3PzCDe');
-  		array_push($neroArray, 'https://pbs.twimg.com/media/CdMlPxaWwAELuz1.jpg');
-  		$min=1;
-  		$max=5;
-  		$randomNumber = rand($min, $max);
-  		shuffle($neroArray);
-  		$response = $neroArray[$randomNumber] . '  sorpresa!!';
-  		return $response;
-    }
+    //if($randomNumber == 4)
+    //{
+    // 	$response = '';
+    //		$neroArray = array(1 => 'http://www.dagospia.com/img/foto/11-2017/il-nero-di-whatsapp-960531.png');
+  	//	array_push($neroArray, 'https://cdn-img-f.facciabuco.com/13/sg87i2atkk-il-negro-di-whatsapp-al-festival-di-sanremo_a.jpg');
+  	//	array_push($neroArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Kej6kSAxbyBQ_bg575MtmtG0r5MQ00CDYTneqMPyVmz7Oy156w');
+  	//	array_push($neroArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxujPjROj4r3uec8FNGmsXNZswjsrtGOzrroEdLFQo3y3PzCDe');
+  	//	array_push($neroArray, 'https://pbs.twimg.com/media/CdMlPxaWwAELuz1.jpg');
+  	//	$min=1;
+  	//	$max=5;
+  	//	$randomNumber = rand($min, $max);
+  	//	shuffle($neroArray);
+  	//	$response = $neroArray[$randomNumber] . '  sorpresa!!';
+  	//	return $response;
+    //}
     
   $response = '';
   $figaArray = array(1 => 'https://i.pinimg.com/originals/df/79/7b/df797b5fe21cc62ab75584cb4180b24d.jpg');
@@ -71,6 +71,26 @@ function Figa($text)
   array_push($figaArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2rRyMyMYPDkAXGNd1lCVmEXjjqvI5SrBxKnj1_DZqPOIh-6DQw');
   array_push($figaArray, 'http://eugeniadiordiychuk.com/static/image/2012/02/18/jenya-d-cover-leonardo-eugenia-diordiychuk-metart-01.jpg');
   array_push($figaArray, 'http://redbust.com/wp-content/uploads/sadie_jones6/sadie_jones_09.jpg');
+  array_push($figaArray, 'http://i.imgur.com/C9XTjAf.jpg');
+  array_push($figaArray, 'http://i.imgur.com/SO6rhzF.jpg');
+  array_push($figaArray, 'https://i.imgur.com/uGEQ5M2.jpg');
+  array_push($figaArray, 'https://steemitimages.com/0x0/https://steemitimages.com/DQmZbMY67T8HdPJXDX1bTuzfaN77stJSM32MuV9MqqYcn5Q/victoria-moore-1.jpg');
+  array_push($figaArray, 'http://i3.sinaimg.cn/ty/nba/2015-01-19/U4933P6T12D7488707F44DT20150119103349.jpg');
+  array_push($figaArray, 'https://citydaygame.com/wp-content/uploads/2016/01/girls_who_make_cuteness_hot_640_15.jpg');
+  array_push($figaArray, 'http://misteriya.com/uploads/posts/2012-11/1352730682_those_are_big_but_not_their_eyes_01.jpg');
+  array_push($figaArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO_JLKVEikL50ITglVBTyA5yGYGOrSz_boUd3AZcVvr2zFthjr_w');
+  array_push($figaArray, 'https://stunningfitnessgirls.com/wp-content/uploads/2018/08/tumblr_pebsludPb51u24e28_540.jpg');
+  array_push($figaArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgbVzneqVn8lf-guaU0DDaAL8JdWNFP0MkvUJoHR3XDhNW_5D');
+  array_push($figaArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ2YdcYRcdUCCssRd8QcBaoH8X1sKM_qA2SGDFbAUrhU6QuKQ7Fw');
+  array_push($figaArray, 'https://scontent-frt3-2.cdninstagram.com/vp/63374d98f1c0224a064965e441e5106d/5C54EBC3/t51.2885-15/e35/40964287_1813616545420860_3587414566238519218_n.jpg?se=7&ig_cache_key=MTg3MjIzMTk2NzE1ODQ2ODUwNQ%3D%3D.2');
+  array_push($figaArray, 'https://steamuserimages-a.akamaihd.net/ugc/884253767811424295/7082B5B56313011F080EBD483681780BF7FEAB11/');
+  array_push($figaArray, 'http://www.bossroyal.com/wp-content/uploads/2016/08/20160828_juli_annee_09.jpg');
+  array_push($figaArray, 'http://www.imagefully.com/wp-content/uploads/2015/07/Sexy-Hot-Girl-Smile-Face-Image.jpg');
+  array_push($figaArray, 'https://fhm.nl/wp-content/uploads/2018/02/IMGL9897.jpg');
+  array_push($figaArray, 'https://opinionyliteratura.files.wordpress.com/2015/04/la-belleza-de-la-mujer-asic3a1tica-writeintheglobaljungle-com-e28093-20.jpg');
+  array_push($figaArray, 'https://imagesyoulike.com/images/00000/32x24/09260.jpg');
+  array_push($figaArray, 'https://imgix.ranker.com/user_node_img/50053/1001057408/original/feeling-the-sands-of-time-all-people-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces');
+  array_push($figaArray, 'https://qph.fs.quoracdn.net/main-qimg-beedf48ef9ef2e5319836744508f2110');
   
   $figaGIFArray = array(1 => 'https://media.giphy.com/media/Ef5fzYwvSITkI/giphy.gif');
   array_push($figaGIFArray, 'http://content.fhm.com/i/media/2015/05/meg.gif');
@@ -122,8 +142,31 @@ function Figa($text)
   array_push($figaGIFArray, 'https://choualbox.com/Img/20110921155608A.gif');
   array_push($figaGIFArray, 'http://list.lisimg.com/image/8554738/500full.jpg');
   array_push($figaGIFArray, 'https://lh3.googleusercontent.com/-zj0thQQ3LQE/U800Fz9ZJXI/AAAAAAAAMIQ/QXHDEszqU1A/w530-h299-n/ShelbyChesnes.gif');
+  
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_17.gif');
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_16.gif');
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_15.gif');
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_14.gif');
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_12.gif');
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_06.gif');
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_05.gif');
+  array_push($figaGIFArray, 'https://www.chaostrophic.com/wp-content/uploads/2016/10/these_sexy_girls_shaking_their_assets_that_will_make_you_say_mmm_03.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_05.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_04.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_02.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_01.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_20.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_19.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_17.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_16.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_14.gif');
+  array_push($figaGIFArray, 'https://cdn.acidcow.com/pics/20130823/girls_gifs_13.gif');
+  array_push($figaGIFArray, 'https://i.giphy.com/media/IIJO2apwXN1zq/200w.webp');
+  array_push($figaGIFArray, 'https://lh3.googleusercontent.com/-CJcpN5vmM9c/WxEG07hD_YI/AAAAAAAAqJc/7pX4TlaDZFAta5qMI5ErB7jarJ-zubTSACJoC/w325-h453/76adbe1847c0d20d8b69c938152bc1fa.gif');
+  
+  
   $min=1;
-  $max=50;
+  $max=70;
   $randomNumber = rand($min, $max);
   //shuffle the array
   shuffle($figaArray);

@@ -161,6 +161,12 @@ else if(strpos($text, 'buona pasqua') !== false)
 	$response = Pasqua($text);
 }
 
+// PRONTO
+else if(strpos($text, 'pronto?') !== false)
+{
+	$response = "Culo onto!";
+}
+
 // CULO
 else if(strpos($text, 'culo') !== false)
 {
