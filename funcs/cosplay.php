@@ -57,14 +57,71 @@ function Cosplay($text)
   array_push($cosplayArray, 'https://creative-ads.org/wp-content/uploads/2014/05/Hot-Velma-Cosplay-by-Alithia-2.jpg');
   array_push($cosplayArray, 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmd1J8nwP27EAvywSPdjwLqiGy84E3DQv7PxpM3vH3dUL7/steampunk%20girl.jpg');
   
-  
+
+  $cosplayGifArray = array(1 => 'http://tse4.mm.bing.net/th?id=OGC.0be768b0ee23e711e3ab49a6c067731a&pid=1.7&rurl=http://img1.thatpervert.com/pics/post/porn--cosplay-cosplay-porn-4374455.gif&ehk=/wEM0CzPo9GupV7grVCJig');
+  array_push($cosplayGifArray, 'https://cdn4.images.motherlessmedia.com/images/10A7682.gif?fs=opencloud');
+  array_push($cosplayGifArray, 'https://i.kym-cdn.com/photos/images/newsfeed/000/477/664/84b.gif');
+  array_push($cosplayGifArray, 'https://images.sex.com/images/pinporn/2015/12/07/300/14480498.gif');
+  array_push($cosplayGifArray, 'https://alexsnowdog.files.wordpress.com/2017/06/cosplay11.gif');
+  array_push($cosplayGifArray, 'https://choualbox.com/Img/146451129647.gif');
+  array_push($cosplayGifArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNbUmWzvdrBNfTVjmFu6g3KZU5Zn0mA7T5HPiaNGyRk-tUyVWC');
+  array_push($cosplayGifArray, 'https://i.imgur.com/Z6fZvP3.gif?noredirect');
+  array_push($cosplayGifArray, 'https://thumbs.gfycat.com/LankyClearDouglasfirbarkbeetle-size_restricted.gif');
+  array_push($cosplayGifArray, 'http://xxxpicz.com/xxx/velma-dinkley-boobs-porn-scooby-doo-velma-ass-gif.gif');
+  array_push($cosplayGifArray, 'https://images.sex.com/images/pinporn/2017/01/14/300/17216170.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/58/da/60/58da60052d91d54dffb0d81f7fa850c9.gif');
+  array_push($cosplayGifArray, 'https://i.makeagif.com/media/8-14-2015/ShTahr.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/ae/f9/a5/aef9a570d549d803ff829daac8a396c1.gif');
+  array_push($cosplayGifArray, 'https://i.imgur.com/dEpmOPI.jpg');
+  array_push($cosplayGifArray, 'http://hot-cosplaygirls.com/wp-content/uploads/2015/01/Super-Mary-Face17.gif');
+  array_push($cosplayGifArray, 'https://blog.planete-nextgen.com/wp-content/uploads/2015/10/ezgif.com-optimize.gif');
+  array_push($cosplayGifArray, 'https://www.maxim.com/.image/t_share/MTUwOTAyNjIwNDU2NzU3MDgx/tumblr_lyhfkrwyrf1r69bfqo1_500.gif');
+  array_push($cosplayGifArray, 'https://lh3.googleusercontent.com/-Yg3iw-3im4Y/VKnVYxmdhgI/AAAAAAAAxDQ/BXTj85VGkGs/w426-h638/cute-asian-cosplay-girl-gif-1777980.gif');
+  array_push($cosplayGifArray, 'https://lh3.googleusercontent.com/-IGpMXFR6Fgg/VWVd8dcm0BI/AAAAAAAAA7I/9tcOlZKuIQE/w360-h193-n-rw/bianca%2Bbeauchamp%2Bharley%2Bquinn%2B1.gif');
+  array_push($cosplayGifArray, 'https://media.giphy.com/media/q5R3a7Vqgrl04/giphy.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/22/71/f5/2271f51c936a6363d640883711218380.gif');
+  array_push($cosplayGifArray, 'http://lolhehehe.com/wp-content/uploads/2018/02/eewewewew.gif');
+  array_push($cosplayGifArray, 'https://images.sex.com/images/pinporn/2017/05/14/300/17763223.gif');
+  array_push($cosplayGifArray, 'https://foro.putalocura.com/proxy.php?image=http%3A%2F%2F24.media.tumblr.com%2F0116628cbed04dc98cf398494083c009%2Ftumblr_mhexphQNuz1rimwgjo1_1280.gif&hash=bdc7f592d37b142ef3195dd7af142a51');
+  array_push($cosplayGifArray, 'https://ugc.kn3.net/i/760x/http://www.23hq.com/theory23hq/photo/17161033/original');
+  array_push($cosplayGifArray, 'http://gosidework.com/423/27baf6f345b168b95cb36ca9b914f444.gif');
+  array_push($cosplayGifArray, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJoxGQFsRexycsDjfOeFSBvbb3gqBsushdDc8N1kVmWxVCq1yb');
+  array_push($cosplayGifArray, 'https://www.bunnylust.com/sexy-pattycake-naked-leia-gifs/2.gif');
+  array_push($cosplayGifArray, 'https://i.kym-cdn.com/photos/images/original/000/477/740/7d7.gif');
+  array_push($cosplayGifArray, 'http://www.daidegasforum.com/images2/349/sexy-nurse-cosplay-gif.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/06/a4/15/06a415d1a10fd004b30c406d7273e7a4.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/15/f5/a7/15f5a7d775217a8920b7bbaba26a7f2f.gif');
+  array_push($cosplayGifArray, 'https://i.imgur.com/WJRHrd1.gif');
+  array_push($cosplayGifArray, 'https://lh3.googleusercontent.com/-E1hC2vHHta4/V9BF252WUEI/AAAAAAADtZo/Jex_byeJZ-Ux3qQ4PpyWBFBjqwJMOg95wCJoC/w506-h750/giphy-downsized-large.gif');
+  array_push($cosplayGifArray, 'https://i.redd.it/ve4v2t4tdwox.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/ba/7c/d6/ba7cd626519b7b960057c8676bc00f34.gif');
+  array_push($cosplayGifArray, 'https://thumbs.gfycat.com/BestBrownCoot-small.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/10/6a/79/106a797dd220ce01622c6fdc9cf107df.gif');
+  array_push($cosplayGifArray, 'https://steamusercontent-a.akamaihd.net/ugc/487893695360056820/F6F558F448CA04ECB7B83D7A1715BF868801F657/');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/07/64/94/07649423b800d2045e3e2fc0dfda9d3d.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/5d/25/3b/5d253bd9338577938bcb2cd9b9a38bff.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/45/40/2c/45402c1b8991b5e50c986f1df7964ee9.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/9f/a7/c5/9fa7c50da7781878c5ddeb9b0e834b5a.gif');
+  array_push($cosplayGifArray, 'http://nsfw.yourgeekgirls.su/archive/cosplay/Molly-Mfc/DC/harley-quinn/yourgeekgirls.su_cosplay_comics_DC_harley-quinn_attributes_boobs_redhead_nsfw_without-underwear_mood_sexy_shameless_photo_hair_fetish_Molly-Mfc_2555_0_58afafcb3caa1.gif');
+  array_push($cosplayGifArray, 'https://i.makeagif.com/media/8-14-2015/ShTahr.gif');
+  array_push($cosplayGifArray, 'https://i.pinimg.com/originals/ae/f9/a5/aef9a570d549d803ff829daac8a396c1.gif');
+  array_push($cosplayGifArray, 'https://i.imgur.com/dEpmOPI.jpg');
+  array_push($cosplayGifArray, 'http://hot-cosplaygirls.com/wp-content/uploads/2015/01/Super-Mary-Face17.gif');
+  array_push($cosplayGifArray, 'https://blog.planete-nextgen.com/wp-content/uploads/2015/10/ezgif.com-optimize.gif');
+    
   $min=1;
   $max=50;
   $randomNumber = rand($min, $max);
   //shuffle the array
   shuffle($cosplayArray);
+  shuffle($cosplayGifArray);
   
-  $response = $cosplayArray[$randomNumber];
+  // devo cercare una gif?
+  if(strpos($text, 'gif') !== false)
+    $response = $cosplayGifArray[$randomNumber];
+  else
+    $response = $cosplayArray[$randomNumber];
+  
   return $response;
 }
 ?>
