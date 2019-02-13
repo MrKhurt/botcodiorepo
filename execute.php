@@ -136,31 +136,31 @@ else if(substr($text, 0, 8) === 'traduci ')
 // NONDEFINIZIONE
 else if(substr($text, 0, 15) === 'nondefinizione ')
 {
-  $response = Nondefinizione(substr($text, 15));
+  $response = Nondefinizione($text);
 }
 
 // DEFINIZIONE
 else if(substr($text, 0, 12) === 'definizione ')
 {
-  $response = Definizione(substr($text, 12));
+  $response = Definizione($text);
 }
 
 // PREZZO
 else if(substr($text, 0, 7) === 'prezzo ')
 {
-  $response = Prezzo(substr($text, 7));
+  $response = Prezzo($text);
 }
 
 // CERCA FOTO
 else if(substr($text, 0, 11) === 'cerca foto ')
 {
-	$response = CercaFoto(substr($text, 11));
+	$response = CercaFoto($text);
 }
 
 // CERCA PORZO
 else if(substr($text, 0, 6) === 'porzo ')
 {
-	$response = PorSearch(substr($text, 6));
+	$response = PorSearch($text);
 }
 
 // PASQUA
