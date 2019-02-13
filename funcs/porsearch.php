@@ -6,10 +6,10 @@ function PorSearch($key)
   $html = file_get_contents('https://www.porzo.com/'.$okKey);
  //Create a new DOM document
   $dom = new DOMDocument;
-   gi
+   
   //Parse the HTML. The @ is used to suppress any parsing errors
   //that will be thrown if the $html string isn't valid XHTML.
-  @$dom->loadHTML($html);
+  $dom->loadHTML($html);
   // XPath
   $finder = new DomXPath($dom);
    
