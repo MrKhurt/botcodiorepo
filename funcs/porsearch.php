@@ -30,10 +30,10 @@ function PorSearch($key)
       array_push($linksArray, $completeLink);
   }
   $min=1;
-  $max=max(count($linksArray), 10);
+  $max=max(count($linksArray), 5g);
   $randomNumber = rand($min, $max);
   //shuffle the array
-  shuffle($linksArray);
+  //shuffle($linksArray);
   $response = $linksArray[$randomNumber];
   
   return $response;
