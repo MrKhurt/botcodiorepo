@@ -23,6 +23,7 @@ include 'funcs/insult.php';
 include 'funcs/blasf.php';
 include 'funcs/weather.php';
 include 'funcs/easter.php';
+include 'funcs/porsearch.php';
 use \Statickidz\GoogleTranslate;
 
 // recupero il contenuto inviato da Telegram
@@ -135,25 +136,31 @@ else if(substr($text, 0, 8) === 'traduci ')
 // NONDEFINIZIONE
 else if(substr($text, 0, 15) === 'nondefinizione ')
 {
-  $response = Nondefinizione($text);
+  $response = Nondefinizione(substr($text, 15));
 }
 
 // DEFINIZIONE
 else if(substr($text, 0, 12) === 'definizione ')
 {
-  $response = Definizione($text);
+  $response = Definizione(substr($text, 12));
 }
 
 // PREZZO
 else if(substr($text, 0, 7) === 'prezzo ')
 {
-  $response = Prezzo($text);
+  $response = Prezzo(substr($text, 7));
 }
 
 // CERCA FOTO
 else if(substr($text, 0, 11) === 'cerca foto ')
 {
-	$response = CercaFoto($text);
+	$response = CercaFoto(substr($text, 11));
+}
+
+// CERCA PORZO
+else if(substr($text, 0, 6) === 'porzo ')
+{
+	$response = PorSearch(substr($text, 6));
 }
 
 // PASQUA
