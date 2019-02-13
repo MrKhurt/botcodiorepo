@@ -3,7 +3,7 @@ function PorSearch($key)
 {
   //Load the HTML page
   $okKey = str_replace(' ', '%20', $key);
-  $html = file_get_contents('https://www.porzo.com/'.$okKey);
+  $html = file_get_contents('https://www.porzo.com/search/'.$okKey);
  //Create a new DOM document
   $dom = new DOMDocument;
    
@@ -36,6 +36,6 @@ function PorSearch($key)
   shuffle($linksArray);
   $response = $linksArray[$randomNumber];
   
-  return 'https://www.porzo.com/'.$okKey;
+  return $response;
 }
    ?>
