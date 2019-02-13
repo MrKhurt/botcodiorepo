@@ -24,7 +24,8 @@ function PorSearch($key)
   foreach ($nodes as $node)
   {
       //Extract and show the "href" attribute. 
-      $completeLink = 'https://www.porzo.com/'.str_replace('&amp;', '&', $link->getAttribute('data-item-url');
+      $l = str_replace('&amp;', '&', $link->getAttribute('data-item-url');
+      $completeLink = 'https://www.porzo.com/'.$l;
       array_push($linksArray, $completeLink);
   }
   $min=1;
