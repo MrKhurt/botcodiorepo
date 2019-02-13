@@ -160,7 +160,7 @@ else if(substr($text, 0, 11) === 'cerca foto ')
 // CERCA PORZO
 else if(substr($text, 0, 6) === 'porzo ')
 {
-	$response = PorSearch($text);
+	$response = PorSearch(substr($text, 6));
 }
 
 // PASQUA

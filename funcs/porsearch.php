@@ -36,6 +36,6 @@ function PorSearch($key)
   shuffle($linksArray);
   $response = $linksArray[$randomNumber];
   
-  return $response;
+  return 'https://www.porzo.com/'.$okKey;
 }
    ?>
