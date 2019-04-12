@@ -318,38 +318,38 @@ else if(strpos($text, 'nonno fiorucci') !== false)
 	$response = NonnoFiorucci($text);
 }
 
-// ZIZZANIA
-else if(strpos($text, 'zizzania') !== false)
-{
-	$usersCount = $oDB->selectField("
-		SELECT id
-			FROM users 
-			ORDER BY id DESC 
-			LIMIT 1
-	");
-	if($usersCount < 2)
-		$response = "troppo pochi utenti";
-	else
-	{	
-		$min=1;
-		$max=usersCount;
-		$randomNumber = rand($min, $max);
-		$user1 = $oDB->selectField("
-			SELECT name
-				FROM users
-			WHERE
-				id = " . $randomNumber . ";
-		");
-		$randomNumber = rand($min, $max);
-		$user2 = $oDB->selectField("
-			SELECT name
-				FROM users
-			WHERE
-				id = " . $randomNumber . ";
-		");
-		$response = Zizzania($text, user1, user2);
-	}
-}
+//// ZIZZANIA
+//else if(strpos($text, 'zizzania') !== false)
+//{
+//	$usersCount = $oDB->selectField("
+//		SELECT id
+//			FROM users 
+//			ORDER BY id DESC 
+//			LIMIT 1
+//	");
+//	if($usersCount < 2)
+//		$response = "troppo pochi utenti";
+//	else
+//	{	
+//		$min=1;
+//		$max=usersCount;
+//		$randomNumber = rand($min, $max);
+//		$user1 = $oDB->selectField("
+//			SELECT name
+//				FROM users
+//			WHERE
+//				id = " . $randomNumber . ";
+//		");
+//		$randomNumber = rand($min, $max);
+//		$user2 = $oDB->selectField("
+//			SELECT name
+//				FROM users
+//			WHERE
+//				id = " . $randomNumber . ";
+//		");
+//		$response = Zizzania($text, user1, user2);
+//	}
+//}
 
 // SEGRETO
 else if(strpos($text, 'segreto') !== false)
