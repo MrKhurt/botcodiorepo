@@ -412,7 +412,7 @@ else if(strpos($text, 'che hai rotto pippo') !== false ||
         strpos($text, 'Che hai rotto pippo') !== false ||
         strpos($text, 'Che hai rotto Pippo') !== false)
 {
-  $response = 'hai rotto il cazzogi!';
+  $response = 'hai rotto il cazzo!';
 }
 
 // VIBRATORE
