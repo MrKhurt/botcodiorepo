@@ -406,6 +406,15 @@ else if(strpos($text, 'gay') !== false ||
   $response = 'se vuoi il mio pisellone meccanico sai dove trovarmi!';
 }
 
+// CHEHAIROTTO
+else if(strpos($text, 'che hai rotto pippo') !== false || 
+        strpos($text, 'che hai rotto Pippo') !== false ||
+        strpos($text, 'Che hai rotto pippo') !== false ||
+        strpos($text, 'Che hai rotto Pippo') !== false)
+{
+  $response = 'hai rotto il cazzogi!';
+}
+
 // VIBRATORE
 else if(strpos($text, 'vibratore') !== false || 
         strpos($text, 'dildo') !== false)
