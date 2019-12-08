@@ -22,16 +22,6 @@ function Figa($text)
     
   $response = '';
   $figaArray = array(1 => 'https://i.pinimg.com/originals/df/79/7b/df797b5fe21cc62ab75584cb4180b24d.jpg');
-  array_push($figaArray, 'https://i.pinimg.com/originals/58/b6/8a/58b68a789ef7ce0347431c4bc91973b1.jpg');
-  array_push($figaArray, 'https://i.pinimg.com/originals/c0/d1/75/c0d1751c48968094807d933c604c7129.jpg');
-  array_push($figaArray, 'https://i.pinimg.com/originals/2b/26/eb/2b26ebf9f6fd6f035f34bb2d929f8b45.jpg');
-  array_push($figaArray, 'https://i.pinimg.com/originals/15/86/fc/1586fcacf7f47e1e4aa3be9e3ded3582.jpg');
-  array_push($figaArray, 'https://i.pinimg.com/originals/f8/fd/4d/f8fd4dfef36c6373073ebf132a102892.jpg');
-  array_push($figaArray, 'https://i.pinimg.com/originals/ee/35/03/ee3503f72f07ff19e1f8ec135eee5577.jpg');
-  array_push($figaArray, 'http://cdn-so.fantasti.cc/big/b/i/s/bisexualguy/bisexualguy_4ad8b8.jpg');
-  array_push($figaArray, 'http://cdn-so.fantasti.cc/big/b/i/s/bisexualguy/bisexualguy_852f68.jpg');
-  array_push($figaArray, 'http://www.independentescortsdelhi.in/wp-content/uploads/2017/10/Best-Sexy-Call-Girls-in-New-Delhi.jpg');
-  array_push($figaArray, 'https://i.pinimg.com/originals/9c/5d/4b/9c5d4b2c7acc17f9281236c2110d8af0.jpg');
   array_push($figaArray, 'https://i.pinimg.com/564x/95/46/d5/9546d5291ed2af9ba93eb9214d107885.jpg');
   array_push($figaArray, 'https://www.thesun.co.uk/wp-content/uploads/2016/11/nintchdbpict000228620832.jpg?w=640&strip=all');
   array_push($figaArray, 'https://i.pinimg.com/originals/b8/77/f0/b877f0ca3c9cbd58828d6d62acce87f7.jpg');
@@ -50,6 +40,16 @@ function Figa($text)
   array_push($figaArray, 'https://i.pinimg.com/736x/75/d7/39/75d739ff770b6a618ea329b9cd6a0395--sexy-women-sexy-girls.jpg');
   array_push($figaArray, 'https://i.pinimg.com/originals/6d/80/d1/6d80d17f9f86ecd9ad313f888c52c463.png');
   array_push($figaArray, 'https://i.pinimg.com/originals/7d/7b/3e/7d7b3ef786f7f11b62a941d7846d568d.jpg');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2018/05/66fc2ca143dc1560f1ce55dee9845d31_width-600.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2018/05/svetabily_17_5_2018_11_20_46_938.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2018/05/dashamart_17_5_2018_11_18_39_770.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2018/05/odintsova-al_17_5_2018_11_23_51_56.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2018/05/svetabily_17_5_2018_11_21_2_282.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2018/05/helga_model_17_5_2018_11_23_1_1.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2018/05/viki_odintcova_17_5_2018_11_21_16_230.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2019/10/05723186eb138fa32d137557cb6b8b02_width-600.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2019/10/dec37c838ac0e852e825438cf931c2f2_width-600.jpg?quality=100&strip=info&w=600');
+  array_push($figaArray, 'https://thechive.files.wordpress.com/2019/10/4ed8416e9096bc8113267b15362ae7fe_width-600.jpg?quality=100&strip=info&w=600');
   array_push($figaArray, 'https://i.pinimg.com/originals/4d/2b/7a/4d2b7a03dc7fae0794fe574d57faa042.jpg');
   array_push($figaArray, 'https://i.pinimg.com/originals/a1/db/34/a1db345e2e74799210b3aaadd646c42f.jpg');
   array_push($figaArray, 'https://i.pinimg.com/originals/f9/20/5f/f9205f60dc5736a7a80638c81d9470f2.jpg');
