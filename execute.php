@@ -358,10 +358,10 @@ else if(strpos($text, 'segreto') !== false)
 }
 
 // BEK
-else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
-{
-	$response = Bek($text);
-}
+//else if(strpos($text, 'bek') !== false || strpos($text, 'beck') !== false)
+//{
+//	$response = Bek($text);
+//}
 
 // BESTEMMIA
 else if(strpos($text, 'bestemmia') !== false || 
